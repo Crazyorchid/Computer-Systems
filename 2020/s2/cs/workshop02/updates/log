@@ -33,3 +33,47 @@ aG9wMDItMjAyMDA3MjQtMTkzMjQ0LnppcAo=
 200805-140317 updater:  Creating: Add16.hdl
 200805-140317 updater:  Updating: updates/README
 200805-140317 updater:  Update installed
+200806-111812 Modified: ZGViZGJkNjVkMDhlMzdlYWVmMjc5OTJjMDcwZjlmNmM2NjZjOThjOCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCmViZWUwMDFkOGQyZDFiMzAxMmUxYTNkYTUwNjk2MDdlZTU3ZmFiODEgIC4vdXBk
+YXRlcy91cGRhdGVyLmJhc2gKNzA5YWQ1YjA4YmM1MzVkNjdmZGNhNjgzMGY2YWEwNmMxMzg2OTlh
+MSAgLi91cGRhdGVzL3dvcmtzaG9wMDItMjAyMDA4MDYtMTA1MDM4LnppcAo2MDM2YjFiYmRmN2Rj
+Yzg4YTY5ZWU3MmIxNDI4YzRmMzk3OGE2YjYzICAuL0luYzE2LmhkbAo5MGQwZWVhMzFhYzM2MmE5
+NTE5MDU5ZTY3ZWI4NzkyY2RkMzIyMTc5ICAuL0Z1bGxBZGRlci5oZGwKZDU0OWU5MGEwNjUxNzc0
+OTUwNmQyYzJmOGE1ODM5N2JhZTc0NTI4OSAgLi9NYWtlZmlsZQo=
+200806-111812 make install
+200806-111812 SVN user: a1778478, repository path: 2020/s2/cs/workshop02
+200806-111812 updater:  Directory: ./bin
+200806-111812 updater:  Directory: ./originals
+200806-111812 updater:  Directory: ./originals/ALU
+200806-111812 updater:  Creating: ./HalfAdder.tst
+200806-111812 updater:  Creating: ./Inc16.cmp
+200806-111812 updater:  Creating: ./bin/run-tests
+200806-111812 updater:  Creating: ./Add16.cmp
+200806-111812 updater:  Creating: ./FullAdder.cmp
+200806-111812 updater:  Creating: updates/Makefile
+200806-111812 updater:  Creating: ./originals/HalfAdder.hdl
+200806-111812 updater:  Creating: ./originals/FullAdder.hdl
+200806-111812 updater:  Creating: ./originals/Inc16.hdl
+200806-111812 updater:  Creating: ./originals/Add16.hdl
+200806-111812 updater:  Creating: ./originals/ALU/ALU.hdl
+200806-111812 updater:  Creating: ./FullAdder.tst
+200806-111812 updater:  Creating: ./HalfAdder.cmp
+200806-111812 updater:  Creating: ./Add16.tst
+200806-111812 updater:  Creating: ./Inc16.tst
+200806-111812 updater:  Creating: ./ALU/ALU.tst
+200806-111812 updater:  Creating: ./ALU/ALU-nostat.tst
+200806-111812 updater:  Creating: ./ALU/ALU-nostat.cmp
+200806-111812 updater:  Creating: ./ALU/ALU.cmp
+200806-111812 updater:  Made bin/run-tests executable
+200806-111812 updater:  Updating: updates/README
+200806-111812 updater:  Update installed
+200806-113305 Modified: Njg0NTJmMjgyN2FmNjZhYzgxZTk5NjQ5NWYxY2NkMmI2ODQ1OTVhOCAgLi9IYWxmQWRkZXIuaGRs
+CmRlNTNhMzJmNWQzOGJiM2M4NDk2NjMxMWJiMTdlOTYyNmI4YTJkZDEgIC4vRnVsbEFkZGVyLmhk
+bAo4NGY2ODIwNzRjMzQ4NWRmZDc5NjBiZjhmNmNmMzEyMTAyYWU3YWI0ICAuL0hhbGZBZGRlci5v
+dXQK
+200806-113305 make 
+200806-113305 SVN user: a1778478, repository path: 2020/s2/cs/workshop02
+200806-113400 Modified: Y2M2ZGE4MGNiNGZlMjJkOTI2OWUyMWNlMGY0YmYzMjM3NWQ3NDQwNSAgLi9GdWxsQWRkZXIuaGRs
+Cg==
+200806-113400 make 
+200806-113400 SVN user: a1778478, repository path: 2020/s2/cs/workshop02
