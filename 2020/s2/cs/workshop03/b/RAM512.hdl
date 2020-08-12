@@ -29,4 +29,4 @@ CHIP RAM512 {
 
     Mux8Way16(a=oa,b=ob,c=oc,d=od,e=oe,f=of,g=og,h=oh,sel=address[6..8],out=out);
 }
-}
+
