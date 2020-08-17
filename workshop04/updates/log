@@ -1,0 +1,47 @@
+200817-231840 make install
+200817-231840 SVN user: a1778478, repository path: 2020/s2/cs/workshop04
+200817-231840 Cannot find any zip files in updates/
+200817-231933 Modified: NDFmZGI2NDMxYmQ0NDZlMTMzYzM2YzFkMWZmYWUzZGMxMDc1MjAxNSAgLi91cGRhdGVzL3dvcmtz
+aG9wMDQtMjAyMDA4MTUtMTUxNzI5LnppcAozNjFjMWVhZjZkOTViZWViODc1M2Y4OWE4ZTJmYWNl
+YTZhZjdkZTE0ICAuL3VwZGF0ZXMvTWFrZWZpbGUK
+200817-231933 make install
+200817-231933 SVN user: a1778478, repository path: 2020/s2/cs/workshop04
+200817-231933 updater:  Directory: ./bin
+200817-231933 updater:  Directory: ./originals
+200817-231933 updater:  Creating: ./ComputerRect-external.cmp
+200817-231933 updater:  Creating: ./ComputerMax-external.cmp
+200817-231933 updater:  Creating: ./CPU.tst
+200817-231933 updater:  Creating: ./ComputerMax.cmp
+200817-231933 updater:  Creating: ./ComputerRect.tst
+200817-231933 updater:  Creating: ./Memory.cmp
+200817-231933 updater:  Creating: ./ComputerAdd-external.tst
+200817-231933 updater:  Creating: ./Rect.hack
+200817-231933 updater:  Creating: ./CPU.cmp
+200817-231933 updater:  Creating: ./Add.hack
+200817-231933 updater:  Creating: ./ComputerRect.cmp
+200817-231933 updater:  Creating: ./bin/run-tests
+200817-231933 updater:  Creating: ./Memoryx.tst
+200817-231933 updater:  Creating: ./ComputerAdd.tst
+200817-231933 updater:  Creating: ./Memoryx.cmp
+200817-231933 updater:  Creating: ./Max.hack
+200817-231933 updater:  Creating: ./Memory.tst
+200817-231933 updater:  Creating: ./CPU-external.cmp
+200817-231933 updater:  Creating: ./ComputerAdd-external.cmp
+200817-231933 updater:  Creating: ./originals/Computer.hdl
+200817-231933 updater:  Creating: ./originals/Memory.hdl
+200817-231933 updater:  Creating: ./originals/CPU.hdl
+200817-231933 updater:  Creating: ./ComputerMax.tst
+200817-231933 updater:  Creating: ./ComputerRect-external.tst
+200817-231933 updater:  Creating: ./ComputerAdd.cmp
+200817-231933 updater:  Updating: updates/Makefile
+200817-231933 updater:  Creating: ./ComputerMax-external.tst
+200817-231933 updater:  Creating: ./CPU-external.tst
+200817-231933 updater:  Made Add.hack executable
+200817-231933 updater:  Made Max.hack executable
+200817-231933 updater:  Made Rect.hack executable
+200817-231933 updater:  Made bin/run-tests executable
+200817-231933 updater:  Creating: Computer.hdl
+200817-231933 updater:  Creating: Memory.hdl
+200817-231933 updater:  Creating: CPU.hdl
+200817-231933 updater:  Updating: updates/README
+200817-231933 updater:  Update installed
