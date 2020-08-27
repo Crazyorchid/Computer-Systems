@@ -131,3 +131,33 @@ aG9wMDUtMjAyMDA4MTctMTQyNjEzLnppcAo=
 200824-204952 updater:  Update installed
 200827-001342 make 
 200827-001342 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-110803 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCjZjM2ZjZmI5NzJjZDNlZjM3ZjJmZmYwMDlmODIyNzg2ODI5MzliZGIgIC4vdXBk
+YXRlcy93b3Jrc2hvcDA1LTIwMjAwODE3LTE0MjYxMy56aXAK
+200827-110803 make 
+200827-110803 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-110803 updater:  Directory: ./bin
+200827-110803 updater:  Directory: ./originals
+200827-110803 updater:  Directory: ./tests
+200827-110803 updater:  Directory: ./includes
+200827-110803 updater:  Directory: ./lib
+200827-110803 updater:  Directory: ./lib/cats
+200827-110803 updater:  Directory: ./lib/cats/bin
+200827-110803 updater:  Directory: ./lib/macos
+200827-110803 updater:  Directory: ./lib/macos/bin
+200827-110803 updater:  Directory: ./lib/centos8
+200827-110803 updater:  Directory: ./lib/centos8/bin
+200827-110803 updater:  Creating: ./tokeniser
+200827-110803 updater:  Creating: ./bin/tokeniser
+200827-110803 updater:  Creating: ./bin/diffc
+200827-110803 updater:  Creating: ./bin/diff-colours
+200827-110803 updater:  Creating: ./bin/Compiler-check.bash
+200827-110828 make test
+200827-110828 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-110828 updater:  Creating: ./bin/run-tests
+200827-110828 updater:  Creating: updates/Makefile
+200827-110828 updater:  Creating: ./originals/tokeniser.cpp
+200827-110828 updater:  Creating: ./tests/MemoryTest-Main.jack.tokens
+200827-110828 updater:  Creating: ./tests/Average-Main.jack
+200827-110828 updater:  Creating: ./tests/1char-varops
+200827-110828 updater:  Creating: ./tests/ExplsSquare-Main.jack.tokens

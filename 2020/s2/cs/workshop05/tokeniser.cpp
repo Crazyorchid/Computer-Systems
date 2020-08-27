@@ -17,8 +17,12 @@ namespace Workshop_Tokeniser
     // we just need to remember the token kind
     static void parse_extra(TokenKind kind)
     {
+        
         new_token_kind = kind ;
         nextch() ;
+        if (have ('ch')) nextch(); else
+        c_did_not_find('ch');
+
     }
 
     // parse a single character of white space
