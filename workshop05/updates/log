@@ -161,3 +161,149 @@ YXRlcy93b3Jrc2hvcDA1LTIwMjAwODE3LTE0MjYxMy56aXAK
 200827-110828 updater:  Creating: ./tests/Average-Main.jack
 200827-110828 updater:  Creating: ./tests/1char-varops
 200827-110828 updater:  Creating: ./tests/ExplsSquare-Main.jack.tokens
+200827-112902 Modified: ZWQ0YTg4ZDUyZGFlZWVmZTU3NzYzMTJjMDZlYWMzNjFmMjA1ZWY1MSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200827-112902 make install
+200827-112902 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-112902 updater:  Creating: ./tests/MathTest-Main.jack
+200827-112902 updater:  Creating: ./tests/0keywords
+200827-112902 updater:  Creating: ./tests/ComplexArrays-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/StringTest-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/StringTest-Main.jack
+200827-112902 updater:  Creating: ./tests/1char-ops
+200827-112902 updater:  Creating: ./tests/Seven-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/MemoryTest-Main.jack
+200827-112902 updater:  Creating: ./tests/Address.asm
+200827-112902 updater:  Creating: ./tests/Numerical.asm
+200827-112902 updater:  Creating: ./tests/Square-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/Rect.asm
+200827-112902 updater:  Creating: ./tests/Jump.asm.tokens
+200827-112902 updater:  Creating: ./tests/ExplsSquare-Square.jack.tokens
+200827-112902 updater:  Creating: ./tests/ExplsSquare-Square.jack
+200827-112902 updater:  Creating: ./tests/1char-ops.tokens
+200827-112902 updater:  Creating: ./tests/Jump.asm
+200827-112902 updater:  Creating: ./tests/ConvertToBin-Main.jack
+200827-112902 updater:  Creating: ./tests/ScreenTest-Main.jack
+200827-112902 updater:  Creating: ./tests/0identifiers
+200827-112902 updater:  Creating: ./tests/Numerical.asm.tokens
+200827-112902 updater:  Creating: ./tests/Square-Main.jack
+200827-112902 updater:  Creating: ./tests/Add.asm
+200827-112902 updater:  Creating: ./tests/0numbers
+200827-112902 updater:  Creating: ./tests/MathTest-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/OutputTest-Main.jack
+200827-112902 updater:  Creating: ./tests/DestComp.asm.tokens
+200827-112902 updater:  Creating: ./tests/KeyboardTest-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/ExplsSquare-SquareGame.jack.tokens
+200827-112902 updater:  Creating: ./tests/SysTest-Main.jack
+200827-112902 updater:  Creating: ./tests/ArrayTest-Main.jack
+200827-112902 updater:  Creating: ./tests/Pong-PongGame.jack.tokens
+200827-112902 updater:  Creating: ./tests/0numbers.tokens
+200827-112902 updater:  Creating: ./tests/MaxL.asm.tokens
+200827-112902 updater:  Creating: ./tests/SysTest-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/Square-SquareGame.jack
+200827-112902 updater:  Creating: ./tests/1char-symbols
+200827-112902 updater:  Creating: ./tests/0identifiers.tokens
+200827-112902 updater:  Creating: ./tests/1char-symbols.tokens
+200827-112902 updater:  Creating: ./tests/Rect.asm.tokens
+200827-112902 updater:  Creating: ./tests/Pong-Bat.jack.tokens
+200827-112902 updater:  Creating: ./tests/0keywords.tokens
+200827-112902 updater:  Creating: ./tests/ExplsSquare-Main.jack
+200827-112902 updater:  Creating: ./tests/Square-Square.jack
+200827-112902 updater:  Creating: ./tests/RectL.asm.tokens
+200827-112902 updater:  Creating: ./tests/Comp.asm.tokens
+200827-112902 updater:  Creating: ./tests/Pong-Ball.jack
+200827-112902 updater:  Creating: ./tests/1char-varops.tokens
+200827-112902 updater:  Creating: ./tests/Average-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/Seven-Main.jack
+200827-112902 updater:  Creating: ./tests/Dest.asm
+200827-112902 updater:  Creating: ./tests/Pong-Main.jack
+200827-112902 updater:  Creating: ./tests/OutputTest-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/ComplexArrays-Main.jack
+200827-112902 updater:  Creating: ./tests/Pong-Bat.jack
+200827-112902 updater:  Creating: ./tests/ConvertToBin-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/ArrayTest-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/ScreenTest-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/2char-varops.tokens
+200827-112902 updater:  Creating: ./tests/DestComp.asm
+200827-112902 updater:  Creating: ./tests/Max.asm.tokens
+200827-112902 updater:  Creating: ./tests/Square-SquareGame.jack.tokens
+200827-112902 updater:  Creating: ./tests/RectL.asm
+200827-112902 updater:  Creating: ./tests/KeyboardTest-Main.jack
+200827-112902 updater:  Creating: ./tests/Pong-Main.jack.tokens
+200827-112902 updater:  Creating: ./tests/Square-Square.jack.tokens
+200827-112902 updater:  Creating: ./tests/Max.asm
+200827-112902 updater:  Creating: ./tests/Comp.asm
+200827-112902 updater:  Creating: ./tests/Add.asm.tokens
+200827-112902 updater:  Creating: ./tests/MaxL.asm
+200827-112902 updater:  Creating: ./tests/2char-varops
+200827-112902 updater:  Creating: ./tests/Pong-Ball.jack.tokens
+200827-112902 updater:  Creating: ./tests/Pong-PongGame.jack
+200827-112902 updater:  Creating: ./tests/ExplsSquare-SquareGame.jack
+200827-112902 updater:  Creating: ./tests/Address.asm.tokens
+200827-112902 updater:  Creating: ./tests/Dest.asm.tokens
+200827-112902 updater:  Creating: ./includes/tokeniser-extras.h
+200827-112902 updater:  Creating: ./includes/tokeniser.h
+200827-112902 updater:  Creating: ./includes/iobuffer.h
+200827-112902 updater:  Creating: ./lib/cats/bin/tokeniser
+200827-112902 updater:  Creating: ./lib/cats/bin/diff-colours
+200827-112902 updater:  Creating: ./lib/cats/lib.a
+200827-112902 updater:  Creating: ./lib/macos/bin/tokeniser
+200827-112902 updater:  Creating: ./lib/macos/bin/diff-colours
+200827-112902 updater:  Creating: ./lib/macos/lib.a
+200827-112902 updater:  Creating: ./lib/centos8/bin/tokeniser
+200827-112902 updater:  Creating: ./lib/centos8/bin/diff-colours
+200827-112902 updater:  Creating: ./lib/centos8/lib.a
+200827-112902 updater:  Creating: ./tokens.cpp
+200827-112902 updater:  Made tokeniser executable
+200827-112902 updater:  Made bin/diffc executable
+200827-112902 updater:  Made bin/diff-colours executable
+200827-112902 updater:  Made bin/run-tests executable
+200827-112902 updater:  Made bin/tokeniser executable
+200827-112902 updater:  Made lib/cats/bin/diff-colours executable
+200827-112902 updater:  Made lib/cats/bin/tokeniser executable
+200827-112902 updater:  Made lib/centos8/bin/diff-colours executable
+200827-112902 updater:  Made lib/centos8/bin/tokeniser executable
+200827-112902 updater:  Made lib/macos/bin/diff-colours executable
+200827-112902 updater:  Made lib/macos/bin/tokeniser executable
+200827-112902 updater:  Updating: updates/README
+200827-112902 updater:  Update installed
+200827-112917 make 
+200827-112917 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-113416 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCmNiNTExZmI3ZDJiOWI3YzhlNjU0Njk3NzFkZmM0MDE0ZTJiYzY3NTcgIC4vdG9r
+ZW5pc2VyLmNwcApkYTM5YTNlZTVlNmI0YjBkMzI1NWJmZWY5NTYwMTg5MGFmZDgwNzA5ICAuL2lu
+Y2x1ZGVzLy5SaGlzdG9yeQo=
+200827-113416 make 
+200827-113416 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-113811 Modified: MzIwMDZhNDUzYjJkMzU5NDhkZmZjOGM0ZjU1MzAyOGMwZGI5M2FlOCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200827-113811 make 
+200827-113811 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-113937 Modified: ZTk0YTQ4YTIyZmIxYWM2Y2YxYjQ0ZDgyOTkyNjcyNTNkNDkzMWNkMCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200827-113937 make 
+200827-113937 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-114003 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCjJkNWMwODVhZDBjMzkxMjNiMjI5M2I3NTM4NDk4ZTIzNTMyZmU3NjIgIC4vdG9r
+ZW5pc2VyLmNwcAo=
+200827-114003 make 
+200827-114003 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-114051 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCmFiMGUxNDRhZjA1NWUxNDE1NDA5MDU4ZjBkZWVlYTkxODJkMWM1ZGYgIC4vdG9r
+ZW5pc2VyLmNwcAo=
+200827-114051 make 
+200827-114051 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-115818 Modified: YmFiYTVjNWFiMmNmNGVmYjkyYjUwMWJhMmQwMGRlM2Y3Yjc2MjhmYyAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200827-115818 make 
+200827-115818 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-115844 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCjA4NmUwMDNkZDczOTllYWVkNWRjNzEwNTEyOTk2OWNmM2JjMzZiMjYgIC4vdG9r
+ZW5pc2VyLmNwcAo=
+200827-115844 make 
+200827-115844 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200827-115918 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCjhjYzI3YTZhZDUzMzZkMzllYTY3MTE2ODM0NTAwNDdiNzM3OTdmOWEgIC4vdG9r
+ZW5pc2VyLmNwcAo=
+200827-115918 make 
+200827-115918 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
