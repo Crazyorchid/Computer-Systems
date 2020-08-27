@@ -29,6 +29,8 @@ namespace Workshop_Tokeniser
     // ch is the white space character
     static void parse_wspace(TokenKind kind)
     {
+    	//new_token_kind = tk_space;
+    	//do nextch() ; while ( c_have(cg_wspace) ) ;
 
         parse_extra(kind) ;
     }
@@ -60,8 +62,9 @@ namespace Workshop_Tokeniser
     // ch is the single character operator
     static void parse_op(TokenKind kind)
     {
-    	//c_mustbe('+' | '-' | '*' | '/')
-        c_did_not_find(cg_op) ;
+    	 new_token_kind = kind ;
+    	 do nextch() ; while (c_have(tk_add|tk_divide|tk_sub|tk_times) ) ;
+        //c_did_not_find(cg_op) ;
     }
 
     // parse < or <= - always read one extra character
@@ -160,6 +163,17 @@ namespace Workshop_Tokeniser
             parse_op(tk_add) ;
             break ;
         // * replace * this comment with case labels and parse calls for the other op tokens
+        case '-':
+        	parse_op(tk_sub);
+        	break;
+        
+        case '*':
+        	parse_op(tk_times);
+        	break;
+        
+        case '/':
+        	parse_op(tk_divide);
+        	break;
 
         case '>':               // var op tokens
             parse_varop() ;
