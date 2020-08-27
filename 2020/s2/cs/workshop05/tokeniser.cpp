@@ -38,7 +38,7 @@ namespace Workshop_Tokeniser
     // ch is the first character of the identifier
     static void parse_identifier()
     {
-    	new_token_kind = tk_integer ;
+    	new_token_kind = tk_identifier ;
     	do nextch() ; while ( c_have(cg_extends_identifier) ) ;
         //c_did_not_find(cg_start_of_identifier) ;
     }
@@ -202,4 +202,3 @@ namespace Workshop_Tokeniser
         return token ;
     }
 }
-
