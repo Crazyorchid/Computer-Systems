@@ -20,8 +20,7 @@ namespace Workshop_Tokeniser
         
         new_token_kind = kind ;
         nextch() ;
-        if (have ('ch')) nextch(); else
-        c_did_not_find('ch');
+        //c_mustbe('ch');
 
     }
 
@@ -30,6 +29,7 @@ namespace Workshop_Tokeniser
     // ch is the white space character
     static void parse_wspace(TokenKind kind)
     {
+
         parse_extra(kind) ;
     }
 
@@ -38,7 +38,9 @@ namespace Workshop_Tokeniser
     // ch is the first character of the identifier
     static void parse_identifier()
     {
-        c_did_not_find(cg_start_of_identifier) ;
+    	new_token_kind = tk_integer ;
+    	do nextch() ; while ( c_have(cg_extends_identifier) ) ;
+        //c_did_not_find(cg_start_of_identifier) ;
     }
 
     // parse a number - always read one extra character
@@ -58,6 +60,7 @@ namespace Workshop_Tokeniser
     // ch is the single character operator
     static void parse_op(TokenKind kind)
     {
+    	//c_mustbe('+' | '-' | '*' | '/')
         c_did_not_find(cg_op) ;
     }
 
@@ -66,7 +69,8 @@ namespace Workshop_Tokeniser
     // ch is '<'
     static void parse_lt_lte()
     {
-        c_did_not_find(cg_start_of_varop) ;
+    	//c_mustbe()
+        //c_did_not_find(cg_start_of_varop) ;
     }
 
     // parse = or == - always read one extra character
