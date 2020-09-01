@@ -1,0 +1,47 @@
+200901-151548 Modified: NjBkYjU0OGYwYmIxMWQ1YWRmNTBmZDg5ODYxNzE1YWM5M2Y4YjhmNiAgLi91cGRhdGVzL3dvcmtz
+aG9wMDYtMjAyMDA4MjgtMTIyOTM5LnppcAo=
+200901-151548 make install
+200901-151548 SVN user: a1778478, repository path: 2020/s2/cs/workshop06
+200901-151548 updater:  Directory: ./bin
+200901-151548 updater:  Directory: ./originals
+200901-151548 updater:  Creating: ./question08.tst
+200901-151548 updater:  Creating: ./question01.asm
+200901-151548 updater:  Creating: ./question05.asm
+200901-151548 updater:  Creating: ./question10.cmp
+200901-151548 updater:  Creating: ./question09.cmp
+200901-151548 updater:  Creating: ./question11.tst
+200901-151548 updater:  Creating: ./question11.cmp
+200901-151548 updater:  Creating: ./question06.cmp
+200901-151548 updater:  Creating: ./question07.cmp
+200901-151548 updater:  Creating: ./bin/run-tests
+200901-151548 updater:  Creating: ./question10.tst
+200901-151548 updater:  Creating: ./question06.tst
+200901-151548 updater:  Creating: ./question07.tst
+200901-151548 updater:  Creating: ./question09.tst
+200901-151548 updater:  Creating: ./originals/question09.asm
+200901-151548 updater:  Creating: ./originals/answer04.hack
+200901-151548 updater:  Creating: ./originals/question10.asm
+200901-151548 updater:  Creating: ./originals/question11.asm
+200901-151548 updater:  Creating: ./originals/question07.asm
+200901-151548 updater:  Creating: ./originals/question06.asm
+200901-151548 updater:  Creating: ./originals/question08.asm
+200901-151548 updater:  Creating: ./originals/answer05.hack
+200901-151548 updater:  Creating: ./originals/question03.txt
+200901-151548 updater:  Creating: ./question04.asm
+200901-151548 updater:  Creating: updates/Makefile
+200901-151548 updater:  Creating: ./question08.cmp
+200901-151548 updater:  Made question01.asm executable
+200901-151548 updater:  Made question04.asm executable
+200901-151548 updater:  Made question05.asm executable
+200901-151548 updater:  Made bin/run-tests executable
+200901-151548 updater:  Creating: question09.asm
+200901-151548 updater:  Creating: answer04.hack
+200901-151548 updater:  Creating: question10.asm
+200901-151548 updater:  Creating: question11.asm
+200901-151548 updater:  Creating: question07.asm
+200901-151548 updater:  Creating: question06.asm
+200901-151548 updater:  Creating: question08.asm
+200901-151548 updater:  Creating: answer05.hack
+200901-151548 updater:  Creating: question03.txt
+200901-151548 updater:  Updating: updates/README
+200901-151548 updater:  Update installed
