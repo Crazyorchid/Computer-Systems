@@ -45,3 +45,51 @@ aG9wMDYtMjAyMDA4MjgtMTIyOTM5LnppcAo=
 200901-151548 updater:  Creating: question03.txt
 200901-151548 updater:  Updating: updates/README
 200901-151548 updater:  Update installed
+200903-112313 Modified: NjVjODcwODg0M2EzNjhlZGE2NGZmODIyYjhhYzM3ZjhiM2ExNTlkYiAgLi9xdWVzdGlvbjEwLmFz
+bQphZGM4M2IxOWU3OTM0OTFiMWM2ZWEwZmQ4YjQ2Y2Q5ZjMyZTU5MmZjICAuL2Fuc3dlcjA0Lmhh
+Y2sKYWRjODNiMTllNzkzNDkxYjFjNmVhMGZkOGI0NmNkOWYzMmU1OTJmYyAgLi9xdWVzdGlvbjAz
+LnR4dAo2NWM4NzA4ODQzYTM2OGVkYTY0ZmY4MjJiOGFjMzdmOGIzYTE1OWRiICAuL3F1ZXN0aW9u
+MTEuYXNtCmFkYzgzYjE5ZTc5MzQ5MWIxYzZlYTBmZDhiNDZjZDlmMzJlNTkyZmMgIC4vYW5zd2Vy
+MDUuaGFjawo2NWM4NzA4ODQzYTM2OGVkYTY0ZmY4MjJiOGFjMzdmOGIzYTE1OWRiICAuL3F1ZXN0
+aW9uMDYuYXNtCjY1Yzg3MDg4NDNhMzY4ZWRhNjRmZjgyMmI4YWMzN2Y4YjNhMTU5ZGIgIC4vcXVl
+c3Rpb24wNy5hc20KNjVjODcwODg0M2EzNjhlZGE2NGZmODIyYjhhYzM3ZjhiM2ExNTlkYiAgLi9x
+dWVzdGlvbjA4LmFzbQo2NWM4NzA4ODQzYTM2OGVkYTY0ZmY4MjJiOGFjMzdmOGIzYTE1OWRiICAu
+L3F1ZXN0aW9uMDkuYXNtCg==
+200903-112313 make insatll
+200903-112313 SVN user: a1778478, repository path: 2020/s2/cs/workshop06
+200903-112324 make install
+200903-112324 SVN user: a1778478, repository path: 2020/s2/cs/workshop06
+200903-112324 updater:  Directory: ./bin
+200903-112324 updater:  Directory: ./originals
+200903-112324 updater:  Creating: ./question11.cmp
+200903-112324 updater:  Creating: ./question01.asm
+200903-112324 updater:  Creating: ./question10.cmp
+200903-112324 updater:  Creating: ./question06.cmp
+200903-112324 updater:  Creating: ./question07.cmp
+200903-112324 updater:  Creating: ./question08.tst
+200903-112324 updater:  Creating: ./question09.tst
+200903-112324 updater:  Creating: ./question05.asm
+200903-112324 updater:  Creating: ./bin/run-tests
+200903-112324 updater:  Creating: ./question04.asm
+200903-112324 updater:  Creating: updates/Makefile
+200903-112324 updater:  Creating: ./originals/question03.txt
+200903-112324 updater:  Creating: ./originals/question06.asm
+200903-112324 updater:  Creating: ./originals/question07.asm
+200903-112324 updater:  Creating: ./originals/question11.asm
+200903-112324 updater:  Creating: ./originals/question10.asm
+200903-112324 updater:  Creating: ./originals/answer05.hack
+200903-112324 updater:  Creating: ./originals/answer04.hack
+200903-112324 updater:  Creating: ./originals/question09.asm
+200903-112324 updater:  Creating: ./originals/question08.asm
+200903-112324 updater:  Creating: ./question07.tst
+200903-112324 updater:  Creating: ./question06.tst
+200903-112324 updater:  Creating: ./question10.tst
+200903-112324 updater:  Creating: ./question11.tst
+200903-112324 updater:  Creating: ./question09.cmp
+200903-112324 updater:  Creating: ./question08.cmp
+200903-112324 updater:  Made question01.asm executable
+200903-112324 updater:  Made question04.asm executable
+200903-112324 updater:  Made question05.asm executable
+200903-112324 updater:  Made bin/run-tests executable
+200903-112324 updater:  Updating: updates/README
+200903-112324 updater:  Update installed
