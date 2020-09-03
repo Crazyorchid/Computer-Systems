@@ -7,4 +7,9 @@
 	@numbers
 	@arr
 // add your instructions after this line
+@1
+D=M
+@10
+D=D+M
+M=M
 
