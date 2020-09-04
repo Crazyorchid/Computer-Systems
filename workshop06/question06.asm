@@ -7,13 +7,10 @@
 	@numbers
 	@arr
 // add your instructions after this line
-@1
-
+@2
 D=M
-
-@10
-
+@3
 D=D+M
-
+@5
 M=D
 
