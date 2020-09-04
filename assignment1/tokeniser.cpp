@@ -35,10 +35,10 @@ namespace Assignment_Tokeniser
         do nextch() ; while ( c_have(cg_extends_identifier) ) ;
     }
 
-    static void parse_integer(TokenKind kind)
+    static void parse_number(TokenKind kind)
     {
     	new_token_kind = kind;
-    	do nextch(); while (c_have(tk_integer)) ;
+    	do nextch(); while (c_have(tk_integer|tk_scientific)) ;
 
     }
 
@@ -115,6 +115,8 @@ static void parse_procedure()
     	do nextch(); while (c_have(tk_at|tk_stop|tk_lcb|tk_rcb|tk_lrb|tk_rrb|tk_lsb|tk_rsb));
     }
 
+
+
     static void parse_eol_comment()
     {
 
@@ -150,12 +152,17 @@ static void parse_procedure()
     	case ' ':               // white space tokens
             parse_wspace(tk_space) ;
             break ;
+        
         case '\n':
             parse_wspace(tk_newline) ;
             break ;
 
     	case 'a'...'z':
 
+    		parse_identifier();
+    		break;
+
+    	case 'A'...'Z':
     		parse_identifier();
     		break;
 
@@ -166,7 +173,8 @@ static void parse_procedure()
 
 
         case '0'...'9':
-        parse_integer(tk_integer);
+        	parse_number(tk_integer);
+        	break;
 
         /*case '+'|'-':
         parse_number(cg_start_of_exponent);*/
