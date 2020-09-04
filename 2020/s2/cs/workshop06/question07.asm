@@ -7,46 +7,25 @@
 	@numbers
 	@arr
 // add your instructions after this line
-@i
-
-D = 0 //i=0
-
+@x
+M=0
 @sum
-
-D = 0 //sum=0
-
+M=0
 (LOOP)
-
-@i
-
-D = M //D=i
-
-@10
-
-D = D - A // D = i -10
-
+@x
+D=M
+@9
+D=D-A
 @END
-
-D;JGT // if(i-10)>0 goto END
-
-@i
-
-D = M // D=i
-
+D;JGT
+@x
+D=M
 @sum
-
-M = D + M // sum = sum+1
-
-@i
-
-M = M + 1 // x = x+1
-
+M=D+M
+@x
+M=M+1
 @LOOP
-
-0 ; JMP // Got LOOP
-
+0;JMP
 (END)
-
 @END
-
-0 ; JMP // Infinite loop
+0;JMP
