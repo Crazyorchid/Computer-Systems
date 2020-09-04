@@ -120,6 +120,7 @@ static void parse_procedure()
     static void parse_eol_comment()
     {
 
+
     }
 
     static void pare_adhoc_comment()
@@ -182,7 +183,8 @@ static void parse_procedure()
 
 
        
-        /*case ' '|'!'|'#'-'~':
+        case '!':
+        case '#'-'~':
         	parse_string();
         	break;
         
@@ -191,7 +193,7 @@ static void parse_procedure()
         	parse_symbol(tk_at);
         	break;
         
-        case '-':
+        /*case '-':
         case '=':	
         	parse_symbol(tk_sub_assign);
         	break;
@@ -224,10 +226,11 @@ static void parse_procedure()
        
         case '<':	
         	parse_symbol(tk_lshift_l);
-        	break;*/
+        	break;
+        
         case '@':	
         	parse_symbol(tk_at);
-        	break;
+        	break;*/
 
         case '.':
         	parse_symbol(tk_stop);
