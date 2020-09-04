@@ -35,10 +35,10 @@ namespace Assignment_Tokeniser
         do nextch() ; while ( c_have(cg_extends_identifier) ) ;
     }
 
-    static void parse_number(TokenKind kind)
+    static void parse_integer(TokenKind kind)
     {
     	new_token_kind = kind;
-    	do nextch(); while (c_have(cg_digit|tk_scientific)) ;
+    	do nextch(); while (c_have(tk_integer)) ;
 
     }
 
@@ -56,9 +56,63 @@ namespace Assignment_Tokeniser
 
     }
 
-    static void parse_symbol()
+    /*static void parse_done()
+{
+    switch(ch)
     {
+    case 'd':
+    case 'o':
+    case 'n':
+    case 'e':
+        nextch() ;
+        break ;
+    default:
+        did_not_find("done") ;
+    }
+}
 
+	static void parse_while()
+	{
+	    switch(ch)
+	    {
+	    case 'w':
+	    case 'h':
+	    case 'i':
+	    case 'l':
+	    case 'e':
+	        nextch() ;
+	        break ;
+	    default:
+	        did_not_find("done") ;
+	    }
+	}
+
+	static void parse_procedure()
+{
+    mustbe('p') ;
+    mustbe('r') ;
+    mustbe('o') ;
+    mustbe('c') ;
+    mustbe('e') ; 
+    mustbe('d') ;
+    mustbe('u') ;
+}
+
+static void parse_procedure()
+{
+    mustbe('p') ;
+    mustbe('r') ;
+    mustbe('o') ;
+    mustbe('c') ;
+    mustbe('e') ; 
+    mustbe('d') ;
+    mustbe('u') ;
+}*/
+
+    static void parse_symbol(TokenKind kind)
+    {
+    	new_token_kind = kind ;
+    	do nextch(); while (c_have(tk_at|tk_stop|tk_lcb|tk_rcb|tk_lrb|tk_rrb|tk_lsb|tk_rsb));
     }
 
     static void parse_eol_comment()
@@ -105,36 +159,107 @@ namespace Assignment_Tokeniser
     		parse_identifier();
     		break;
 
-        /*case '0':
+        //case '0':
 
-        parse_number();
-        break;
+        //case '('e'|'E') ('+'|'-')':
+        //parse_number(tk_scientific);
+
 
         case '0'...'9':
-        parse_number(tk_integer);*/
+        parse_integer(tk_integer);
 
-        case ' '|'!'|'#'-'~':
+        /*case '+'|'-':
+        parse_number(cg_start_of_exponent);*/
+
+
+
+       
+        /*case ' '|'!'|'#'-'~':
         	parse_string();
         	break;
-
-        case 'done':
-        	parse_keyword(tk_done);
+        
+        //'@'|'-='|'+='|'*='|'/='|'!='|'=='|'<<<'|'<<'|'>>>'|'>>'|'{'|'}'|'('|')'|'['|']'
+        case '@':	
+        	parse_symbol(tk_at);
+        	break;
+        
+        case '-':
+        case '=':	
+        	parse_symbol(tk_sub_assign);
+        	break;
+        
+        case '+':
+        case '=':	
+        	parse_symbol(tk_add_assign);
+        	break;
+        
+        case '*':
+        case '=':	
+        	parse_symbol(tk_mult_assign);
+        	break;
+        
+        case '/':
+        case '=':	
+        	parse_symbol(tk_div_assign);
+        	break;
+		
+		case '!':
+		case '=':	
+        	parse_symbol(tk_not_eq);
+        	break;
+        
+        case '=':
+        nextch();	
+        	parse_symbol(tk_eq);
+        	break;
+        
+       
+        case '<':	
+        	parse_symbol(tk_lshift_l);
+        	break;*/
+        case '@':	
+        	parse_symbol(tk_at);
         	break;
 
-        case 'while':
-        	parse_keyword(tk_while);
+        case '.':
+        	parse_symbol(tk_stop);
         	break;
 
-		case 'procedure':
-        	parse_keyword(tk_procedure);
+       
+        case '<':	
+        	parse_symbol(tk_lshift);
+        	break;
+        
+        /*case '>':	
+        	parse_symbol(tk_rshift_l);
+        	break;*/
+        
+        case '>':	
+        	parse_symbol(tk_rshift);
+        	break;
+        
+        case '{':	
+        	parse_symbol(tk_lcb);
+        	break;
+        
+        case '}':	
+        	parse_symbol(tk_rcb);
         	break;
 
-		case 'if-goto':
-        	parse_keyword(tk_if_goto);
+        case '(':	
+        	parse_symbol(tk_lrb);
         	break;
 
-		case 'this':
-        	parse_keyword(tk_this);
+        case ')':	
+        	parse_symbol(tk_rrb);
+        	break;
+
+        case '[':
+        	parse_symbol(tk_lsb);
+        	break;
+        
+        case ']':
+        	parse_symbol(tk_rsb);
         	break;
 
 
@@ -153,6 +278,6 @@ namespace Assignment_Tokeniser
                         // ...
 
         return token ;
-    }
- }
+   }
+}
 
