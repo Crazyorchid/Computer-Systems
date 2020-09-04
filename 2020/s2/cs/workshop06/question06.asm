@@ -7,10 +7,19 @@
 	@numbers
 	@arr
 // add your instructions after this line
-@2
-D=M
-@3
-D=D+M
-@5
+@x
+M=1
+@10
+D=A
+@y
 M=D
+
+@x
+D=M
+@y
+D=D+M
+@sum
+M=D
+
+
 

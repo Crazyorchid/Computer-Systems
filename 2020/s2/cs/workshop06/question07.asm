@@ -7,14 +7,13 @@
 	@numbers
 	@arr
 // add your instructions after this line
-
 @i
 
-D = 0 
+D = 0 //i=0
 
 @sum
 
-D = 0
+D = 0 //sum=0
 
 (LOOP)
 
@@ -28,7 +27,7 @@ D = D - A // D = i -10
 
 @END
 
-D;JGT 
+D;JGT // if(i-10)>0 goto END
 
 @i
 
@@ -44,7 +43,7 @@ M = M + 1 // x = x+1
 
 @LOOP
 
-0 ; JMP 
+0 ; JMP // Got LOOP
 
 (END)
 
