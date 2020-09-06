@@ -32,14 +32,19 @@ namespace Assignment_Tokeniser
     static void parse_identifier()
     {
         new_token_kind = tk_identifier;
-        do nextch() ; while ( c_have(cg_extends_identifier) ) ;
+        do nextch() ; while (c_have(cg_extends_identifier)) ;
     }
 
-    static void parse_number(TokenKind kind)
+    /*static void parse_integer(TokenKind kind)
     {
     	new_token_kind = kind;
-    	do nextch(); while (c_have(tk_integer|tk_scientific)) ;
+    	do nextch(); while (c_have(tk_integer)) ;
 
+    }*/
+
+    static void parse_digit(){
+    	new_token_kind = tk_integer;
+    	do nextch(); while (c_have(cg_digit19));
     }
 
     static void parse_string()
@@ -116,6 +121,19 @@ static void parse_procedure()
     }
 
 
+    static void parse_not_eq(){
+    	new_token_kind = tk_not_eq ;
+    	if(c_have('!')) c_have_next('='); else
+    	c_did_not_find(tk_not_eq);
+
+    }
+
+    static void parse_eq(){
+    	new_token_kind = tk_eq ;
+    	if(c_have('=')) c_have_next('='); else
+    	c_did_not_find(tk_not_eq);
+
+    } 
 
     static void parse_eol_comment()
     {
@@ -148,8 +166,17 @@ static void parse_procedure()
                      
                         // End of Inptut
 
+    
     switch(ch)
     {
+    	case '=':
+    		parse_string();
+    		break;
+
+    	case '!':
+    		parse_not_eq();
+    		break;
+
     	case ' ':               // white space tokens
             parse_wspace(tk_space) ;
             break ;
@@ -173,8 +200,13 @@ static void parse_procedure()
         //parse_number(tk_scientific);
 
 
+        /*case '0':
+        	parse_integer(tk_integer);
+        	break;*/
+
+
         case '0'...'9':
-        	parse_number(tk_integer);
+        	parse_digit();
         	break;
 
         /*case '+'|'-':
@@ -183,7 +215,6 @@ static void parse_procedure()
 
 
        
-        case '!':
         case '#'-'~':
         	parse_string();
         	break;
@@ -192,6 +223,8 @@ static void parse_procedure()
         case '@':	
         	parse_symbol(tk_at);
         	break;
+
+
         
         /*case '-':
         case '=':	
