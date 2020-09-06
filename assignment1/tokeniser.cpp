@@ -57,63 +57,11 @@ namespace Assignment_Tokeniser
     static void parse_keyword(TokenKind kind)
     {
     	new_token_kind = kind;
-    	do nextch(); while(c_have(tk_done|tk_while|tk_if_goto|tk_this)); //keyword ::= 'done'|'while'|'procedure'|'if-goto'|'this' 
+    	do nextch(); while(c_have(tk_done|tk_while|tk_if_goto|tk_this));
 
     }
 
-    /*static void parse_done()
-{
-    switch(ch)
-    {
-    case 'd':
-    case 'o':
-    case 'n':
-    case 'e':
-        nextch() ;
-        break ;
-    default:
-        did_not_find("done") ;
-    }
-}
-
-	static void parse_while()
-	{
-	    switch(ch)
-	    {
-	    case 'w':
-	    case 'h':
-	    case 'i':
-	    case 'l':
-	    case 'e':
-	        nextch() ;
-	        break ;
-	    default:
-	        did_not_find("done") ;
-	    }
-	}
-
-	static void parse_procedure()
-{
-    mustbe('p') ;
-    mustbe('r') ;
-    mustbe('o') ;
-    mustbe('c') ;
-    mustbe('e') ; 
-    mustbe('d') ;
-    mustbe('u') ;
-}
-
-static void parse_procedure()
-{
-    mustbe('p') ;
-    mustbe('r') ;
-    mustbe('o') ;
-    mustbe('c') ;
-    mustbe('e') ; 
-    mustbe('d') ;
-    mustbe('u') ;
-}*/
-
+    
     static void parse_symbol(TokenKind kind)
     {
     	new_token_kind = kind ;
@@ -121,19 +69,19 @@ static void parse_procedure()
     }
 
 
-    static void parse_not_eq(){
+    /*static void parse_not_eq(){
     	new_token_kind = tk_not_eq ;
     	if(c_have('!')) c_have_next('='); else
     	c_did_not_find(tk_not_eq);
 
-    }
+    }*/
 
-    static void parse_eq(){
+    /*static void parse_eq(){
     	new_token_kind = tk_eq ;
     	if(c_have('=')) c_have_next('='); else
     	c_did_not_find(tk_not_eq);
 
-    } 
+    } */
 
     static void parse_eol_comment()
     {
@@ -174,7 +122,7 @@ static void parse_procedure()
     		break;
 
     	case '!':
-    		parse_not_eq();
+    		parse_string();
     		break;
 
     	case ' ':               // white space tokens
@@ -225,61 +173,8 @@ static void parse_procedure()
         	break;
 
 
-        
-        /*case '-':
-        case '=':	
-        	parse_symbol(tk_sub_assign);
-        	break;
-        
-        case '+':
-        case '=':	
-        	parse_symbol(tk_add_assign);
-        	break;
-        
-        case '*':
-        case '=':	
-        	parse_symbol(tk_mult_assign);
-        	break;
-        
-        case '/':
-        case '=':	
-        	parse_symbol(tk_div_assign);
-        	break;
-		
-		case '!':
-		case '=':	
-        	parse_symbol(tk_not_eq);
-        	break;
-        
-        case '=':
-        nextch();	
-        	parse_symbol(tk_eq);
-        	break;
-        
-       
-        case '<':	
-        	parse_symbol(tk_lshift_l);
-        	break;
-        
-        case '@':	
-        	parse_symbol(tk_at);
-        	break;*/
-
         case '.':
         	parse_symbol(tk_stop);
-        	break;
-
-       
-        case '<':	
-        	parse_symbol(tk_lshift);
-        	break;
-        
-        /*case '>':	
-        	parse_symbol(tk_rshift_l);
-        	break;*/
-        
-        case '>':	
-        	parse_symbol(tk_rshift);
         	break;
         
         case '{':	
