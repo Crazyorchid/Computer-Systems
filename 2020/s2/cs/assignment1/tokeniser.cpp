@@ -42,6 +42,7 @@ namespace Assignment_Tokeniser
 
     }*/
 
+
     static void parse_digit(){
     	new_token_kind = tk_integer;
     	do nextch(); while (c_have(cg_digit19));
@@ -59,6 +60,12 @@ namespace Assignment_Tokeniser
     	new_token_kind = kind;
     	do nextch(); while(c_have(tk_done|tk_while|tk_if_goto|tk_this));
 
+    }
+
+    static void parse_eq(TokenKind kind)
+    {
+        new_token_kind = kind;
+        do nextch(); while(c_have_next(tk_eq));
     }
 
     
@@ -117,13 +124,13 @@ namespace Assignment_Tokeniser
     
     switch(ch)
     {
-    	case '=':
+    	/*case '=':
     		parse_string();
     		break;
 
     	case '!':
     		parse_string();
-    		break;
+    		break;*/
 
     	case ' ':               // white space tokens
             parse_wspace(tk_space) ;
@@ -163,6 +170,10 @@ namespace Assignment_Tokeniser
 
 
        
+        /*case '=':
+            parse_eq(tk_eq);
+            break;*/
+
         case '#'-'~':
         	parse_string();
         	break;
@@ -200,6 +211,22 @@ namespace Assignment_Tokeniser
         case ']':
         	parse_symbol(tk_rsb);
         	break;
+
+        case '!':
+        	new_token_kind = tk_not_eq ;
+        	nextch() ; c_mustbe('=') ;
+        	break;
+
+        case '-':
+        	new_token_kind = tk_sub_assign ;
+        	nextch() ; c_mustbe('=');
+        	break;
+
+        case '=':
+        	new_token_kind = tk_eq ;
+        	nextch(); c_mustbe('=');
+        	break;
+
 
 
         case EOF:
