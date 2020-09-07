@@ -841,3 +841,12 @@ Cg==
 Cg==
 200907-002826 make 
 200907-002826 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-122757 make 
+200907-122757 The following command(s) cannot be found:
+200907-122757 .  zip
+200907-122757 .  unzip
+200907-122757 .  java
+200907-122757 200907-122757 Please install them and try again.
+200907-122757 200907-122757 Please install them and try again.
+200907-122757 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-122757 Cannot find directory updates/assignment1-20200817-142446
