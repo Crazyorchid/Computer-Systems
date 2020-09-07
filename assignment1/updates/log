@@ -850,3 +850,21 @@ Cg==
 200907-122757 200907-122757 Please install them and try again.
 200907-122757 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
 200907-122757 Cannot find directory updates/assignment1-20200817-142446
+200907-122850 make 
+200907-122850 The following command(s) cannot be found:
+200907-122850 .  zip
+200907-122850 .  unzip
+200907-122850 .  java
+200907-122850 200907-122850 Please install them and try again.
+200907-122850 200907-122850 Please install them and try again.
+200907-122850 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-122850 Cannot find directory updates/assignment1-20200817-142446
+200907-122855 make install
+200907-122855 200907-122855 Please install them and try again.
+200907-122855 The following command(s) cannot be found:
+200907-122855 .  zip
+200907-122855 .  unzip
+200907-122855 .  java
+200907-122855 200907-122855 Please install them and try again.
+200907-122855 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-122855 Cannot find directory updates/assignment1-20200817-142446
