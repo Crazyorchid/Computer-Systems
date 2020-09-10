@@ -87,6 +87,7 @@ namespace Assignment_Tokeniser {
                 }
             }
              else {
+
                 return;
             }
         }
@@ -104,17 +105,6 @@ namespace Assignment_Tokeniser {
         } else if (c_have(cg_start_of_exponent)) {
             parse_scientific();
         }
-    }
-
-
-    static void parse_digit() {
-        new_token_kind = tk_integer;
-        do nextch(); while (c_have(cg_digit19));
-    }
-
-    static void parse_exponent() {
-        new_token_kind = tk_scientific;
-        do nextch(); while (c_have(cg_start_of_exponent));
     }
 
 
@@ -263,7 +253,6 @@ namespace Assignment_Tokeniser {
                             parse_symbol(tk_at);
                             break;
 
-
                         case '.':
                             parse_symbol(tk_stop);
                             break;
@@ -341,8 +330,8 @@ namespace Assignment_Tokeniser {
 
                     Token token = new_token(new_token_kind);
 
-                    /*if(token_kind(token) == tk_string)
-                        set_token_spelling(token, token_spelling(token).substr(2, token_spelling(token).length()-1));*/
+                    if(token_kind(token) == tk_string)
+                        set_token_spelling(token, token_spelling(token).substr(2, token_spelling(token).length()-1));
 
                     if (token_spelling(token) == "this") {
                         set_token_kind(token, tk_this);
