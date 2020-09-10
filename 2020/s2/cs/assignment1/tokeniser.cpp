@@ -341,8 +341,8 @@ namespace Assignment_Tokeniser {
 
                     Token token = new_token(new_token_kind);
 
-                    if(token_kind(token) == tk_string)
-                        set_token_spelling(token, token_spelling(token).substr(2, token_spelling(token).length()-1));
+                    /*if(token_kind(token) == tk_string)
+                        set_token_spelling(token, token_spelling(token).substr(2, token_spelling(token).length()-1));*/
 
                     if (token_spelling(token) == "this") {
                         set_token_kind(token, tk_this);
@@ -372,7 +372,7 @@ namespace Assignment_Tokeniser {
                     }
                     else if (token_kind(token) == tk_string){
                         string s = token_spelling(token);
-                        set_token_spelling(token,s.substr((1,s.length()-1)));
+                        set_token_spelling(token,s.substr((2,s.length()-1)));
                     }
 
                     // before returning a token check if the kind or spelling needs updating
