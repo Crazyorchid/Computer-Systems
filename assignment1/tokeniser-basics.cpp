@@ -64,6 +64,7 @@ namespace Assignment_Tokeniser
                         all_lines.back()+=part;
                     else
                         all_lines.push_back(part);
+
                     copy = copy.substr(i);
                     nl_num++;
                     i = 0;
