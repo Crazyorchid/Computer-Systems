@@ -1519,3 +1519,16 @@ Y2UueG1sCjE3Y2UyZGJmYzZlYmVlOTcwN2RkMWRiYzJiNDE1ODMzOTdhNWE4YjEgIC4vdG9rZW5p
 c2VyLmNwcAo=
 200910-232532 make 
 200910-232532 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200910-233220 Modified: OWQ5MWNmNjY5ZTM0YTU0MTIwZjkxNjFkNmVlN2E5MzM5OTRjZWU2MyAgLi90b2tlbmlzZXItYmFz
+aWNzLmNwcAowODVkZjUzNDU1ODdhOWVmZDQ4MDkzMzMwOTAxMDZlNDY2Nzk4NWUzICAuLy5pZGVh
+L3dvcmtzcGFjZS54bWwKZmEzZWFkOTdmNzIwODdjYTBhMmMwNzAzZTg1ZWZkOTEwZGYyNzk4ZCAg
+Li91cGRhdGVzL2Fzc2lnbm1lbnQxLTIwMjAwOTAxLTE0MjM1Mi56aXAK
+200910-233220 make 
+200910-233220 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200910-233220 updater:  Updating: ./lib/cats/lib.a
+200910-233220 updater:  Updating: ./lib/centos8/lib.a
+200910-233220 updater:  Updating: ./lib/macos/lib.a
+200910-233220 updater:  Updating: ./includes/tokeniser.h
+200910-233220 updater:  Updating: ./includes/tokeniser-extras.h
+200910-233220 updater:  Updating: updates/README
+200910-233220 updater:  Update installed
