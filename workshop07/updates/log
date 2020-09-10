@@ -48,3 +48,49 @@ aG9wMDctMjAyMDA4MjgtMTYwODQ0LnppcAo=
 200907-221307 updater:  Update installed
 200907-221314 make install
 200907-221314 SVN user: a1778478, repository path: 2020/s2/cs/workshop07
+200910-112714 Modified: MTA0N2NmYTdiYjcyOTY3Mzg3YjIyMDJmNTU4MGJmZDYzNjk0YTMwYSAgLi9xdWVzdGlvbjAwLnZt
+LWFzbQo1Y2FkNjliNGM5NjUyNWQxNTdlOTcwMjg5ZjBiZTYxODQ2NzNmMTExICAuL3F1ZXN0aW9u
+MDEudm0tYXNtCjhmNDdmODc0ZTllOGZmNTJjMGZjYTVmYTFjZDhmOTU4MTczZDhhZjkgIC4vcXVl
+c3Rpb24wMi52bS1hc20KOTgyMWRiN2VlYjI4MDY3NWIyYTllNmI5NTViNjVlOTBjNWQwOTQxMyAg
+Li9xdWVzdGlvbjAzLnZtLWFzbQphYzI1NzkyODNlZjk3NTIzYmZkYTM1NzYyZjcyZGRmNTY1YWVk
+NTJhICAuL3F1ZXN0aW9uMDQudm0tYXNtCjVlNWJiNjk5N2EwNDQwYzAxNjQ5MTRmM2EyNmY4ZTA2
+Yjg2MjlkN2YgIC4vcXVlc3Rpb24wNS52bS1hc20K
+200910-112714 make 
+200910-112714 SVN user: a1778478, repository path: 2020/s2/cs/workshop07
+200910-112714 updater:  Directory: ./bin
+200910-112714 updater:  Directory: ./originals
+200910-112714 updater:  Directory: ./lib
+200910-112714 updater:  Directory: ./lib/cats
+200910-112714 updater:  Directory: ./lib/cats/bin
+200910-112714 updater:  Directory: ./lib/macos
+200910-112714 updater:  Directory: ./lib/macos/bin
+200910-112714 updater:  Directory: ./lib/centos8
+200910-112714 updater:  Directory: ./lib/centos8/bin
+200910-112714 updater:  Creating: ./bin/assembler
+200910-112714 updater:  Creating: ./bin/simulator
+200910-112714 updater:  Creating: ./bin/run-tests
+200910-112714 updater:  Creating: updates/Makefile
+200910-112714 updater:  Creating: ./originals/question03.vm-asm
+200910-112714 updater:  Creating: ./originals/question01.vm-asm
+200910-112714 updater:  Creating: ./originals/question05.vm-asm
+200910-112714 updater:  Creating: ./originals/question02.vm-asm
+200910-112714 updater:  Creating: ./originals/question00.vm-asm
+200910-112714 updater:  Creating: ./originals/question04.vm-asm
+200910-112714 updater:  Creating: ./originals/question06.vm-asm
+200910-112714 updater:  Creating: ./lib/cats/bin/assembler
+200910-112714 updater:  Creating: ./lib/cats/bin/simulator
+200910-112714 updater:  Creating: ./lib/macos/bin/assembler
+200910-112714 updater:  Creating: ./lib/macos/bin/simulator
+200910-112714 updater:  Creating: ./lib/centos8/bin/assembler
+200910-112714 updater:  Creating: ./lib/centos8/bin/simulator
+200910-112714 updater:  Made bin/assembler executable
+200910-112714 updater:  Made bin/run-tests executable
+200910-112714 updater:  Made bin/simulator executable
+200910-112714 updater:  Made lib/cats/bin/assembler executable
+200910-112714 updater:  Made lib/cats/bin/simulator executable
+200910-112714 updater:  Made lib/centos8/bin/assembler executable
+200910-112714 updater:  Made lib/centos8/bin/simulator executable
+200910-112714 updater:  Made lib/macos/bin/assembler executable
+200910-112714 updater:  Made lib/macos/bin/simulator executable
+200910-112714 updater:  Updating: updates/README
+200910-112714 updater:  Update installed
