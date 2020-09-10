@@ -48,6 +48,13 @@ aG9wMDctMjAyMDA4MjgtMTYwODQ0LnppcAo=
 200907-221307 updater:  Update installed
 200907-221314 make install
 200907-221314 SVN user: a1778478, repository path: 2020/s2/cs/workshop07
+<<<<<<< .mine
+200909-235849 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200909-235849 make 
+200909-235849 SVN user: a1778478, repository path: 2020/s2/cs/workshop07
+||||||| .r202
+=======
 200910-112714 Modified: MTA0N2NmYTdiYjcyOTY3Mzg3YjIyMDJmNTU4MGJmZDYzNjk0YTMwYSAgLi9xdWVzdGlvbjAwLnZt
 LWFzbQo1Y2FkNjliNGM5NjUyNWQxNTdlOTcwMjg5ZjBiZTYxODQ2NzNmMTExICAuL3F1ZXN0aW9u
 MDEudm0tYXNtCjhmNDdmODc0ZTllOGZmNTJjMGZjYTVmYTFjZDhmOTU4MTczZDhhZjkgIC4vcXVl
@@ -94,3 +101,4 @@ Yjg2MjlkN2YgIC4vcXVlc3Rpb24wNS52bS1hc20K
 200910-112714 updater:  Made lib/macos/bin/simulator executable
 200910-112714 updater:  Updating: updates/README
 200910-112714 updater:  Update installed
+>>>>>>> .r211
