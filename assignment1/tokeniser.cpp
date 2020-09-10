@@ -372,7 +372,7 @@ namespace Assignment_Tokeniser {
                     }
                     else if (token_kind(token) == tk_string){
                         string s = token_spelling(token);
-                        set_token_spelling(token,s.substr((2,s.length()-1)));
+                        //set_token_spelling(token,s.substr((2,s.length()-1)));
                     }
 
                     // before returning a token check if the kind or spelling needs updating
