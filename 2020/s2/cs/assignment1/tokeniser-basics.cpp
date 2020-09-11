@@ -159,47 +159,20 @@ namespace Assignment_Tokeniser
     // read next character if not at the end of input and update the line and column numbers
     // additional code will be required here to handle preprocessing of '\t' and '\r'
     // in some cases you may wish to remember a character to use next time instead of calling read_char()
+    static char repeat = EOF;
     void nextch()
     {
-        if ( ch == EOF ) return ;           // stop reading once we have read EOF
+    if ( ch == EOF ) return ;           // stop reading once we have read EOF
 
-        spelling += ch ;                    // remember the old ch, it is part of the current token being parsed
+    spelling += ch ;
 
-        ch = read_char() ;                  // read the next character
-        if(for_tab == '\t' && column % 4 != 0){
-            ch = ' ';
-            column++;
-            if(column % 4 ==0)
-                for_tab = '\0';
-            return;
-        }
+    if ( ch == '\n' ) { line++ ; column = 1 ; } else column++ ;
 
-        if(ch == '\n'){
-            line++;
-            column_of_new = column++;
-            column = 1;
-        }else{
-            column++;
-        }
+    if ( repeat != EOF ) { ch = repeat ; repeat = EOF ; } else ch = read_char() ;
 
-
-
-        if(ch == '\r'){
-            char tmp = read_char();
-            if(tmp == '\n')
-                ch = tmp;
-            else
-                ch = '\n';
-
-        }
-
-
-        if(ch == '\t'){
-            for_tab = ch;
-            ch = ' ';
-
-        }
-    }
+    if ( ch == '\t' ) { if ( column % 4 != 0 ) repeat = '\t' ; ch = ' ' ; } else
+    if ( ch == '\r' ) { ch = read_char() ; if ( ch != '\n' ) repeat = ch ; ch = '\n' ; }
+}
 
     // initialise the tokeniser
     void initialise_tokeniser()
