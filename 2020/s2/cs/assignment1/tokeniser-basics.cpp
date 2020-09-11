@@ -119,7 +119,7 @@ namespace Assignment_Tokeniser
             dqh += "  " + std::__cxx11::to_string(cur_line) + ": ";
         }else if(cur_line < 1000) {
             dqh += " " + std::__cxx11::to_string(cur_line) + ": ";
-        }else if(cur_line < 1000) {
+        }else if(cur_line < 10000) {
             dqh += std::__cxx11::to_string(cur_line) + ": ";
         }
 
@@ -134,7 +134,7 @@ namespace Assignment_Tokeniser
                 dqh += "  " + std::__cxx11::to_string(pre_line) + ": ";
             }else if(cur_line < 1000) {
                 dqh += " " + std::__cxx11::to_string(pre_line) + ": ";
-            }else if(cur_line < 1000) {
+            }else if(cur_line < 10000) {
                 dqh += std::__cxx11::to_string(pre_line) + ": ";
             }
 
