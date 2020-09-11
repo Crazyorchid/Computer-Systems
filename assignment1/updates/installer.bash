@@ -60,15 +60,6 @@ check_changed_files
 echo "${now} make ${@}" >> updates/log
 chmod 600 updates/log
 
-# reminder every time
-reminders_exam()
-{
-    echo -e "${colorboldred}                                                                                ${undocolor}"
-    echo -e "${colorboldred}         Make a web submission after completing each part of the exam!          ${undocolor}"
-    echo -e "${colorboldred}                                                                                ${undocolor}"
-    echo "${now_s}" > .reminders-svn
-}
-
 # reminder every hour - svn udpate / svn commit
 reminders_svn()
 {
@@ -103,37 +94,11 @@ reminders_logbook()
     echo "${now_s}" > .reminders-logbook
 }
 
-# recommendation every 60 minutes - practise using logbook
-recommendations_logbook()
-{
-    if [ -f .reminders-logbook ]
-    then
-        last_reminder=`cat .reminders-logbook`
-        ((since=now_s-last_reminder))
-        if [ "${since}" -lt 3600 ] ; then return ; fi
-    fi
-
-    echo -e "${colorboldgreen}                          Practise using your LOGBOOK!                          ${undocolor}"
-    echo -e "${colorboldgreen}                                                                                ${undocolor}"
-    echo "${now_s}" > .reminders-logbook
-}
-
 reminders()
 {
     now_s=`date +%s`
-
-    if [ "${repo_assign}" != "${repo_assign##exam}" ]
-    then
-        reminders_exam
-    elif [ "${repo_assign}" != "${repo_assign##assignment}" ]
-    then
-        reminders_svn
-        reminders_logbook
-    elif [ "${repo_assign}" != "${repo_assign##workshop}" -o "${repo_assign}" != "${repo_assign##project}" ]
-    then
-        reminders_svn
-        recommendations_logbook
-    fi
+    reminders_svn
+    reminders_logbook
 }
 
 # nullglob is set so patterns can be empty
@@ -292,7 +257,7 @@ check_compilers()
 # check which svn repository directory this working copy belongs too
 # give up if this is not a working copy!
 repouser=
-repo_assign=
+repoassign=
 check_svn()
 {
     repo=`svn info 2> /dev/null | grep "^URL:"`
@@ -356,8 +321,6 @@ warn_svn_status()
         file="${1##./originals/}"
         shift 1
 
-        if [ "${file}" == "./originals" ] ; then continue ; fi
-
         if [ ! -f "${file}" -a ! -d "${file}" ]
         then
             svn_not_found[${#svn_not_found[@]}]="${file}"
@@ -416,7 +379,6 @@ check_svn_originals()
     warn_svn_status . Makefile updates updates/installer.bash updates/updater.bash updates/log updates/*-*-*.zip
     # if originals extracted - check if they are in svn
     if [ -d ./originals ] ; then
-        warn_svn_status `find ./originals -type d`
         warn_svn_status `find ./originals -type f`
     fi
 
@@ -491,11 +453,11 @@ fi
 update_zip="${update_zips[${#update_zips[@]}-1]}"
 update_dir="${update_zip%%.zip}"
 
-# remove quarantine flags and all other macos extended attributes if on macos
+# remove quarantine flag if on macos
 if [ -x /usr/bin/xattr ]
 then
-    chmod -R u+w .
-    xattr -rc .
+    chmod u+w "${update_zip}"
+    xattr -rd com.apple.quarantine "${update_zip}"
 fi
 
 # unzip the newest file

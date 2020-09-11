@@ -1,373 +1,206 @@
-200911-031322 Modified: ZmEzZWFkOTdmNzIwODdjYTBhMmMwNzAzZTg1ZWZkOTEwZGYyNzk4ZCAgLi91cGRhdGVzL2Fzc2ln
-bm1lbnQxLTIwMjAwOTAxLTE0MjM1Mi56aXAK
-200911-031322 make install
-200911-031322 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-031322 updater:  Directory: ./bin
-200911-031322 updater:  Directory: ./lib
-200911-031322 updater:  Directory: ./lib/cats
-200911-031322 updater:  Directory: ./lib/cats/bin
-200911-031322 updater:  Directory: ./lib/centos8
-200911-031322 updater:  Directory: ./lib/centos8/bin
-200911-031322 updater:  Directory: ./lib/macos
-200911-031322 updater:  Directory: ./lib/macos/bin
-200911-031322 updater:  Directory: ./originals
-200911-031322 updater:  Directory: ./includes
-200911-031322 updater:  Directory: ./tests
-200911-031322 updater:  Creating: ./tokens-context
-200911-031322 updater:  Creating: ./tokens-context.cpp
-200911-031322 updater:  Creating: ./tokens.cpp
-200911-031322 updater:  Creating: ./bin/tokens-context
-200911-031322 updater:  Creating: ./bin/diff-colours
-200911-031322 updater:  Creating: ./bin/run-tests
-200911-031322 updater:  Creating: ./bin/tokens
-200911-031322 updater:  Creating: ./bin/Compiler-check.bash
-200911-031322 updater:  Creating: ./bin/diffc
-200911-031322 updater:  Creating: ./tokens
-200911-031322 updater:  Creating: ./lib/cats/bin/tokens-context
-200911-031322 updater:  Creating: ./lib/cats/bin/diff-colours
-200911-031322 updater:  Creating: ./lib/cats/bin/tokens
-200911-031322 updater:  Creating: ./lib/cats/lib.a
-200911-031322 updater:  Creating: ./lib/centos8/bin/tokens-context
-200911-031322 updater:  Creating: ./lib/centos8/bin/diff-colours
-200911-031322 updater:  Creating: ./lib/centos8/bin/tokens
-200911-031322 updater:  Creating: ./lib/centos8/lib.a
-200911-031322 updater:  Creating: ./lib/macos/bin/tokens-context
-200911-031322 updater:  Creating: ./lib/macos/bin/diff-colours
-200911-031322 updater:  Creating: ./lib/macos/bin/tokens
-200911-031322 updater:  Creating: ./lib/macos/lib.a
-200911-031322 updater:  Creating: ./originals/tokeniser-basics.cpp
-200911-031322 updater:  Creating: ./originals/tokeniser.cpp
-200911-031322 updater:  Creating: updates/Makefile
-200911-031322 updater:  Creating: ./includes/tokeniser.h
-200911-031322 updater:  Creating: ./includes/iobuffer.h
-200911-031322 updater:  Creating: ./includes/tokeniser-extras.h
-200911-031322 updater:  Creating: ./tests/Average-Main.final
-200911-031322 updater:  Creating: ./tests/Jump.milestone
-200911-031322 updater:  Creating: ./tests/Jump.milestone.tokens
-200911-031322 updater:  Creating: ./tests/Numerical.milestone.context
-200911-031322 updater:  Creating: ./tests/0identifiers.milestone.tokens
-200911-031322 updater:  Creating: ./tests/ExplsSquare-Square.final
-200911-031322 updater:  Creating: ./tests/ScreenTest-Main.final
-200911-031322 updater:  Creating: ./tests/MemoryTest-Main.final
-200911-031322 updater:  Creating: ./tests/Comp.milestone.context
-200911-031322 updater:  Creating: ./tests/Label.milestone.tokens
-200911-031322 updater:  Creating: ./tests/Square-Square.final.tokens
-200911-031322 updater:  Creating: ./tests/ArrayTest-Main.final.context
-200911-031322 updater:  Creating: ./tests/DestComp.milestone.context
-200911-031322 updater:  Creating: ./tests/MathTest-Main.final
-200911-031322 updater:  Creating: ./tests/ComplexArrays-Main.final.context
-200911-031322 updater:  Creating: ./tests/0doubles.final
-200911-031322 updater:  Creating: ./tests/Pong-Bat.final.tokens
-200911-031322 updater:  Creating: ./tests/Add.final.context
-200911-031322 updater:  Creating: ./tests/RectL.milestone.context
-200911-031322 updater:  Creating: ./tests/Rect.final.tokens
-200911-031322 updater:  Creating: ./tests/elephants.milestone
-200911-031322 updater:  Creating: ./tests/Square-Main.final
-200911-031322 updater:  Creating: ./tests/0ops.final
-200911-031322 updater:  Creating: ./tests/ConvertToBin-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/Average-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/MaxL.milestone
-200911-031322 updater:  Creating: ./tests/StringTest-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/0numbers.milestone.context
-200911-031322 updater:  Creating: ./tests/empty.milestone.tokens
-200911-031322 updater:  Creating: ./tests/StringTest-Main.final.context
-200911-031322 updater:  Creating: ./tests/Label.milestone.context
-200911-031322 updater:  Creating: ./tests/Dest.milestone.context
-200911-031322 updater:  Creating: ./tests/Square-SquareGame.final
-200911-031322 updater:  Creating: ./tests/Pong-Ball.final.tokens
-200911-031322 updater:  Creating: ./tests/Square-Square.final
-200911-031322 updater:  Creating: ./tests/0numbers.final
-200911-031322 updater:  Creating: ./tests/Square-SquareGame.final.context
-200911-031322 updater:  Creating: ./tests/1identifiers.milestone.context
-200911-031322 updater:  Creating: ./tests/1identifiers.milestone.tokens
-200911-031322 updater:  Creating: ./tests/0keywords.final
-200911-031322 updater:  Creating: ./tests/Comp.milestone
-200911-031322 updater:  Creating: ./tests/Square-Main.final.context
-200911-031322 updater:  Creating: ./tests/Square-SquareGame.final.tokens
-200911-031322 updater:  Creating: ./tests/0doubles.final.tokens
-200911-031322 updater:  Creating: ./tests/OutputTest-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/MathTest-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/OutputTest-Main.final.context
-200911-031322 updater:  Creating: ./tests/Square-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/ExplsSquare-SquareGame.final.context
-200911-031322 updater:  Creating: ./tests/MaxL.milestone.context
-200911-031322 updater:  Creating: ./tests/0keywords.final.tokens
-200911-031322 updater:  Creating: ./tests/ScreenTest-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/DestComp.milestone.tokens
-200911-031322 updater:  Creating: ./tests/ExplsSquare-Square.final.tokens
-200911-031322 updater:  Creating: ./tests/ComplexArrays-Main.final
-200911-031322 updater:  Creating: ./tests/ScreenTest-Main.final.context
-200911-031322 updater:  Creating: ./tests/0numbers.milestone.tokens
-200911-031322 updater:  Creating: ./tests/Pong-Ball.final
-200911-031322 updater:  Creating: ./tests/Jump.milestone.context
-200911-031322 updater:  Creating: ./tests/ArrayTest-Main.final
-200911-031322 updater:  Creating: ./tests/ArrayTest-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/Seven-Main.final.context
-200911-031322 updater:  Creating: ./tests/Pong-Main.final.context
-200911-031322 updater:  Creating: ./tests/Rect.final.context
-200911-031322 updater:  Creating: ./tests/0ops.final.tokens
-200911-031322 updater:  Creating: ./tests/ExplsSquare-Main.final.context
-200911-031322 updater:  Creating: ./tests/ComplexArrays-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/StringTest-Main.final
-200911-031322 updater:  Creating: ./tests/ExplsSquare-Main.final
-200911-031322 updater:  Creating: ./tests/0numbers.final.tokens
-200911-031322 updater:  Creating: ./tests/Pong-Main.final
-200911-031322 updater:  Creating: ./tests/elephants.milestone.context
-200911-031322 updater:  Creating: ./tests/Max.final.tokens
-200911-031322 updater:  Creating: ./tests/1keywords.final
-200911-031322 updater:  Creating: ./tests/MemoryTest-Main.final.context
-200911-031322 updater:  Creating: ./tests/1char-symbols.milestone
-200911-031322 updater:  Creating: ./tests/1char-symbols.milestone.tokens
-200911-031322 updater:  Creating: ./tests/1char-symbols.milestone.context
-200911-031322 updater:  Creating: ./tests/OutputTest-Main.final
-200911-031322 updater:  Creating: ./tests/ExplsSquare-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/Max.final.context
-200911-031322 updater:  Creating: ./tests/RectL.milestone.tokens
-200911-031322 updater:  Creating: ./tests/Rect.final
-200911-031322 updater:  Creating: ./tests/Max.final
-200911-031322 updater:  Creating: ./tests/MathTest-Main.final.context
-200911-031322 updater:  Creating: ./tests/Numerical.milestone.tokens
-200911-031322 updater:  Creating: ./tests/0numbers.milestone
-200911-031322 updater:  Creating: ./tests/Address.milestone.context
-200911-031322 updater:  Creating: ./tests/ExplsSquare-SquareGame.final
-200911-031322 updater:  Creating: ./tests/0identifiers.milestone
-200911-031322 updater:  Creating: ./tests/MemoryTest-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/empty.milestone
-200911-031322 updater:  Creating: ./tests/KeyboardTest-Main.final.context
-200911-031322 updater:  Creating: ./tests/0numbers.final.context
-200911-031322 updater:  Creating: ./tests/1keywords.final.tokens
-200911-031322 updater:  Creating: ./tests/ExplsSquare-Square.final.context
-200911-031322 updater:  Creating: ./tests/Label.milestone
-200911-031322 updater:  Creating: ./tests/RectL.milestone
-200911-031322 updater:  Creating: ./tests/Pong-Ball.final.context
-200911-031322 updater:  Creating: ./tests/Seven-Main.final
-200911-031322 updater:  Creating: ./tests/ConvertToBin-Main.final.context
-200911-031322 updater:  Creating: ./tests/0doubles.final.context
-200911-031322 updater:  Creating: ./tests/ExplsSquare-SquareGame.final.tokens
-200911-031322 updater:  Creating: ./tests/KeyboardTest-Main.final
-200911-031322 updater:  Creating: ./tests/Comp.milestone.tokens
-200911-031322 updater:  Creating: ./tests/1keywords.final.context
-200911-031322 updater:  Creating: ./tests/Address.milestone.tokens
-200911-031322 updater:  Creating: ./tests/ConvertToBin-Main.final
-200911-031322 updater:  Creating: ./tests/Dest.milestone.tokens
-200911-031322 updater:  Creating: ./tests/Numerical.milestone
-200911-031322 updater:  Creating: ./tests/Pong-Bat.final
-200911-031322 updater:  Creating: ./tests/0ops.final.context
-200911-031322 updater:  Creating: ./tests/Address.milestone
-200911-031322 updater:  Creating: ./tests/Pong-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/Add.final.tokens
-200911-031322 updater:  Creating: ./tests/0keywords.final.context
-200911-031322 updater:  Creating: ./tests/Square-Square.final.context
-200911-031322 updater:  Creating: ./tests/Average-Main.final.context
-200911-031322 updater:  Creating: ./tests/1identifiers.milestone
-200911-031322 updater:  Creating: ./tests/Add.final
-200911-031322 updater:  Creating: ./tests/Seven-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/elephants.milestone.tokens
-200911-031322 updater:  Creating: ./tests/Dest.milestone
-200911-031322 updater:  Creating: ./tests/0identifiers.milestone.context
-200911-031322 updater:  Creating: ./tests/DestComp.milestone
-200911-031322 updater:  Creating: ./tests/MaxL.milestone.tokens
-200911-031322 updater:  Creating: ./tests/KeyboardTest-Main.final.tokens
-200911-031322 updater:  Creating: ./tests/Pong-Bat.final.context
-200911-031322 updater:  Made tokens executable
-200911-031322 updater:  Made tokens-context executable
-200911-031322 updater:  Made bin/Compiler-check.bash executable
-200911-031322 updater:  Made bin/diffc executable
-200911-031322 updater:  Made bin/diff-colours executable
-200911-031322 updater:  Made bin/run-tests executable
-200911-031322 updater:  Made bin/tokens executable
-200911-031322 updater:  Made bin/tokens-context executable
-200911-031322 updater:  Made lib/cats/bin/diff-colours executable
-200911-031322 updater:  Made lib/cats/bin/tokens executable
-200911-031322 updater:  Made lib/cats/bin/tokens-context executable
-200911-031322 updater:  Made lib/centos8/bin/diff-colours executable
-200911-031322 updater:  Made lib/centos8/bin/tokens executable
-200911-031322 updater:  Made lib/centos8/bin/tokens-context executable
-200911-031322 updater:  Made lib/macos/bin/diff-colours executable
-200911-031322 updater:  Made lib/macos/bin/tokens executable
-200911-031322 updater:  Made lib/macos/bin/tokens-context executable
-200911-031322 updater:  Creating: tokeniser-basics.cpp
-200911-031322 updater:  Creating: tokeniser.cpp
-200911-031322 updater:  Updating: updates/README
-200911-031322 updater:  Update installed
-200911-031516 make 
-200911-031516 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-031934 make flags
-200911-031934 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-032206 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
-bGxlci5iYXNoCg==
-200911-032206 make 
-200911-032206 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-032230 make 
-200911-032230 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-032416 make 
-200911-032416 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-144839 Modified: NGVhZDMyNzE2MWFlZTU4MGMyZGI4ODU1ZGI5OWNjZjgwMTA2ZTRmYiAgLi90b2tlbmlzZXItYmFz
-aWNzLmNwcAo=
-200911-144839 make 
-200911-144839 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-144938 Modified: OTRiOTM2MDZmNGQxYTc3MDk4ZGUyMzZmYzYzNDQzYTkzYjg5OTcyNiAgLi90b2tlbmlzZXItYmFz
-aWNzLmNwcAowYzY4MjMwMWFkNWJmMjMyYWNhZmM2NDQwNzUwMDFmNWZlNGZhNjYwICAuL3VwZGF0
-ZXMvaW5zdGFsbGVyLmJhc2gK
-200911-144938 make 
-200911-144938 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-145403 Modified: OTRiOTM2MDZmNGQxYTc3MDk4ZGUyMzZmYzYzNDQzYTkzYjg5OTcyNiAgLi90b2tlbmlzZXItYmFz
-aWNzLmNwcApmYzZjYTZkMmFkMWRiYzkzNTUwYTUzNzJmMjczZjUyYTZlNTgyNDNhICAuL3Rva2Vu
-aXNlci5jcHAK
-200911-145403 make 
-200911-145403 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-145528 Modified: ZmM2Y2E2ZDJhZDFkYmM5MzU1MGE1MzcyZjI3M2Y1MmE2ZTU4MjQzYSAgLi90b2tlbmlzZXIuY3Bw
-Cg==
-200911-145528 make 
-200911-145528 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-145544 make 
-200911-145544 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-145641 Modified: ZTU2ZWEzZWIxZjVkMzkwOGU2YTUxZTI0M2Q2YTRkY2U2Y2QwNzgxMyAgLi90b2tlbmlzZXItYmFz
-aWNzLmNwcAo=
-200911-145641 make 
-200911-145641 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-145719 Modified: YTk2OTAzNGY0MjlhNTRlMzA5ZmJlYTBkODgzOWZkODkxODE1OGMxOCAgLi90b2tlbmlzZXIuY3Bw
-Cg==
-200911-145719 make 
-200911-145719 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-150351 Modified: NjJiM2ZmZjM0OTU0MjYyNzU4YmVjNTdjYjUyMmYxZWIyZDYwOTc0MiAgLi9DTWFrZUxpc3RzLnR4
-dApkNmRmNmEyZWE5N2QyNjcwNTBmOWQ5NjBhZjE4ZjNjYjQ4NzY0ZWJkICAuL3Rva2VuaXNlci1i
-YXNpY3MuY3BwCmU0MWZjM2IyOGYyZDk0MDkyNWE1N2NjYTRlZDJhZGFhNjFkZmRkYmUgIC4vLmlk
-ZWEvd29ya3NwYWNlLnhtbAplNWM1NTI1NTdlNzA4MTNhZGQ3ZGQzNDAyMWIwZGUwM2QyZWUxYmQ1
-ICAuLy5pZGVhL21pc2MueG1sCjkyN2YzMmViOTRjNWE0MTk2ZjdkZTBkZDhmODRiYWJmZTA2MmU3
-MjAgIC4vLmlkZWEvYXNzaWdubWVudDEuaW1sCmQ5MTNkYzY1MjA0MGE1OGEzNmUyNTI2NjEyODkx
-NTUxZDdkMTUzMWYgIC4vLmlkZWEvbW9kdWxlcy54bWwKZGEzOWEzZWU1ZTZiNGIwZDMyNTViZmVm
-OTU2MDE4OTBhZmQ4MDcwOSAgLi8uaWRlYS8uZ2l0aWdub3JlCjJjODgxM2ZlMDJjNjA4NTUyZTQz
-MzgwZWQzZDJhNTQxYWZjZGE1YjkgIC4vY21ha2UtYnVpbGQtZGVidWcvY21ha2VfaW5zdGFsbC5j
-bWFrZQo5YWNjMjczOWFmZDI2N2M3OTMzN2E0OThmMDQ5ZDBhNGU0ODU1MDcwICAuL2NtYWtlLWJ1
-aWxkLWRlYnVnL0NNYWtlRmlsZXMvY21ha2UuY2hlY2tfY2FjaGUKYjJhODhiZjhkNjNlOWVkMDRh
-YmQ3NDBmZTY2ZTJiZTIzMjQ1OWZhZiAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL1Rh
-cmdldERpcmVjdG9yaWVzLnR4dApkYjJlNDM0MGQyZGVmMzdiOTI1MWE3YTMwYTBjMTI0NDYyZmU2
-Y2RiICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvTWFrZWZpbGUuY21ha2UKYWQ4NzEw
-OWJmZmYwNzY1ZjRkZDhjZjQ5NDNiMDRkMTZhNDA3MGZlYSAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9D
-TWFrZUZpbGVzL1Byb2dyZXNzLzcKYWQ4NzEwOWJmZmYwNzY1ZjRkZDhjZjQ5NDNiMDRkMTZhNDA3
-MGZlYSAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL1Byb2dyZXNzLzExCmRkNzEwMzhm
-MzQ2M2Y1MTFlZTc0MDNkYmNiYzg3MTk1MzAyZDg5MWMgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01h
-a2VGaWxlcy9Qcm9ncmVzcy9jb3VudC50eHQKZGQ3MTAzOGYzNDYzZjUxMWVlNzQwM2RiY2JjODcx
-OTUzMDJkODkxYyAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL3Byb2dyZXNzLm1hcmtz
-Cjk3M2JiNmE2ZWY2MTFlMTJhYTFjZDMyMGY5MjRmZmY0NWU2Mjg0YjEgIC4vY21ha2UtYnVpbGQt
-ZGVidWcvQ01ha2VGaWxlcy9DTWFrZURpcmVjdG9yeUluZm9ybWF0aW9uLmNtYWtlCmI5N2FjYTVj
-MjEzNjg4ZGVlNTIyOTQ2NGY3ZTQ4YTk4ZGY0MmU0NjIgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01h
-a2VGaWxlcy8zLjE3LjMvQ01ha2VEZXRlcm1pbmVDb21waWxlckFCSV9DWFguYmluCmQ2ODgxZjI3
-NjZhMTQ0YTMxYjRjZmZhZTgzYmExMjBjNmY1NzYzZjQgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01h
-a2VGaWxlcy8zLjE3LjMvQ01ha2VTeXN0ZW0uY21ha2UKYjUwMGQ3OTY3MDYzMjI3M2Q4NmYzOGVm
-MDJjZGU0NDVjZWRiYWQwNyAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzLzMuMTcuMy9D
-b21waWxlcklkQy9hLm91dAplMjRkZGYwM2JlY2Y3NDM5NjM4ZDYxYzRmNDU2MmUxMTExY2RhMDA4
-ICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvMy4xNy4zL0NvbXBpbGVySWRDL0NNYWtl
-Q0NvbXBpbGVySWQuYwpiMmY1ODNiZGQ0NDUyODVmNzUxZWVhY2U0MWRmMTE5ZjI3NDI2NTUwICAu
-L2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvMy4xNy4zL0NNYWtlRGV0ZXJtaW5lQ29tcGls
-ZXJBQklfQy5iaW4KMTMzZjQ1YzhjYTgzZWEyYzI2ZDgwZGFiOGMzMmEwN2NkNzExYjZjNSAgLi9j
-bWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzLzMuMTcuMy9Db21waWxlcklkQ1hYL2Eub3V0CjIw
-M2EzNDQwNDYyZmVmY2MxYWUyOWYzMGY2YjgzMTUxMThlZWE2ODQgIC4vY21ha2UtYnVpbGQtZGVi
-dWcvQ01ha2VGaWxlcy8zLjE3LjMvQ29tcGlsZXJJZENYWC9DTWFrZUNYWENvbXBpbGVySWQuY3Bw
-CjVkMTI5ZjU2YzViYWExMzRhYTg0MGJhMTgwYWVkN2YyMzEyZWRhYTMgIC4vY21ha2UtYnVpbGQt
-ZGVidWcvQ01ha2VGaWxlcy8zLjE3LjMvQ01ha2VDQ29tcGlsZXIuY21ha2UKODNlNzBhZDI4OTgx
-N2I2MTY1N2E2ZDBmOWQ2YjM2ODdiM2EzNzAzYiAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZp
-bGVzLzMuMTcuMy9DTWFrZUNYWENvbXBpbGVyLmNtYWtlCjgxN2ZmM2RlYWFiMTZmMzkzN2Y4ODZl
-YjkwNTcxMGFmZjExMWQ2OWEgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9DTWFrZU91
-dHB1dC5sb2cKZjczODg2OGVhMWY3MzJmNjI4MDZkZjIxNjljNDQ0NmMwZGUwNTI5ZSAgLi9jbWFr
-ZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL01ha2VmaWxlMgo5YzBjZGU4NGQ5ZGQ5MWExN2E3MzY5
-YWRkYmY0MzA1MWEzYzEwYTRjICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvY2xpb24t
-bG9nLnR4dAphZjQ5NTVjY2IxNmZlZmFmNzhmZTdiZjQxNjVjYjZkNDFjNTg1MTM3ICAuL2NtYWtl
-LWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvY2xpb24tZW52aXJvbm1lbnQudHh0CmY4ZjFlNzhiZmQ4
-ZjEzZDFkN2NkZWI3YzUyNDQ4M2EyNTI4MmFkNTEgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VG
-aWxlcy9hc3NpZ25tZW50MS5kaXIvZmxhZ3MubWFrZQoyOGYzM2ZhNmQ0OWFmZmJmZDcxYTY0ZjE3
-OTI2MDBhZjE0MWMxMTA1ICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNzaWdubWVu
-dDEuZGlyL0RlcGVuZEluZm8uY21ha2UKNzQyODE1OGFlZTNmOTA3YzhiYjM3ZDU3YmVmNjIyN2Rl
-MzM1MWU2OCAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci9w
-cm9ncmVzcy5tYWtlCmZkY2ZiN2U3NGFiYTc5M2EzZmYzMDVhZjdlZGYwYjAzMzZiNmRmZmMgIC4v
-Y21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50MS5kaXIvdG9rZW5zLWNvbnRl
-eHQuY3BwLm8KYWRkNTlhODExODdhYjFmNDVkMDhjOGFiZTlmY2E1OTU3NTdmNDUyNSAgLi9jbWFr
-ZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci90b2tlbmlzZXItYmFzaWNz
-LmNwcC5vCjg3YjExMDUzZjBmZDhmMDlmZDllYWJlYmFmZjFiMjNiMjBhZjFjODAgIC4vY21ha2Ut
-YnVpbGQtZGVidWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50MS5kaXIvdG9rZW5zLmNwcC5vCjgxY2Uz
-OTQwZjE0M2MyZTg1MWFhZDRmZDhlYzY4OTFmMmM1ZGI5ZGEgIC4vY21ha2UtYnVpbGQtZGVidWcv
-Q01ha2VGaWxlcy9hc3NpZ25tZW50MS5kaXIvbGluay50eHQKODFmYjUzZTU0NGRjNmU5YjIyYjQw
-MDZmZTk1MzI2ZTUwODE1OGQ5YyAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2ln
-bm1lbnQxLmRpci9vcmlnaW5hbHMvdG9rZW5pc2VyLWJhc2ljcy5jcHAubwplZmQ3ODU3MDBlN2Fj
-OGU0MjQzOWQ2ZjAyOTUzNTEyMTA4ODU3MzFiICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmls
-ZXMvYXNzaWdubWVudDEuZGlyL29yaWdpbmFscy90b2tlbmlzZXIuY3BwLm8KOTNiZGIwN2MxMGIx
-N2UwNTA1NWI2ZjQyNzJjMzkxOWQxYjQ1ZmY5ZiAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZp
-bGVzL2Fzc2lnbm1lbnQxLmRpci9DWFguaW5jbHVkZWNhY2hlCmM5ZWM1NjU4N2NkMjYxZThkZTZk
-M2YyMTFkMjEzNmE1ZTUzYmQ1NTQgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9hc3Np
-Z25tZW50MS5kaXIvdXBkYXRlcy9hc3NpZ25tZW50MS0yMDIwMDkwMS0xNDIzNTIvdG9rZW5zLWNv
-bnRleHQuY3BwLm8KZTVlODI1OTEzNWIwZWY1ZDc0ZTZmMjE3MGFlY2Y3ZjhlMjg3NmUyOSAgLi9j
-bWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci91cGRhdGVzL2Fzc2ln
-bm1lbnQxLTIwMjAwOTAxLTE0MjM1Mi90b2tlbnMuY3BwLm8KZTVhNDAyMjg0MDk0ZGI0MDhjOTZk
-YzQwYzVkNTQxZDZlMDgzYWIxZSAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2ln
-bm1lbnQxLmRpci91cGRhdGVzL2Fzc2lnbm1lbnQxLTIwMjAwOTAxLTE0MjM1Mi9vcmlnaW5hbHMv
-dG9rZW5pc2VyLWJhc2ljcy5jcHAubwowZGNhM2Q5ODRjODc1MDZlNTk5N2Y3N2FkOTZkYTQ5NmUz
-Y2Q3MWNjICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNzaWdubWVudDEuZGlyL3Vw
-ZGF0ZXMvYXNzaWdubWVudDEtMjAyMDA5MDEtMTQyMzUyL29yaWdpbmFscy90b2tlbmlzZXIuY3Bw
-Lm8KMmM3MGM5NTE0ZDFiMmJjZjAzZDM2MmQxYmI5NDkwYzhlMWYxOWQ4ZCAgLi9jbWFrZS1idWls
-ZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci9kZXBlbmQubWFrZQo5NGE1MmY3Yjk1
-ZThhYmQxMjg5Zjc1ZWJiZmQ2ZGU2MTM1NDhhZGVjICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtl
-RmlsZXMvYXNzaWdubWVudDEuZGlyL3Rva2VuaXNlci5jcHAubwo3M2NlMTFlNTQyNTI0MDYxY2Nj
-YmQ2YzM0NjJkZWJmNTIxZDA4OGMwICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNz
-aWdubWVudDEuZGlyL2RlcGVuZC5pbnRlcm5hbApmOGUxYzBmYTNiMjNkYWUzYWY3Nzg1MTFkZWZl
-NDM4NDhjNTIyODMxICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNzaWdubWVudDEu
-ZGlyL2J1aWxkLm1ha2UKZjljMzE5ZmUzZTBlMDE5ZGMyNTZmNWE5ZDUyNWYxNzAyNjQwNjk1MiAg
-Li9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci9jbWFrZV9jbGVh
-bi5jbWFrZQpiMTIyNjU5MWE3NmMzYmJiMThmMDBkOTY0ZGMxMzk3ZDBkNWEwZTFhICAuL2NtYWtl
-LWJ1aWxkLWRlYnVnL2Fzc2lnbm1lbnQxLmNicAoxZjFjZGU0YmU5ZjBiZGQ4ODlkMjdiNjNhNDUy
-Y2ViMmFhMzhhM2E4ICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlQ2FjaGUudHh0CmQxNDUzY2Ex
-NWI2NmY4YzM0ZTg3MWI0MmY2YjBiYTkwYTFjOWFiOTMgIC4vY21ha2UtYnVpbGQtZGVidWcvTWFr
-ZWZpbGUK
-200911-150351 make 
-200911-150351 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-150412 make 
-200911-150412 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-150630 make 
-200911-150630 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-151052 Modified: MjUwNjY2YjkxNTEwMDc4YWEyZGVhNTUwOThhMTYzNDM5MTYwMmIyYyAgLi90b2tlbmlzZXItYmFz
-aWNzLmNwcAoyYjY5ZTBjOTAwZWYyNWU0Y2FjNzA5NDBiM2Y3MzdjNzUwODFkZjk3ICAuLy5pZGVh
-L3dvcmtzcGFjZS54bWwK
-200911-151052 make 
-200911-151052 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-151121 Modified: ZDZkZjZhMmVhOTdkMjY3MDUwZjlkOTYwYWYxOGYzY2I0ODc2NGViZCAgLi90b2tlbmlzZXItYmFz
-aWNzLmNwcAphYjI3MDQ4Y2Q3ZWM3N2JjOWIxNTgwMjUwNGU3MTYyZGEyOGYyNzY4ICAuLy5pZGVh
-L3dvcmtzcGFjZS54bWwK
-200911-151121 make 
-200911-151121 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-151212 make 
-200911-151212 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-152511 Modified: NjZhNjIyYWY0ZTNkZTcwNWM1ODEzY2VlN2E2NmUyZDI5ZWM1ZTdjMSAgLi8uaWRlYS93b3Jrc3Bh
-Y2UueG1sCjJmNDlmYzg1NWVlZmZmMWE5OTc5M2EyNDA5MTAzMzA4MmRmNTViZDQgIC4vdG9rZW5p
-c2VyLmNwcAphZDg3MTA5YmZmZjA3NjVmNGRkOGNmNDk0M2IwNGQxNmE0MDcwZmVhICAuL2NtYWtl
-LWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvUHJvZ3Jlc3MvNwphZDg3MTA5YmZmZjA3NjVmNGRkOGNm
-NDk0M2IwNGQxNmE0MDcwZmVhICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvUHJvZ3Jl
-c3MvMTEKZGQ3MTAzOGYzNDYzZjUxMWVlNzQwM2RiY2JjODcxOTUzMDJkODkxYyAgLi9jbWFrZS1i
-dWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL1Byb2dyZXNzL2NvdW50LnR4dAphZGQ1OWE4MTE4N2FiMWY0
-NWQwOGM4YWJlOWZjYTU5NTc1N2Y0NTI1ICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMv
-YXNzaWdubWVudDEuZGlyL3Rva2VuaXNlci1iYXNpY3MuY3BwLm8KOTNiZGIwN2MxMGIxN2UwNTA1
-NWI2ZjQyNzJjMzkxOWQxYjQ1ZmY5ZiAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fz
-c2lnbm1lbnQxLmRpci9DWFguaW5jbHVkZWNhY2hlCjJjNzBjOTUxNGQxYjJiY2YwM2QzNjJkMWJi
-OTQ5MGM4ZTFmMTlkOGQgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50
-MS5kaXIvZGVwZW5kLm1ha2UKNzNjZTExZTU0MjUyNDA2MWNjY2JkNmMzNDYyZGViZjUyMWQwODhj
-MCAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci9kZXBlbmQu
-aW50ZXJuYWwK
-200911-152511 make 
-200911-152511 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-152531 Modified: Zjc1YzM3ODYxMDRlODljZjRmOGU1YzNhZjc5NDczNzlhNTU1ZTY2NyAgLi8uaWRlYS93b3Jrc3Bh
-Y2UueG1sCmE5NjkwMzRmNDI5YTU0ZTMwOWZiZWEwZDg4MzlmZDg5MTgxNThjMTggIC4vdG9rZW5p
-c2VyLmNwcAo=
-200911-152531 make 
-200911-152531 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-152701 Modified: YWQ4NzEwOWJmZmYwNzY1ZjRkZDhjZjQ5NDNiMDRkMTZhNDA3MGZlYSAgLi9jbWFrZS1idWlsZC1k
-ZWJ1Zy9DTWFrZUZpbGVzL1Byb2dyZXNzLzExCmRkNzEwMzhmMzQ2M2Y1MTFlZTc0MDNkYmNiYzg3
-MTk1MzAyZDg5MWMgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9Qcm9ncmVzcy9jb3Vu
-dC50eHQKMTUyY2E5MGFmMjVkNWQ4NDk0MWU1ZDZhMjRkMmYwNTAyMWJkZWNhNyAgLi9jbWFrZS1i
-dWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci9DWFguaW5jbHVkZWNhY2hlCjJj
-NzBjOTUxNGQxYjJiY2YwM2QzNjJkMWJiOTQ5MGM4ZTFmMTlkOGQgIC4vY21ha2UtYnVpbGQtZGVi
-dWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50MS5kaXIvZGVwZW5kLm1ha2UKOTRhNTJmN2I5NWU4YWJk
-MTI4OWY3NWViYmZkNmRlNjEzNTQ4YWRlYyAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVz
-L2Fzc2lnbm1lbnQxLmRpci90b2tlbmlzZXIuY3BwLm8KNzNjZTExZTU0MjUyNDA2MWNjY2JkNmMz
-NDYyZGViZjUyMWQwODhjMCAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2lnbm1l
-bnQxLmRpci9kZXBlbmQuaW50ZXJuYWwK
-200911-152701 make 
-200911-152701 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200911-162501 Modified: ZmEzZWFkOTdmNzIwODdjYTBhMmMwNzAzZTg1ZWZkOTEwZGYyNzk4ZCAgLi91cGRhdGVzL2Fzc2ln
+bm1lbnQxLTIwMjAwOTAxLTE0MjM1MiAuemlwCg==
+200911-162501 make install
+200911-162501 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200911-162501 updater:  Directory: ./bin
+200911-162501 updater:  Directory: ./lib
+200911-162501 updater:  Directory: ./lib/cats
+200911-162501 updater:  Directory: ./lib/cats/bin
+200911-162501 updater:  Directory: ./lib/centos8
+200911-162501 updater:  Directory: ./lib/centos8/bin
+200911-162501 updater:  Directory: ./lib/macos
+200911-162501 updater:  Directory: ./lib/macos/bin
+200911-162501 updater:  Directory: ./originals
+200911-162501 updater:  Directory: ./includes
+200911-162501 updater:  Directory: ./tests
+200911-162501 updater:  Creating: ./tokens-context
+200911-162501 updater:  Creating: ./tokens-context.cpp
+200911-162501 updater:  Creating: ./tokens.cpp
+200911-162501 updater:  Creating: ./installer.bash
+200911-162501 updater:  Creating: ./bin/tokens-context
+200911-162501 updater:  Creating: ./bin/diff-colours
+200911-162501 updater:  Creating: ./bin/run-tests
+200911-162501 updater:  Creating: ./bin/tokens
+200911-162501 updater:  Creating: ./bin/Compiler-check.bash
+200911-162501 updater:  Creating: ./bin/diffc
+200911-162501 updater:  Creating: ./tokens
+200911-162501 updater:  Creating: ./lib/cats/bin/tokens-context
+200911-162501 updater:  Creating: ./lib/cats/bin/diff-colours
+200911-162501 updater:  Creating: ./lib/cats/bin/tokens
+200911-162501 updater:  Creating: ./lib/cats/lib.a
+200911-162501 updater:  Creating: ./lib/centos8/bin/tokens-context
+200911-162501 updater:  Creating: ./lib/centos8/bin/diff-colours
+200911-162501 updater:  Creating: ./lib/centos8/bin/tokens
+200911-162501 updater:  Creating: ./lib/centos8/lib.a
+200911-162501 updater:  Creating: ./lib/macos/bin/tokens-context
+200911-162501 updater:  Creating: ./lib/macos/bin/diff-colours
+200911-162501 updater:  Creating: ./lib/macos/bin/tokens
+200911-162501 updater:  Creating: ./lib/macos/lib.a
+200911-162501 updater:  Creating: ./originals/tokeniser-basics.cpp
+200911-162501 updater:  Creating: ./originals/tokeniser.cpp
+200911-162501 updater:  Creating: updates/Makefile
+200911-162501 updater:  Creating: ./includes/tokeniser.h
+200911-162501 updater:  Creating: ./includes/iobuffer.h
+200911-162501 updater:  Creating: ./includes/tokeniser-extras.h
+200911-162501 updater:  Creating: ./tests/Average-Main.final
+200911-162501 updater:  Creating: ./tests/Jump.milestone
+200911-162501 updater:  Creating: ./tests/Jump.milestone.tokens
+200911-162501 updater:  Creating: ./tests/Numerical.milestone.context
+200911-162501 updater:  Creating: ./tests/0identifiers.milestone.tokens
+200911-162501 updater:  Creating: ./tests/ExplsSquare-Square.final
+200911-162501 updater:  Creating: ./tests/ScreenTest-Main.final
+200911-162501 updater:  Creating: ./tests/MemoryTest-Main.final
+200911-162501 updater:  Creating: ./tests/Comp.milestone.context
+200911-162501 updater:  Creating: ./tests/Label.milestone.tokens
+200911-162501 updater:  Creating: ./tests/Square-Square.final.tokens
+200911-162501 updater:  Creating: ./tests/ArrayTest-Main.final.context
+200911-162501 updater:  Creating: ./tests/DestComp.milestone.context
+200911-162501 updater:  Creating: ./tests/MathTest-Main.final
+200911-162501 updater:  Creating: ./tests/ComplexArrays-Main.final.context
+200911-162501 updater:  Creating: ./tests/0doubles.final
+200911-162501 updater:  Creating: ./tests/Pong-Bat.final.tokens
+200911-162501 updater:  Creating: ./tests/Add.final.context
+200911-162501 updater:  Creating: ./tests/RectL.milestone.context
+200911-162501 updater:  Creating: ./tests/Rect.final.tokens
+200911-162501 updater:  Creating: ./tests/elephants.milestone
+200911-162501 updater:  Creating: ./tests/Square-Main.final
+200911-162501 updater:  Creating: ./tests/0ops.final
+200911-162501 updater:  Creating: ./tests/ConvertToBin-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/Average-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/MaxL.milestone
+200911-162501 updater:  Creating: ./tests/StringTest-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/0numbers.milestone.context
+200911-162501 updater:  Creating: ./tests/empty.milestone.tokens
+200911-162501 updater:  Creating: ./tests/StringTest-Main.final.context
+200911-162501 updater:  Creating: ./tests/Label.milestone.context
+200911-162501 updater:  Creating: ./tests/Dest.milestone.context
+200911-162501 updater:  Creating: ./tests/Square-SquareGame.final
+200911-162501 updater:  Creating: ./tests/Pong-Ball.final.tokens
+200911-162501 updater:  Creating: ./tests/Square-Square.final
+200911-162501 updater:  Creating: ./tests/0numbers.final
+200911-162501 updater:  Creating: ./tests/Square-SquareGame.final.context
+200911-162501 updater:  Creating: ./tests/1identifiers.milestone.context
+200911-162501 updater:  Creating: ./tests/1identifiers.milestone.tokens
+200911-162501 updater:  Creating: ./tests/0keywords.final
+200911-162501 updater:  Creating: ./tests/Comp.milestone
+200911-162501 updater:  Creating: ./tests/Square-Main.final.context
+200911-162501 updater:  Creating: ./tests/Square-SquareGame.final.tokens
+200911-162501 updater:  Creating: ./tests/0doubles.final.tokens
+200911-162501 updater:  Creating: ./tests/OutputTest-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/MathTest-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/OutputTest-Main.final.context
+200911-162501 updater:  Creating: ./tests/Square-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/ExplsSquare-SquareGame.final.context
+200911-162501 updater:  Creating: ./tests/MaxL.milestone.context
+200911-162501 updater:  Creating: ./tests/0keywords.final.tokens
+200911-162501 updater:  Creating: ./tests/ScreenTest-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/DestComp.milestone.tokens
+200911-162501 updater:  Creating: ./tests/ExplsSquare-Square.final.tokens
+200911-162501 updater:  Creating: ./tests/ComplexArrays-Main.final
+200911-162501 updater:  Creating: ./tests/ScreenTest-Main.final.context
+200911-162501 updater:  Creating: ./tests/0numbers.milestone.tokens
+200911-162501 updater:  Creating: ./tests/Pong-Ball.final
+200911-162501 updater:  Creating: ./tests/Jump.milestone.context
+200911-162501 updater:  Creating: ./tests/ArrayTest-Main.final
+200911-162501 updater:  Creating: ./tests/ArrayTest-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/Seven-Main.final.context
+200911-162501 updater:  Creating: ./tests/Pong-Main.final.context
+200911-162501 updater:  Creating: ./tests/Rect.final.context
+200911-162501 updater:  Creating: ./tests/0ops.final.tokens
+200911-162501 updater:  Creating: ./tests/ExplsSquare-Main.final.context
+200911-162501 updater:  Creating: ./tests/ComplexArrays-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/StringTest-Main.final
+200911-162501 updater:  Creating: ./tests/ExplsSquare-Main.final
+200911-162501 updater:  Creating: ./tests/0numbers.final.tokens
+200911-162501 updater:  Creating: ./tests/Pong-Main.final
+200911-162501 updater:  Creating: ./tests/elephants.milestone.context
+200911-162501 updater:  Creating: ./tests/Max.final.tokens
+200911-162501 updater:  Creating: ./tests/1keywords.final
+200911-162501 updater:  Creating: ./tests/MemoryTest-Main.final.context
+200911-162501 updater:  Creating: ./tests/1char-symbols.milestone
+200911-162501 updater:  Creating: ./tests/1char-symbols.milestone.tokens
+200911-162501 updater:  Creating: ./tests/1char-symbols.milestone.context
+200911-162501 updater:  Creating: ./tests/OutputTest-Main.final
+200911-162501 updater:  Creating: ./tests/ExplsSquare-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/Max.final.context
+200911-162501 updater:  Creating: ./tests/RectL.milestone.tokens
+200911-162501 updater:  Creating: ./tests/Rect.final
+200911-162501 updater:  Creating: ./tests/Max.final
+200911-162501 updater:  Creating: ./tests/MathTest-Main.final.context
+200911-162501 updater:  Creating: ./tests/Numerical.milestone.tokens
+200911-162501 updater:  Creating: ./tests/0numbers.milestone
+200911-162501 updater:  Creating: ./tests/Address.milestone.context
+200911-162501 updater:  Creating: ./tests/ExplsSquare-SquareGame.final
+200911-162501 updater:  Creating: ./tests/0identifiers.milestone
+200911-162501 updater:  Creating: ./tests/MemoryTest-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/empty.milestone
+200911-162501 updater:  Creating: ./tests/KeyboardTest-Main.final.context
+200911-162501 updater:  Creating: ./tests/0numbers.final.context
+200911-162501 updater:  Creating: ./tests/1keywords.final.tokens
+200911-162501 updater:  Creating: ./tests/ExplsSquare-Square.final.context
+200911-162501 updater:  Creating: ./tests/Label.milestone
+200911-162501 updater:  Creating: ./tests/RectL.milestone
+200911-162501 updater:  Creating: ./tests/Pong-Ball.final.context
+200911-162501 updater:  Creating: ./tests/Seven-Main.final
+200911-162501 updater:  Creating: ./tests/ConvertToBin-Main.final.context
+200911-162501 updater:  Creating: ./tests/0doubles.final.context
+200911-162501 updater:  Creating: ./tests/ExplsSquare-SquareGame.final.tokens
+200911-162501 updater:  Creating: ./tests/KeyboardTest-Main.final
+200911-162501 updater:  Creating: ./tests/Comp.milestone.tokens
+200911-162501 updater:  Creating: ./tests/1keywords.final.context
+200911-162501 updater:  Creating: ./tests/Address.milestone.tokens
+200911-162501 updater:  Creating: ./tests/ConvertToBin-Main.final
+200911-162501 updater:  Creating: ./tests/Dest.milestone.tokens
+200911-162501 updater:  Creating: ./tests/Numerical.milestone
+200911-162501 updater:  Creating: ./tests/Pong-Bat.final
+200911-162501 updater:  Creating: ./tests/0ops.final.context
+200911-162501 updater:  Creating: ./tests/Address.milestone
+200911-162501 updater:  Creating: ./tests/Pong-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/Add.final.tokens
+200911-162501 updater:  Creating: ./tests/0keywords.final.context
+200911-162501 updater:  Creating: ./tests/Square-Square.final.context
+200911-162501 updater:  Creating: ./tests/Average-Main.final.context
+200911-162501 updater:  Creating: ./tests/1identifiers.milestone
+200911-162501 updater:  Creating: ./tests/Add.final
+200911-162501 updater:  Creating: ./tests/Seven-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/elephants.milestone.tokens
+200911-162501 updater:  Creating: ./tests/Dest.milestone
+200911-162501 updater:  Creating: ./tests/0identifiers.milestone.context
+200911-162501 updater:  Creating: ./tests/DestComp.milestone
+200911-162501 updater:  Creating: ./tests/MaxL.milestone.tokens
+200911-162501 updater:  Creating: ./tests/KeyboardTest-Main.final.tokens
+200911-162501 updater:  Creating: ./tests/Pong-Bat.final.context
+200911-162501 updater:  Made installer.bash executable
+200911-162501 updater:  Made tokens executable
+200911-162501 updater:  Made tokens-context executable
+200911-162501 updater:  Made bin/Compiler-check.bash executable
+200911-162501 updater:  Made bin/diffc executable
+200911-162501 updater:  Made bin/diff-colours executable
+200911-162501 updater:  Made bin/run-tests executable
+200911-162501 updater:  Made bin/tokens executable
+200911-162501 updater:  Made bin/tokens-context executable
+200911-162501 updater:  Made lib/cats/bin/diff-colours executable
+200911-162501 updater:  Made lib/cats/bin/tokens executable
+200911-162501 updater:  Made lib/cats/bin/tokens-context executable
+200911-162501 updater:  Made lib/centos8/bin/diff-colours executable
+200911-162501 updater:  Made lib/centos8/bin/tokens executable
+200911-162501 updater:  Made lib/centos8/bin/tokens-context executable
+200911-162501 updater:  Made lib/macos/bin/diff-colours executable
+200911-162501 updater:  Made lib/macos/bin/tokens executable
+200911-162501 updater:  Made lib/macos/bin/tokens-context executable
+200911-162501 updater:  Creating: tokeniser-basics.cpp
+200911-162501 updater:  Creating: tokeniser.cpp
+200911-162501 updater:  Updating: updates/README
+200911-162501 updater:  Update installed
+200911-162508 make 
+200911-162508 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200911-162542 make 
+200911-162542 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200911-162601 make 
+200911-162601 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200911-162646 make 
+200911-162646 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200911-162830 make 
+200911-162830 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200911-162912 make 
+200911-162912 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
