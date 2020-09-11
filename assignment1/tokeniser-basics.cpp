@@ -1,7 +1,7 @@
 // a skeleton implementation of a tokeniser
 
 #include "tokeniser-extras.h"
-
+#include <vector>
 // to shorten the code
 using namespace std ;
 
@@ -9,6 +9,12 @@ using namespace std ;
 
 namespace Assignment_Tokeniser
 {
+    int line = 0;
+    int column = 0;
+
+
+    string one_line ;
+    vector<string> all_lines;
 
     // the current input character
     // the eof marker can be confused with a legal character but not one accepted by our tokeniser
@@ -52,13 +58,19 @@ namespace Assignment_Tokeniser
     // read next character if not at the end of input and update the line and column numbers
     // additional code will be required here to handle preprocessing of '\t' and '\r'
     // in some cases you may wish to remember a character to use next time instead of calling read_char()
+    static char repeat = EOF;
     void nextch()
     {
         if ( ch == EOF ) return ;           // stop reading once we have read EOF
 
-        spelling += ch ;                    // remember the old ch, it is part of the current token being parsed
+        spelling += ch ;
 
-        ch = read_char() ;                  // read the next character
+        if ( ch == '\n' ) { line++ ; column = 1 ; } else column++ ;
+
+        if ( repeat != EOF ) { ch = repeat ; repeat = EOF ; } else ch = read_char() ;
+
+        if ( ch == '\t' ) { if ( column % 4 != 0 ) repeat = '\t' ; ch = ' ' ; } else
+        if ( ch == '\r' ) { ch = read_char() ; if ( ch != '\n' ) repeat = ch ; ch = '\n' ; }
     }
 
     // initialise the tokeniser
