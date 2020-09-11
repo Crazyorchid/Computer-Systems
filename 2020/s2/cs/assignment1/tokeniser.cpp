@@ -217,7 +217,6 @@ namespace Assignment_Tokeniser {
 
                     switch (ch) {
 
-
                         case ' ':               // white space tokens
                             parse_wspace(tk_space);
                             break;
@@ -317,7 +316,6 @@ namespace Assignment_Tokeniser {
                         case '$':
                             parse_identifier(tk_identifier);
                             break;
-
 
                         case EOF:
                             new_token_kind = tk_eoi;
