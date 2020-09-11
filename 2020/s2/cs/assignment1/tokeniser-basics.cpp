@@ -14,8 +14,6 @@ namespace Assignment_Tokeniser
     // the eof marker can be confused with a legal character but not one accepted by our tokeniser
     int line = 0;
     int column = 0;
-    char for_tab;
-    int column_of_new;
 
 
     string one_line ;
@@ -40,15 +38,15 @@ namespace Assignment_Tokeniser
         Token token;
         if(kind == tk_newline) {
             if(all_lines.size()>0){
-                if(all_lines.back().back() == '$') {
-                    one_line.back() += '$';
+                if(all_lines.back().back() == '\n') {
+                    one_line.back() += '\n';
                     all_lines.push_back(one_line);
                 }
                 else{
-                    all_lines.back() += "$";
+                    all_lines.back() += "\n";
                 }
             }else
-                all_lines.push_back(one_line + "$");
+                all_lines.push_back(one_line + "\n");
 
             token = new_token(kind, spelling, line - 1, all_lines.back().size());
             one_line += "";
@@ -59,8 +57,8 @@ namespace Assignment_Tokeniser
             for(int i = 0; i < copy.size(); i++){
                 if(copy[i] == '\n') {
                     string part = copy.substr(0, i);
-                    part += "$";
-                    if(all_lines.back().back() != '$')
+                    part += "\n";
+                    if(all_lines.back().back() != '\n')
                         all_lines.back()+=part;
                     else
                         all_lines.push_back(part);
