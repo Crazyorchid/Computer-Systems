@@ -23,6 +23,21 @@ namespace Exam_Tokeniser
         nextch() ;
     }
 
+    static void parse_identifier(TokenKind kind)
+    {
+        new_token_kind = tk_identifier;
+        do {
+            nextch();
+        }
+        while (c_have(cg_extends_identifier));
+    }
+
+    static void parse_number(TokenKind kind)
+    {
+        new_token_kind = tk_number;
+        nextch();
+    }
+
    static void parse_operation(TokenKind kind)
    {
         new_token_kind = kind;
@@ -58,7 +73,15 @@ namespace Exam_Tokeniser
                 nextch();
                 c_mustbe('=');
                 break;
-
+            case 'A'...'Z':
+                parse_identifier(tk_identifier);
+                break;
+            case 'a'...'z':
+                parse_identifier(tk_identifier);
+                break;
+            case '0'...'9':
+                parse_number(tk_number);
+                break;
 
 
 
