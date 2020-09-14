@@ -43,6 +43,12 @@ namespace Exam_Tokeniser
         new_token_kind = kind;
         nextch();
    }
+
+   static void parse_weird(TokenKind kind)
+   {
+        new_token_kind = tk_weird;
+        nextch();
+   }
    static void parse_symbol(TokenKind kind)
    {
            new_token_kind = kind;
@@ -81,6 +87,9 @@ namespace Exam_Tokeniser
                 break;
             case '0'...'9':
                 parse_number(tk_number);
+                break;
+            case '@':
+                parse_weird(tk_weird);
                 break;
 
 
