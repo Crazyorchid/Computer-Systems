@@ -23,6 +23,24 @@ namespace Exam_Tokeniser
         nextch() ;
     }
 
+   static void parse_operation(TokenKind kind)
+   {
+        new_token_kind = kind;
+        nextch();
+   }
+   static void parse_symbol(TokenKind kind)
+   {
+           new_token_kind = kind;
+           switch (ch) {
+               case '!':
+                   nextch();
+                   if (!c_have('=')) {
+                       c_mustbe('=');
+                       break;
+                   }
+           }
+   }
+
     // return the next Token object by reading more of the input
     // you must read input using the nextch() function
     // the last character read is in the static variable ch
@@ -31,6 +49,22 @@ namespace Exam_Tokeniser
     {
         switch(ch)      // ch is always the next char to read
         {
+            case']':
+                parse_operation(tk_operator);
+                break;
+
+            case'!':
+                new_token_kind = tk_operator;
+                nextch();
+                c_mustbe('=');
+                break;
+
+
+
+
+
+
+
 
 
                         // ******   ADD NEW CODE HERE  ******
@@ -39,6 +73,10 @@ namespace Exam_Tokeniser
 
 
                         // End of Inptut
+        
+
+
+
         case EOF:
             new_token_kind = tk_eoi ;
             break ;
