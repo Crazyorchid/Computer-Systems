@@ -29,6 +29,25 @@ namespace Exam_Tokeniser
         nextch();
     }
 
+
+    static void parse_plusminus(TokenKind kind) {
+        new_token_kind = kind;
+        nextch();
+        if (c_have('+')) {
+            if (c_have_next('+')) {
+                new_token_kind = tk_operator;
+            } else {
+                return;
+            }
+        } else if (c_have('-')) {
+            if (c_have_next('-')) {
+                new_token_kind = tk_operator;
+            } else {
+                return;
+            }
+        }
+    }
+
     // return the next Token object by reading more of the input
     // you must read input using the nextch() function
     // the last character read is in the static variable ch
@@ -56,6 +75,19 @@ namespace Exam_Tokeniser
                 nextch();
                 c_mustbe('=');
                 break;
+            case'<':
+                new_token_kind = tk_operator;
+                nextch();
+                c_mustbe('=');
+                break;
+
+            case '+':
+                parse_plusminus(tk_operator);
+
+            case '-':
+                parse_plusminus(tk_operator);
+
+
 
 
                         // ******   ADD NEW CODE HERE  ******
