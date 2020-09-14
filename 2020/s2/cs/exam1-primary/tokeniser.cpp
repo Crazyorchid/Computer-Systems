@@ -40,6 +40,16 @@ namespace Exam_Tokeniser
             case'~':
                 parse_operation(tk_operator);
                 break;
+            case'[':
+                parse_operation(tk_operator);
+                break;
+            case']':
+                parse_operation(tk_operator);
+                break;
+            case'&':
+                parse_operation(tk_operator);
+                break;
+
 
             case'>':
                 new_token_kind = tk_operator;
