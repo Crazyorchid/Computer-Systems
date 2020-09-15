@@ -23,6 +23,16 @@ namespace Exam_Tokeniser
         nextch() ;
     }
 
+    static void parse_identifier(TokenKind kind)
+    {
+        new_token_kind = tk_identifier;
+        do {
+            nextch();
+        }
+        while (c_have(cg_extends_identifier));
+    }
+
+
     static void parse_operation(TokenKind kind)
     {
         new_token_kind = kind;
@@ -81,11 +91,33 @@ namespace Exam_Tokeniser
                 c_mustbe('=');
                 break;
 
-            case '+':
-                parse_plusminus(tk_operator);
+            case'+':
+                new_token_kind = tk_operator;
+                nextch();
+                c_mustbe('+');
+                break;
 
-            case '-':
-                parse_plusminus(tk_operator);
+            case'-':
+                new_token_kind = tk_operator;
+                nextch();
+                c_mustbe('-');
+                break;
+
+
+            case '$':
+                parse_identifier(tk_identifier);
+            case '1'-'9':
+                parse_identifier(tk_identifier);
+            case '.':
+                parse_identifier(tk_identifier);
+            case 'c'-'p':
+                parse_identifier(tk_identifier);
+
+            case '0':
+
+
+
+
 
 
 
