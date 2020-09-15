@@ -40,6 +40,13 @@ namespace Exam_Tokeniser
     }
 
 
+    static void parse_number(TokenKind kind)
+    {
+        new_token_kind = tk_number;
+        nextch();
+    }
+
+
     static void parse_plusminus(TokenKind kind) {
         new_token_kind = kind;
         nextch();
@@ -106,14 +113,25 @@ namespace Exam_Tokeniser
 
             case '$':
                 parse_identifier(tk_identifier);
+                break;
             case '1'-'9':
                 parse_identifier(tk_identifier);
+                break;
             case '.':
                 parse_identifier(tk_identifier);
+                break;
             case 'c'-'p':
                 parse_identifier(tk_identifier);
+                break;
 
             case '0':
+                parse_number(tk_number);
+                break;
+
+            case 'A'-'F':
+                parse_number(tk_number);
+                break;
+
 
 
 
