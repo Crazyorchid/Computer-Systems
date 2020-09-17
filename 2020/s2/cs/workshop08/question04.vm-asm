@@ -2,3 +2,4 @@ function Question.zero 0
 (Question.zero)
 
 label tricky
+(Question.zero$tricky)
