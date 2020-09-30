@@ -12,14 +12,130 @@ using namespace Hack_Virtual_Machine ;
 
 ////////////////////////////////////////////////////////////////
 /************     MODIFY CODE BETWEEN HERE     **************/
-
+static string current_function;
 
 // translate vm operator command into assembly language
+
 static void translate_vm_operator(TokenKind the_op)
 {
     start_of_vm_operator_command(the_op) ;
 
     // ... your code goes here ...
+    switch(the_op)
+    {
+      case tk_add:
+      output_assembler("@SP");
+      output_assembler("AM=M-1");
+      output_assembler("D=M");
+      output_assembler("A=A-1");
+      output_assembler("M=D+M");
+      break;
+
+      case tk_sub:
+      output_assembler("@SP");
+      output_assembler("AM=M-1");
+      output_assembler("D=M");
+      output_assembler("A=A-1");
+      output_assembler("M=D-M");
+      break;
+
+      case tk_neg:
+      output_assembler("@SP");
+      output_assembler("A=M");
+      output_assembler("A=A-1");
+      output_assembler("M=-M");
+      break;
+
+      case tk_and:
+      output_assembler("@SP");
+      output_assembler("AM=M-1");
+      output_assembler("D=M");
+      output_assembler("A=A-1");
+      output_assembler("M=D&M");
+      break;
+
+      case tk_or:
+      output_assembler("@SP");
+      output_assembler("AM=M-1");
+      output_assembler("D=M");
+      output_assembler("A=A-1");
+      output_assembler("M=D|M");
+      break;
+
+      case tk_not:
+      output_assembler("@SP");
+      output_assembler("A=M");
+      output_assembler("A=A-1");
+      output_assembler("M=!M");
+      break;
+
+      /*case tk_gt:
+      output_assembler("@SP");
+      output_assembler("AM=M-1");
+      output_assembler("D=M");
+      output_assembler("@SP");
+      output_assembler("AM=M-1");
+      output_assembler("D=M-D");
+      output_assembler("@" + labelTrue);
+      output_assembler("D;JGT");
+      output_assembler("D=0");
+      output_assembler("@"+labelFalse);
+      output_assembler("0;JMP");
+      output_assembler("("+labelTrue + ")", false);
+      output_assembler("D=-1");
+      output_assembler("(" + labelFalse + ")", false);
+      output_assembler("@SP");
+      output_assembler("A=M");
+      output_assembler("M=D");
+      output_assembler("@SP");
+      output_assembler("M=M+1");
+      break;
+
+      case tk_eq:
+      output_assembler("@SP");
+      output_assembler("AM=M-1");
+      output_assembler("D=M");
+      output_assembler("@SP");
+      output_assembler("AM=M-1");
+      output_assembler("D=M-D");
+      output_assembler("@" + labelTrue);
+      output_assembler("D;JGT");
+      output_assembler("D=0");
+      output_assembler("@"+labelFalse);
+      output_assembler("0;JMP");
+      output_assembler("("+labelTrue + ")", false);
+      output_assembler("D=-1");
+      output_assembler("(" + labelFalse + ")", false);
+      output_assembler("@SP");
+      output_assembler("A=M");
+      output_assembler("M=D");
+      output_assembler("@SP");
+      output_assembler("M=M+1");
+
+      case tk_lt:
+      output_assembler("@SP");
+      output_assembler("AM=M-1");
+      output_assembler("D=M");
+      output_assembler("@SP");
+      output_assembler("AM=M-1");
+      output_assembler("D=M-D");
+      output_assembler("@" + labelTrue);
+      output_assembler("D;JGT");
+      output_assembler("D=0");
+      output_assembler("@"+labelFalse);
+      output_assembler("0;JMP");
+      output_assembler("("+labelTrue + ")", false);
+      output_assembler("D=-1");
+      output_assembler("(" + labelFalse + ")", false);
+      output_assembler("@SP");
+      output_assembler("A=M");
+      output_assembler("M=D");
+      output_assembler("@SP");
+      output_assembler("M=M+1");*/
+
+
+      default: ;
+    }
 
     end_of_vm_command() ;
 }
@@ -40,6 +156,93 @@ static void translate_vm_function(TokenKind func, string label, int n)
     start_of_vm_func_command(func,label,n) ;
 
     // ... your code goes here ...
+    //state the current function that has been used
+    
+    if ( func == tk_function )
+    {
+
+      output_assembler("(" + label + ")");
+      current_function = label;
+      for (int i = 0; i < n; i++)
+      {
+        output_assembler("@SP");
+        output_assembler("A=M");
+        output_assembler("M=0");
+        output_assembler("@SP");
+        output_assembler("M=M+1");
+      }
+      
+
+    }
+    else
+    {
+      //implement call, 
+
+      //push returnAddress
+        output_assembler("@" + current_function + "$returnAddress");
+        output_assembler("D=A");
+        output_assembler("@SP");
+        output_assembler("A=M");
+        output_assembler("M=D");
+        output_assembler("@SP");
+        output_assembler("M=M+1");
+      //push LCL
+        output_assembler("@LCL");
+        output_assembler("D=M");
+        output_assembler("@SP");
+        output_assembler("A=M");
+        output_assembler("M=D");
+        output_assembler("@SP");
+        output_assembler("M=M+1");
+        //push ARG
+        output_assembler("@ARG");
+        output_assembler("D=M");
+        output_assembler("@SP");
+        output_assembler("A=M");
+        output_assembler("M=D");
+        output_assembler("@SP");
+        output_assembler("M=M+1");
+        //push THIS
+        output_assembler("@THIS");
+        output_assembler("D=M");
+        output_assembler("@SP");
+        output_assembler("A=M");
+        output_assembler("M=D");
+        output_assembler("@SP");
+        output_assembler("M=M+1");
+      //push THAT
+        output_assembler("@THAT");
+        output_assembler("D=M");
+        output_assembler("@SP");
+        output_assembler("A=M");
+        output_assembler("M=D");
+        output_assembler("@SP");
+        output_assembler("M=M+1");
+        //*ARG = *SP-5-n
+        output_assembler("@SP");
+        output_assembler("D=M");
+        output_assembler("@5");
+        output_assembler("D=D-A");
+        output_assembler("@" + to_string(n));
+        output_assembler("D=D-A");
+        output_assembler("@ARG");
+        output_assembler("M=D");
+
+        //*LCL = *SP
+        output_assembler("@SP");
+        output_assembler("D=M");
+        output_assembler("@LCL");
+        output_assembler("M=D");
+
+        //goto g
+        output_assembler("@" + label);
+        output_assembler("0;JMP");
+
+        //returnAddress
+        output_assembler("(" + current_function + "$returnAddress" + ")");
+        
+
+    }
 
     end_of_vm_command() ;
 }
@@ -49,7 +252,10 @@ static void translate_vm_stack(TokenKind stack,TokenKind segment,int offset)
 {
     start_of_vm_stack_command(stack,segment,offset) ;
 
-    // ... your code goes here ...
+    /*switch(stack){
+      case tk_push:
+      case tk_pop:
+    }*/
 
     end_of_vm_command() ;
 }
