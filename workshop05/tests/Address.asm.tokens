@@ -1,0 +1,5 @@
+{kind: @, spelling: "@"}
+{kind: identifier, spelling: "hello"}
+
+***** Fatal error!
+error: Expected: "a character that can start a token" but found: '_'
