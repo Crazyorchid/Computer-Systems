@@ -414,3 +414,146 @@ YWxsZXIuYmFzaAo=
 Cg==
 200827-175335 make 
 200827-175335 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200914-181517 Modified: NDAyNDIzMmE4YzBhOWU4YTgxOTUwYTE2MGNhM2FlM2NiZjZmNDQ3ZiAgLi8udnMvUHJvamVjdFNl
+dHRpbmdzLmpzb24KOGQ1NzBhOGFhYTIwNjFhMWQ0YTVlOGNhNzc4ZjU0YTRlZjk0NGJkYiAgLi8u
+dnMvc2xueC5zcWxpdGUKZTMxNzY1Yjc0NDQzNjZkZDEwZjFmNGFiNzRhMDc1ZTQ5YWNlYjRlYSAg
+Li8udnMvd29ya3Nob3AwNS92MTYvQnJvd3NlLlZDLmRiCmZmNDQzNGZjNDMxOTE4OThjNWE5MGRm
+MGJiZjNhZmZlZjM5NGFlNTQgIC4vLnZzL3dvcmtzaG9wMDUvdjE2L0Jyb3dzZS5WQy5kYi1zaG0K
+ZGEzOWEzZWU1ZTZiNGIwZDMyNTViZmVmOTU2MDE4OTBhZmQ4MDcwOSAgLi8udnMvd29ya3Nob3Aw
+NS92MTYvQnJvd3NlLlZDLmRiLXdhbAo3YTc0YmZiNGY1OTZhZjU4ZWI2NmJmZGQ3Y2VmNzRhZWJh
+Y2M3YjYxICAuLy52cy93b3Jrc2hvcDA1L3YxNi9Ccm93c2UuVkMub3BlbmRiCmQ1NDllOTBhMDY1
+MTc3NDk1MDZkMmMyZjhhNTgzOTdiYWU3NDUyODkgIC4vTWFrZWZpbGUKMGM2ODIzMDFhZDViZjIz
+MmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3RhbGxlci5iYXNoCjZjM2Zj
+ZmI5NzJjZDNlZjM3ZjJmZmYwMDlmODIyNzg2ODI5MzliZGIgIC4vdXBkYXRlcy93b3Jrc2hvcDA1
+LTIwMjAwODE3LTE0MjYxMy56aXAK
+200914-181517 make 
+200914-181517 The following command(s) cannot be found:
+200914-181517 .  zip
+200914-181517 .  java
+200914-181517 200914-181517 Please install them and try again.
+200914-181517 200914-181517 Please install them and try again.
+200914-181517 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
+200914-181517 updater:  Directory: ./bin
+200914-181517 updater:  Directory: ./includes
+200914-181517 updater:  Directory: ./lib
+200914-181517 updater:  Directory: ./lib/cats
+200914-181517 updater:  Directory: ./lib/cats/bin
+200914-181517 updater:  Directory: ./lib/centos8
+200914-181517 updater:  Directory: ./lib/centos8/bin
+200914-181517 updater:  Directory: ./lib/macos
+200914-181517 updater:  Directory: ./lib/macos/bin
+200914-181517 updater:  Directory: ./originals
+200914-181517 updater:  Directory: ./tests
+200914-181517 updater:  Creating: ./bin/Compiler-check.bash
+200914-181517 updater:  Creating: ./bin/diff-colours
+200914-181517 updater:  Creating: ./bin/diffc
+200914-181517 updater:  Creating: ./bin/run-tests
+200914-181517 updater:  Creating: ./bin/tokeniser
+200914-181517 updater:  Creating: ./includes/iobuffer.h
+200914-181517 updater:  Creating: ./includes/tokeniser-extras.h
+200914-181517 updater:  Creating: ./includes/tokeniser.h
+200914-181517 updater:  Creating: ./lib/cats/bin/diff-colours
+200914-181517 updater:  Creating: ./lib/cats/bin/tokeniser
+200914-181517 updater:  Creating: ./lib/cats/lib.a
+200914-181517 updater:  Creating: ./lib/centos8/bin/diff-colours
+200914-181517 updater:  Creating: ./lib/centos8/bin/tokeniser
+200914-181517 updater:  Creating: ./lib/centos8/lib.a
+200914-181517 updater:  Creating: ./lib/macos/bin/diff-colours
+200914-181517 updater:  Creating: ./lib/macos/bin/tokeniser
+200914-181517 updater:  Creating: ./lib/macos/lib.a
+200914-181517 updater:  Updating: updates/Makefile
+200914-181517 updater:  Creating: ./originals/tokeniser.cpp
+200914-181517 updater:  Creating: ./tests/0identifiers
+200914-181517 updater:  Creating: ./tests/0identifiers.tokens
+200914-181517 updater:  Creating: ./tests/0keywords
+200914-181517 updater:  Creating: ./tests/0keywords.tokens
+200914-181517 updater:  Creating: ./tests/0numbers
+200914-181517 updater:  Creating: ./tests/0numbers.tokens
+200914-181517 updater:  Creating: ./tests/1char-ops
+200914-181517 updater:  Creating: ./tests/1char-ops.tokens
+200914-181517 updater:  Creating: ./tests/1char-symbols
+200914-181517 updater:  Creating: ./tests/1char-symbols.tokens
+200914-181517 updater:  Creating: ./tests/1char-varops
+200914-181517 updater:  Creating: ./tests/1char-varops.tokens
+200914-181517 updater:  Creating: ./tests/2char-varops
+200914-181517 updater:  Creating: ./tests/2char-varops.tokens
+200914-181517 updater:  Creating: ./tests/Add.asm
+200914-181517 updater:  Creating: ./tests/Add.asm.tokens
+200914-181517 updater:  Creating: ./tests/Address.asm
+200914-181517 updater:  Creating: ./tests/Address.asm.tokens
+200914-181517 updater:  Creating: ./tests/ArrayTest-Main.jack
+200914-181517 updater:  Creating: ./tests/ArrayTest-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/Average-Main.jack
+200914-181517 updater:  Creating: ./tests/Average-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/Comp.asm
+200914-181517 updater:  Creating: ./tests/Comp.asm.tokens
+200914-181517 updater:  Creating: ./tests/ComplexArrays-Main.jack
+200914-181517 updater:  Creating: ./tests/ComplexArrays-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/ConvertToBin-Main.jack
+200914-181517 updater:  Creating: ./tests/ConvertToBin-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/Dest.asm
+200914-181517 updater:  Creating: ./tests/Dest.asm.tokens
+200914-181517 updater:  Creating: ./tests/DestComp.asm
+200914-181517 updater:  Creating: ./tests/DestComp.asm.tokens
+200914-181517 updater:  Creating: ./tests/ExplsSquare-Main.jack
+200914-181517 updater:  Creating: ./tests/ExplsSquare-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/ExplsSquare-Square.jack
+200914-181517 updater:  Creating: ./tests/ExplsSquare-Square.jack.tokens
+200914-181517 updater:  Creating: ./tests/ExplsSquare-SquareGame.jack
+200914-181517 updater:  Creating: ./tests/ExplsSquare-SquareGame.jack.tokens
+200914-181517 updater:  Creating: ./tests/Jump.asm
+200914-181517 updater:  Creating: ./tests/Jump.asm.tokens
+200914-181517 updater:  Creating: ./tests/KeyboardTest-Main.jack
+200914-181517 updater:  Creating: ./tests/KeyboardTest-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/MathTest-Main.jack
+200914-181517 updater:  Creating: ./tests/MathTest-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/Max.asm
+200914-181517 updater:  Creating: ./tests/Max.asm.tokens
+200914-181517 updater:  Creating: ./tests/MaxL.asm
+200914-181517 updater:  Creating: ./tests/MaxL.asm.tokens
+200914-181517 updater:  Creating: ./tests/MemoryTest-Main.jack
+200914-181517 updater:  Creating: ./tests/MemoryTest-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/Numerical.asm
+200914-181517 updater:  Creating: ./tests/Numerical.asm.tokens
+200914-181517 updater:  Creating: ./tests/OutputTest-Main.jack
+200914-181517 updater:  Creating: ./tests/OutputTest-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/Pong-Ball.jack
+200914-181517 updater:  Creating: ./tests/Pong-Ball.jack.tokens
+200914-181517 updater:  Creating: ./tests/Pong-Bat.jack
+200914-181517 updater:  Creating: ./tests/Pong-Bat.jack.tokens
+200914-181517 updater:  Creating: ./tests/Pong-Main.jack
+200914-181517 updater:  Creating: ./tests/Pong-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/Pong-PongGame.jack
+200914-181517 updater:  Creating: ./tests/Pong-PongGame.jack.tokens
+200914-181517 updater:  Creating: ./tests/Rect.asm
+200914-181517 updater:  Creating: ./tests/Rect.asm.tokens
+200914-181517 updater:  Creating: ./tests/RectL.asm
+200914-181517 updater:  Creating: ./tests/RectL.asm.tokens
+200914-181517 updater:  Creating: ./tests/ScreenTest-Main.jack
+200914-181517 updater:  Creating: ./tests/ScreenTest-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/Seven-Main.jack
+200914-181517 updater:  Creating: ./tests/Seven-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/Square-Main.jack
+200914-181517 updater:  Creating: ./tests/Square-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/Square-Square.jack
+200914-181517 updater:  Creating: ./tests/Square-Square.jack.tokens
+200914-181517 updater:  Creating: ./tests/Square-SquareGame.jack
+200914-181517 updater:  Creating: ./tests/Square-SquareGame.jack.tokens
+200914-181517 updater:  Creating: ./tests/StringTest-Main.jack
+200914-181517 updater:  Creating: ./tests/StringTest-Main.jack.tokens
+200914-181517 updater:  Creating: ./tests/SysTest-Main.jack
+200914-181517 updater:  Creating: ./tests/SysTest-Main.jack.tokens
+200914-181517 updater:  Creating: ./tokeniser
+200914-181517 updater:  Creating: ./tokens.cpp
+200914-181517 updater:  Updating: updates/README
+200914-181517 updater:  Update installed
+200914-181528 Modified: ODgzYzE1NjNjNWFmNGE1NDhiM2JlYTk4MzdkOGRlZTczM2JjOWRhMyAgLi8udnMvc2xueC5zcWxp
+dGUKNTI2YjZlYmJhYmFiNzEwMGIxNjQ5NmE2OWY0MDlkY2ZmZjQ0OGE0NSAgLi8udnMvd29ya3No
+b3AwNS92MTYvQnJvd3NlLlZDLmRiLXdhbAo=
+200914-181528 make 
+200914-181528 The following command(s) cannot be found:
+200914-181528 .  zip
+200914-181528 .  java
+200914-181528 200914-181528 Please install them and try again.
+200914-181528 200914-181528 Please install them and try again.
+200914-181528 SVN user: a1778478, repository path: 2020/s2/cs/workshop05
