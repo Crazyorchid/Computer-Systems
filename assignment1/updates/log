@@ -1,341 +1,944 @@
-200911-164357 Modified: ZmEzZWFkOTdmNzIwODdjYTBhMmMwNzAzZTg1ZWZkOTEwZGYyNzk4ZCAgLi91cGRhdGVzL2Fzc2ln
-bm1lbnQxLTIwMjAwOTAxLTE0MjM1Mi56aXAK
-200911-164357 make install
-200911-164357 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-164357 updater:  Directory: ./bin
-200911-164357 updater:  Directory: ./lib
-200911-164357 updater:  Directory: ./lib/cats
-200911-164357 updater:  Directory: ./lib/cats/bin
-200911-164357 updater:  Directory: ./lib/centos8
-200911-164357 updater:  Directory: ./lib/centos8/bin
-200911-164357 updater:  Directory: ./lib/macos
-200911-164357 updater:  Directory: ./lib/macos/bin
-200911-164357 updater:  Directory: ./originals
-200911-164357 updater:  Directory: ./includes
-200911-164357 updater:  Directory: ./tests
-200911-164357 updater:  Creating: ./tokens-context
-200911-164357 updater:  Creating: ./tokens-context.cpp
-200911-164357 updater:  Creating: ./tokens.cpp
-200911-164357 updater:  Creating: ./bin/tokens-context
-200911-164357 updater:  Creating: ./bin/diff-colours
-200911-164357 updater:  Creating: ./bin/run-tests
-200911-164357 updater:  Creating: ./bin/tokens
-200911-164357 updater:  Creating: ./bin/Compiler-check.bash
-200911-164357 updater:  Creating: ./bin/diffc
-200911-164357 updater:  Creating: ./tokens
-200911-164357 updater:  Creating: ./lib/cats/bin/tokens-context
-200911-164357 updater:  Creating: ./lib/cats/bin/diff-colours
-200911-164357 updater:  Creating: ./lib/cats/bin/tokens
-200911-164357 updater:  Creating: ./lib/cats/lib.a
-200911-164357 updater:  Creating: ./lib/centos8/bin/tokens-context
-200911-164357 updater:  Creating: ./lib/centos8/bin/diff-colours
-200911-164357 updater:  Creating: ./lib/centos8/bin/tokens
-200911-164357 updater:  Creating: ./lib/centos8/lib.a
-200911-164357 updater:  Creating: ./lib/macos/bin/tokens-context
-200911-164357 updater:  Creating: ./lib/macos/bin/diff-colours
-200911-164357 updater:  Creating: ./lib/macos/bin/tokens
-200911-164357 updater:  Creating: ./lib/macos/lib.a
-200911-164357 updater:  Creating: ./originals/tokeniser-basics.cpp
-200911-164357 updater:  Creating: ./originals/tokeniser.cpp
-200911-164357 updater:  Creating: updates/Makefile
-200911-164357 updater:  Creating: ./includes/tokeniser.h
-200911-164357 updater:  Creating: ./includes/iobuffer.h
-200911-164357 updater:  Creating: ./includes/tokeniser-extras.h
-200911-164357 updater:  Creating: ./tests/Average-Main.final
-200911-164357 updater:  Creating: ./tests/Jump.milestone
-200911-164357 updater:  Creating: ./tests/Jump.milestone.tokens
-200911-164357 updater:  Creating: ./tests/Numerical.milestone.context
-200911-164357 updater:  Creating: ./tests/0identifiers.milestone.tokens
-200911-164357 updater:  Creating: ./tests/ExplsSquare-Square.final
-200911-164357 updater:  Creating: ./tests/ScreenTest-Main.final
-200911-164357 updater:  Creating: ./tests/MemoryTest-Main.final
-200911-164357 updater:  Creating: ./tests/Comp.milestone.context
-200911-164357 updater:  Creating: ./tests/Label.milestone.tokens
-200911-164357 updater:  Creating: ./tests/Square-Square.final.tokens
-200911-164357 updater:  Creating: ./tests/ArrayTest-Main.final.context
-200911-164357 updater:  Creating: ./tests/DestComp.milestone.context
-200911-164357 updater:  Creating: ./tests/MathTest-Main.final
-200911-164357 updater:  Creating: ./tests/ComplexArrays-Main.final.context
-200911-164357 updater:  Creating: ./tests/0doubles.final
-200911-164357 updater:  Creating: ./tests/Pong-Bat.final.tokens
-200911-164357 updater:  Creating: ./tests/Add.final.context
-200911-164357 updater:  Creating: ./tests/RectL.milestone.context
-200911-164357 updater:  Creating: ./tests/Rect.final.tokens
-200911-164357 updater:  Creating: ./tests/elephants.milestone
-200911-164357 updater:  Creating: ./tests/Square-Main.final
-200911-164357 updater:  Creating: ./tests/0ops.final
-200911-164357 updater:  Creating: ./tests/ConvertToBin-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/Average-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/MaxL.milestone
-200911-164357 updater:  Creating: ./tests/StringTest-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/0numbers.milestone.context
-200911-164357 updater:  Creating: ./tests/empty.milestone.tokens
-200911-164357 updater:  Creating: ./tests/StringTest-Main.final.context
-200911-164357 updater:  Creating: ./tests/Label.milestone.context
-200911-164357 updater:  Creating: ./tests/Dest.milestone.context
-200911-164357 updater:  Creating: ./tests/Square-SquareGame.final
-200911-164357 updater:  Creating: ./tests/Pong-Ball.final.tokens
-200911-164357 updater:  Creating: ./tests/Square-Square.final
-200911-164357 updater:  Creating: ./tests/0numbers.final
-200911-164357 updater:  Creating: ./tests/Square-SquareGame.final.context
-200911-164357 updater:  Creating: ./tests/1identifiers.milestone.context
-200911-164357 updater:  Creating: ./tests/1identifiers.milestone.tokens
-200911-164357 updater:  Creating: ./tests/0keywords.final
-200911-164357 updater:  Creating: ./tests/Comp.milestone
-200911-164357 updater:  Creating: ./tests/Square-Main.final.context
-200911-164357 updater:  Creating: ./tests/Square-SquareGame.final.tokens
-200911-164357 updater:  Creating: ./tests/0doubles.final.tokens
-200911-164357 updater:  Creating: ./tests/OutputTest-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/MathTest-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/OutputTest-Main.final.context
-200911-164357 updater:  Creating: ./tests/Square-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/ExplsSquare-SquareGame.final.context
-200911-164357 updater:  Creating: ./tests/MaxL.milestone.context
-200911-164357 updater:  Creating: ./tests/0keywords.final.tokens
-200911-164357 updater:  Creating: ./tests/ScreenTest-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/DestComp.milestone.tokens
-200911-164357 updater:  Creating: ./tests/ExplsSquare-Square.final.tokens
-200911-164357 updater:  Creating: ./tests/ComplexArrays-Main.final
-200911-164357 updater:  Creating: ./tests/ScreenTest-Main.final.context
-200911-164357 updater:  Creating: ./tests/0numbers.milestone.tokens
-200911-164357 updater:  Creating: ./tests/Pong-Ball.final
-200911-164357 updater:  Creating: ./tests/Jump.milestone.context
-200911-164357 updater:  Creating: ./tests/ArrayTest-Main.final
-200911-164357 updater:  Creating: ./tests/ArrayTest-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/Seven-Main.final.context
-200911-164357 updater:  Creating: ./tests/Pong-Main.final.context
-200911-164357 updater:  Creating: ./tests/Rect.final.context
-200911-164357 updater:  Creating: ./tests/0ops.final.tokens
-200911-164357 updater:  Creating: ./tests/ExplsSquare-Main.final.context
-200911-164357 updater:  Creating: ./tests/ComplexArrays-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/StringTest-Main.final
-200911-164357 updater:  Creating: ./tests/ExplsSquare-Main.final
-200911-164357 updater:  Creating: ./tests/0numbers.final.tokens
-200911-164357 updater:  Creating: ./tests/Pong-Main.final
-200911-164357 updater:  Creating: ./tests/elephants.milestone.context
-200911-164357 updater:  Creating: ./tests/Max.final.tokens
-200911-164357 updater:  Creating: ./tests/1keywords.final
-200911-164357 updater:  Creating: ./tests/MemoryTest-Main.final.context
-200911-164357 updater:  Creating: ./tests/1char-symbols.milestone
-200911-164357 updater:  Creating: ./tests/1char-symbols.milestone.tokens
-200911-164357 updater:  Creating: ./tests/1char-symbols.milestone.context
-200911-164357 updater:  Creating: ./tests/OutputTest-Main.final
-200911-164357 updater:  Creating: ./tests/ExplsSquare-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/Max.final.context
-200911-164357 updater:  Creating: ./tests/RectL.milestone.tokens
-200911-164357 updater:  Creating: ./tests/Rect.final
-200911-164357 updater:  Creating: ./tests/Max.final
-200911-164357 updater:  Creating: ./tests/MathTest-Main.final.context
-200911-164357 updater:  Creating: ./tests/Numerical.milestone.tokens
-200911-164357 updater:  Creating: ./tests/0numbers.milestone
-200911-164357 updater:  Creating: ./tests/Address.milestone.context
-200911-164357 updater:  Creating: ./tests/ExplsSquare-SquareGame.final
-200911-164357 updater:  Creating: ./tests/0identifiers.milestone
-200911-164357 updater:  Creating: ./tests/MemoryTest-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/empty.milestone
-200911-164357 updater:  Creating: ./tests/KeyboardTest-Main.final.context
-200911-164357 updater:  Creating: ./tests/0numbers.final.context
-200911-164357 updater:  Creating: ./tests/1keywords.final.tokens
-200911-164357 updater:  Creating: ./tests/ExplsSquare-Square.final.context
-200911-164357 updater:  Creating: ./tests/Label.milestone
-200911-164357 updater:  Creating: ./tests/RectL.milestone
-200911-164357 updater:  Creating: ./tests/Pong-Ball.final.context
-200911-164357 updater:  Creating: ./tests/Seven-Main.final
-200911-164357 updater:  Creating: ./tests/ConvertToBin-Main.final.context
-200911-164357 updater:  Creating: ./tests/0doubles.final.context
-200911-164357 updater:  Creating: ./tests/ExplsSquare-SquareGame.final.tokens
-200911-164357 updater:  Creating: ./tests/KeyboardTest-Main.final
-200911-164357 updater:  Creating: ./tests/Comp.milestone.tokens
-200911-164357 updater:  Creating: ./tests/1keywords.final.context
-200911-164357 updater:  Creating: ./tests/Address.milestone.tokens
-200911-164357 updater:  Creating: ./tests/ConvertToBin-Main.final
-200911-164357 updater:  Creating: ./tests/Dest.milestone.tokens
-200911-164357 updater:  Creating: ./tests/Numerical.milestone
-200911-164357 updater:  Creating: ./tests/Pong-Bat.final
-200911-164357 updater:  Creating: ./tests/0ops.final.context
-200911-164357 updater:  Creating: ./tests/Address.milestone
-200911-164357 updater:  Creating: ./tests/Pong-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/Add.final.tokens
-200911-164357 updater:  Creating: ./tests/0keywords.final.context
-200911-164357 updater:  Creating: ./tests/Square-Square.final.context
-200911-164357 updater:  Creating: ./tests/Average-Main.final.context
-200911-164357 updater:  Creating: ./tests/1identifiers.milestone
-200911-164357 updater:  Creating: ./tests/Add.final
-200911-164357 updater:  Creating: ./tests/Seven-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/elephants.milestone.tokens
-200911-164357 updater:  Creating: ./tests/Dest.milestone
-200911-164357 updater:  Creating: ./tests/0identifiers.milestone.context
-200911-164357 updater:  Creating: ./tests/DestComp.milestone
-200911-164357 updater:  Creating: ./tests/MaxL.milestone.tokens
-200911-164357 updater:  Creating: ./tests/KeyboardTest-Main.final.tokens
-200911-164357 updater:  Creating: ./tests/Pong-Bat.final.context
-200911-164357 updater:  Made tokens executable
-200911-164357 updater:  Made tokens-context executable
-200911-164357 updater:  Made bin/Compiler-check.bash executable
-200911-164357 updater:  Made bin/diffc executable
-200911-164357 updater:  Made bin/diff-colours executable
-200911-164357 updater:  Made bin/run-tests executable
-200911-164357 updater:  Made bin/tokens executable
-200911-164357 updater:  Made bin/tokens-context executable
-200911-164357 updater:  Made lib/cats/bin/diff-colours executable
-200911-164357 updater:  Made lib/cats/bin/tokens executable
-200911-164357 updater:  Made lib/cats/bin/tokens-context executable
-200911-164357 updater:  Made lib/centos8/bin/diff-colours executable
-200911-164357 updater:  Made lib/centos8/bin/tokens executable
-200911-164357 updater:  Made lib/centos8/bin/tokens-context executable
-200911-164357 updater:  Made lib/macos/bin/diff-colours executable
-200911-164357 updater:  Made lib/macos/bin/tokens executable
-200911-164357 updater:  Made lib/macos/bin/tokens-context executable
-200911-164357 updater:  Creating: tokeniser-basics.cpp
-200911-164357 updater:  Creating: tokeniser.cpp
-200911-164357 updater:  Updating: updates/README
-200911-164357 updater:  Update installed
-200911-164531 make 
-200911-164531 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-164719 make 
-200911-164719 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-164930 Modified: ZDZkZjZhMmVhOTdkMjY3MDUwZjlkOTYwYWYxOGYzY2I0ODc2NGViZCAgLi90b2tlbmlzZXItYmFz
-aWNzLmNwcApiMTA1MTIyZTlmMGFiOTNkZjRiZWE3ZGE3NDVjNzhiMzVhZjljZGE5ICAuL3Rva2Vu
-aXNlci5jcHAK
-200911-164930 make 
-200911-164930 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-165512 Modified: YjEwNTEyMmU5ZjBhYjkzZGY0YmVhN2RhNzQ1Yzc4YjM1YWY5Y2RhOSAgLi90b2tlbmlzZXIuY3Bw
+200828-104711 Modified: M2FlMDE1OWJkNTgwNmI1NTc2MTVlY2Q3NGRlNDYwYzEzYzk3ODgzMiAgLi91cGRhdGVzL2Fzc2ln
+bm1lbnQxLTIwMjAwODE3LTE0MjQ0Ni56aXAK
+200828-104711 make install
+200828-104711 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200828-104711 updater:  Directory: ./bin
+200828-104711 updater:  Directory: ./lib
+200828-104711 updater:  Directory: ./lib/cats
+200828-104711 updater:  Directory: ./lib/cats/bin
+200828-104711 updater:  Directory: ./lib/centos8
+200828-104711 updater:  Directory: ./lib/centos8/bin
+200828-104711 updater:  Directory: ./lib/macos
+200828-104711 updater:  Directory: ./lib/macos/bin
+200828-104711 updater:  Directory: ./originals
+200828-104711 updater:  Directory: ./includes
+200828-104711 updater:  Directory: ./tests
+200828-104711 updater:  Creating: ./tokens-context
+200828-104711 updater:  Creating: ./tokens-context.cpp
+200828-104711 updater:  Creating: ./tokens.cpp
+200828-104711 updater:  Creating: ./bin/tokens-context
+200828-104711 updater:  Creating: ./bin/diff-colours
+200828-104711 updater:  Creating: ./bin/run-tests
+200828-104711 updater:  Creating: ./bin/tokens
+200828-104711 updater:  Creating: ./bin/Compiler-check.bash
+200828-104711 updater:  Creating: ./bin/diffc
+200828-104711 updater:  Creating: ./tokens
+200828-104711 updater:  Creating: ./lib/cats/bin/tokens-context
+200828-104711 updater:  Creating: ./lib/cats/bin/diff-colours
+200828-104711 updater:  Creating: ./lib/cats/bin/tokens
+200828-104711 updater:  Creating: ./lib/cats/lib.a
+200828-104711 updater:  Creating: ./lib/centos8/bin/tokens-context
+200828-104711 updater:  Creating: ./lib/centos8/bin/diff-colours
+200828-104711 updater:  Creating: ./lib/centos8/bin/tokens
+200828-104711 updater:  Creating: ./lib/centos8/lib.a
+200828-104711 updater:  Creating: ./lib/macos/bin/tokens-context
+200828-104711 updater:  Creating: ./lib/macos/bin/diff-colours
+200828-104711 updater:  Creating: ./lib/macos/bin/tokens
+200828-104711 updater:  Creating: ./lib/macos/lib.a
+200828-104711 updater:  Creating: ./originals/tokeniser-basics.cpp
+200828-104711 updater:  Creating: ./originals/tokeniser.cpp
+200828-104711 updater:  Creating: updates/Makefile
+200828-104711 updater:  Creating: ./includes/tokeniser.h
+200828-104711 updater:  Creating: ./includes/iobuffer.h
+200828-104711 updater:  Creating: ./includes/tokeniser-extras.h
+200828-104711 updater:  Creating: ./tests/Average-Main.final
+200828-104711 updater:  Creating: ./tests/Jump.milestone
+200828-104711 updater:  Creating: ./tests/Jump.milestone.tokens
+200828-104711 updater:  Creating: ./tests/Numerical.milestone.context
+200828-104711 updater:  Creating: ./tests/0identifiers.milestone.tokens
+200828-104711 updater:  Creating: ./tests/ExplsSquare-Square.final
+200828-104711 updater:  Creating: ./tests/ScreenTest-Main.final
+200828-104711 updater:  Creating: ./tests/MemoryTest-Main.final
+200828-104711 updater:  Creating: ./tests/Comp.milestone.context
+200828-104711 updater:  Creating: ./tests/Label.milestone.tokens
+200828-104711 updater:  Creating: ./tests/Square-Square.final.tokens
+200828-104711 updater:  Creating: ./tests/ArrayTest-Main.final.context
+200828-104711 updater:  Creating: ./tests/DestComp.milestone.context
+200828-104711 updater:  Creating: ./tests/MathTest-Main.final
+200828-104711 updater:  Creating: ./tests/ComplexArrays-Main.final.context
+200828-104711 updater:  Creating: ./tests/0doubles.final
+200828-104711 updater:  Creating: ./tests/Pong-Bat.final.tokens
+200828-104711 updater:  Creating: ./tests/Add.final.context
+200828-104711 updater:  Creating: ./tests/RectL.milestone.context
+200828-104711 updater:  Creating: ./tests/Rect.final.tokens
+200828-104711 updater:  Creating: ./tests/elephants.milestone
+200828-104711 updater:  Creating: ./tests/Square-Main.final
+200828-104711 updater:  Creating: ./tests/0ops.final
+200828-104711 updater:  Creating: ./tests/ConvertToBin-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/Average-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/MaxL.milestone
+200828-104711 updater:  Creating: ./tests/StringTest-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/0numbers.milestone.context
+200828-104711 updater:  Creating: ./tests/empty.milestone.tokens
+200828-104711 updater:  Creating: ./tests/StringTest-Main.final.context
+200828-104711 updater:  Creating: ./tests/Label.milestone.context
+200828-104711 updater:  Creating: ./tests/Dest.milestone.context
+200828-104711 updater:  Creating: ./tests/Square-SquareGame.final
+200828-104711 updater:  Creating: ./tests/Pong-Ball.final.tokens
+200828-104711 updater:  Creating: ./tests/Square-Square.final
+200828-104711 updater:  Creating: ./tests/0numbers.final
+200828-104711 updater:  Creating: ./tests/Square-SquareGame.final.context
+200828-104711 updater:  Creating: ./tests/1identifiers.milestone.context
+200828-104711 updater:  Creating: ./tests/1identifiers.milestone.tokens
+200828-104711 updater:  Creating: ./tests/0keywords.final
+200828-104711 updater:  Creating: ./tests/Comp.milestone
+200828-104711 updater:  Creating: ./tests/Square-Main.final.context
+200828-104711 updater:  Creating: ./tests/Square-SquareGame.final.tokens
+200828-104711 updater:  Creating: ./tests/0doubles.final.tokens
+200828-104711 updater:  Creating: ./tests/OutputTest-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/MathTest-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/OutputTest-Main.final.context
+200828-104711 updater:  Creating: ./tests/Square-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/ExplsSquare-SquareGame.final.context
+200828-104711 updater:  Creating: ./tests/MaxL.milestone.context
+200828-104711 updater:  Creating: ./tests/0keywords.final.tokens
+200828-104711 updater:  Creating: ./tests/ScreenTest-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/DestComp.milestone.tokens
+200828-104711 updater:  Creating: ./tests/ExplsSquare-Square.final.tokens
+200828-104711 updater:  Creating: ./tests/ComplexArrays-Main.final
+200828-104711 updater:  Creating: ./tests/ScreenTest-Main.final.context
+200828-104711 updater:  Creating: ./tests/0numbers.milestone.tokens
+200828-104711 updater:  Creating: ./tests/Pong-Ball.final
+200828-104711 updater:  Creating: ./tests/Jump.milestone.context
+200828-104711 updater:  Creating: ./tests/ArrayTest-Main.final
+200828-104711 updater:  Creating: ./tests/ArrayTest-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/Seven-Main.final.context
+200828-104711 updater:  Creating: ./tests/Pong-Main.final.context
+200828-104711 updater:  Creating: ./tests/Rect.final.context
+200828-104711 updater:  Creating: ./tests/0ops.final.tokens
+200828-104711 updater:  Creating: ./tests/ExplsSquare-Main.final.context
+200828-104711 updater:  Creating: ./tests/ComplexArrays-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/StringTest-Main.final
+200828-104711 updater:  Creating: ./tests/ExplsSquare-Main.final
+200828-104711 updater:  Creating: ./tests/0numbers.final.tokens
+200828-104711 updater:  Creating: ./tests/Pong-Main.final
+200828-104711 updater:  Creating: ./tests/elephants.milestone.context
+200828-104711 updater:  Creating: ./tests/Max.final.tokens
+200828-104711 updater:  Creating: ./tests/1keywords.final
+200828-104711 updater:  Creating: ./tests/MemoryTest-Main.final.context
+200828-104711 updater:  Creating: ./tests/1char-symbols.milestone
+200828-104711 updater:  Creating: ./tests/1char-symbols.milestone.tokens
+200828-104711 updater:  Creating: ./tests/1char-symbols.milestone.context
+200828-104711 updater:  Creating: ./tests/OutputTest-Main.final
+200828-104711 updater:  Creating: ./tests/ExplsSquare-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/Max.final.context
+200828-104711 updater:  Creating: ./tests/RectL.milestone.tokens
+200828-104711 updater:  Creating: ./tests/Rect.final
+200828-104711 updater:  Creating: ./tests/Max.final
+200828-104711 updater:  Creating: ./tests/MathTest-Main.final.context
+200828-104711 updater:  Creating: ./tests/Numerical.milestone.tokens
+200828-104711 updater:  Creating: ./tests/0numbers.milestone
+200828-104711 updater:  Creating: ./tests/Address.milestone.context
+200828-104711 updater:  Creating: ./tests/ExplsSquare-SquareGame.final
+200828-104711 updater:  Creating: ./tests/0identifiers.milestone
+200828-104711 updater:  Creating: ./tests/MemoryTest-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/empty.milestone
+200828-104711 updater:  Creating: ./tests/KeyboardTest-Main.final.context
+200828-104711 updater:  Creating: ./tests/0numbers.final.context
+200828-104711 updater:  Creating: ./tests/1keywords.final.tokens
+200828-104711 updater:  Creating: ./tests/ExplsSquare-Square.final.context
+200828-104711 updater:  Creating: ./tests/Label.milestone
+200828-104711 updater:  Creating: ./tests/RectL.milestone
+200828-104711 updater:  Creating: ./tests/Pong-Ball.final.context
+200828-104711 updater:  Creating: ./tests/Seven-Main.final
+200828-104711 updater:  Creating: ./tests/ConvertToBin-Main.final.context
+200828-104711 updater:  Creating: ./tests/0doubles.final.context
+200828-104711 updater:  Creating: ./tests/ExplsSquare-SquareGame.final.tokens
+200828-104711 updater:  Creating: ./tests/KeyboardTest-Main.final
+200828-104711 updater:  Creating: ./tests/Comp.milestone.tokens
+200828-104711 updater:  Creating: ./tests/1keywords.final.context
+200828-104711 updater:  Creating: ./tests/Address.milestone.tokens
+200828-104711 updater:  Creating: ./tests/ConvertToBin-Main.final
+200828-104711 updater:  Creating: ./tests/Dest.milestone.tokens
+200828-104711 updater:  Creating: ./tests/Numerical.milestone
+200828-104711 updater:  Creating: ./tests/Pong-Bat.final
+200828-104711 updater:  Creating: ./tests/0ops.final.context
+200828-104711 updater:  Creating: ./tests/Address.milestone
+200828-104711 updater:  Creating: ./tests/Pong-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/Add.final.tokens
+200828-104711 updater:  Creating: ./tests/0keywords.final.context
+200828-104711 updater:  Creating: ./tests/Square-Square.final.context
+200828-104711 updater:  Creating: ./tests/Average-Main.final.context
+200828-104711 updater:  Creating: ./tests/1identifiers.milestone
+200828-104711 updater:  Creating: ./tests/Add.final
+200828-104711 updater:  Creating: ./tests/Seven-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/elephants.milestone.tokens
+200828-104711 updater:  Creating: ./tests/Dest.milestone
+200828-104711 updater:  Creating: ./tests/0identifiers.milestone.context
+200828-104711 updater:  Creating: ./tests/DestComp.milestone
+200828-104711 updater:  Creating: ./tests/MaxL.milestone.tokens
+200828-104711 updater:  Creating: ./tests/KeyboardTest-Main.final.tokens
+200828-104711 updater:  Creating: ./tests/Pong-Bat.final.context
+200828-104711 updater:  Made tokens executable
+200828-104711 updater:  Made tokens-context executable
+200828-104711 updater:  Made bin/Compiler-check.bash executable
+200828-104711 updater:  Made bin/diffc executable
+200828-104711 updater:  Made bin/diff-colours executable
+200828-104711 updater:  Made bin/run-tests executable
+200828-104711 updater:  Made bin/tokens executable
+200828-104711 updater:  Made bin/tokens-context executable
+200828-104711 updater:  Made lib/cats/bin/diff-colours executable
+200828-104711 updater:  Made lib/cats/bin/tokens executable
+200828-104711 updater:  Made lib/cats/bin/tokens-context executable
+200828-104711 updater:  Made lib/centos8/bin/diff-colours executable
+200828-104711 updater:  Made lib/centos8/bin/tokens executable
+200828-104711 updater:  Made lib/centos8/bin/tokens-context executable
+200828-104711 updater:  Made lib/macos/bin/diff-colours executable
+200828-104711 updater:  Made lib/macos/bin/tokens executable
+200828-104711 updater:  Made lib/macos/bin/tokens-context executable
+200828-104711 updater:  Creating: tokeniser-basics.cpp
+200828-104711 updater:  Creating: tokeniser.cpp
+200828-104711 updater:  Updating: updates/README
+200828-104711 updater:  Update installed
+200828-104754 make 
+200828-104754 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200828-104932 make 
+200828-104932 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200828-105036 Modified: ZjljNDM1Mzc2ZDUwNTVjYzdkYTdmMGIxNDAyNTE1ZDg0M2M2ZDc4OSAgLi90b2tlbnMtY29udGV4
+dC5jcHAK
+200828-105036 make 
+200828-105036 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200828-105036 updater:  Updating: ./tokens-context.cpp
+200901-150649 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200901-150649 make 
+200901-150649 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-150758 make 
+200901-150758 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-150758 updater:  Updating: ./tokens-context.cpp
+200901-150758 updater:  Updating: ./tokens.cpp
+200901-150916 make 
+200901-150916 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-161445 Modified: ZjFjMTM3YWI1YjdhYmIyNjFiMmZjYjFjMTdmN2MxZDNiODU3MWYwNiAgLi90b2tlbmlzZXIuY3Bw
 Cg==
-200911-165512 make 
-200911-165512 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-170126 Modified: ZDVjNTM4ZGI3NGU5YjJjZjkyNzMyZTRjZThjODQ1ZDdiNTFiODkzYyAgLi8uaWRlYS93b3Jrc3Bh
-Y2UueG1sCjI2ZmRkNzU5NDliYzZhMTc3ODUzY2E5M2VmMjNjYTViMGJhNzdjMGQgIC4vY21ha2Ut
-YnVpbGQtZGVidWcvQ01ha2VGaWxlcy9jbGlvbi1sb2cudHh0Cg==
-200911-170126 make clean
-200911-170126 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-170207 Modified: NjJiM2ZmZjM0OTU0MjYyNzU4YmVjNTdjYjUyMmYxZWIyZDYwOTc0MiAgLi9DTWFrZUxpc3RzLnR4
-dAo5OWI3NzUwYTU0NjAwMTI2OGU2N2U3OWFhYWY0YzRlMGYxYWExNDVlICAuLy5pZGVhL3dvcmtz
-cGFjZS54bWwKMmM4ODEzZmUwMmM2MDg1NTJlNDMzODBlZDNkMmE1NDFhZmNkYTViOSAgLi9jbWFr
-ZS1idWlsZC1kZWJ1Zy9jbWFrZV9pbnN0YWxsLmNtYWtlCjlhY2MyNzM5YWZkMjY3Yzc5MzM3YTQ5
-OGYwNDlkMGE0ZTQ4NTUwNzAgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9jbWFrZS5j
-aGVja19jYWNoZQpiMmE4OGJmOGQ2M2U5ZWQwNGFiZDc0MGZlNjZlMmJlMjMyNDU5ZmFmICAuL2Nt
-YWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvVGFyZ2V0RGlyZWN0b3JpZXMudHh0CmRiMmU0MzQw
-ZDJkZWYzN2I5MjUxYTdhMzBhMGMxMjQ0NjJmZTZjZGIgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01h
-a2VGaWxlcy9NYWtlZmlsZS5jbWFrZQpkZDcxMDM4ZjM0NjNmNTExZWU3NDAzZGJjYmM4NzE5NTMw
-MmQ4OTFjICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvcHJvZ3Jlc3MubWFya3MKOTcz
-YmI2YTZlZjYxMWUxMmFhMWNkMzIwZjkyNGZmZjQ1ZTYyODRiMSAgLi9jbWFrZS1idWlsZC1kZWJ1
-Zy9DTWFrZUZpbGVzL0NNYWtlRGlyZWN0b3J5SW5mb3JtYXRpb24uY21ha2UKYjk3YWNhNWMyMTM2
-ODhkZWU1MjI5NDY0ZjdlNDhhOThkZjQyZTQ2MiAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZp
-bGVzLzMuMTcuMy9DTWFrZURldGVybWluZUNvbXBpbGVyQUJJX0NYWC5iaW4KZDY4ODFmMjc2NmEx
-NDRhMzFiNGNmZmFlODNiYTEyMGM2ZjU3NjNmNCAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZp
-bGVzLzMuMTcuMy9DTWFrZVN5c3RlbS5jbWFrZQpiNTAwZDc5NjcwNjMyMjczZDg2ZjM4ZWYwMmNk
-ZTQ0NWNlZGJhZDA3ICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvMy4xNy4zL0NvbXBp
-bGVySWRDL2Eub3V0CmUyNGRkZjAzYmVjZjc0Mzk2MzhkNjFjNGY0NTYyZTExMTFjZGEwMDggIC4v
-Y21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy8zLjE3LjMvQ29tcGlsZXJJZEMvQ01ha2VDQ29t
-cGlsZXJJZC5jCmIyZjU4M2JkZDQ0NTI4NWY3NTFlZWFjZTQxZGYxMTlmMjc0MjY1NTAgIC4vY21h
-a2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy8zLjE3LjMvQ01ha2VEZXRlcm1pbmVDb21waWxlckFC
-SV9DLmJpbgoxMzNmNDVjOGNhODNlYTJjMjZkODBkYWI4YzMyYTA3Y2Q3MTFiNmM1ICAuL2NtYWtl
-LWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvMy4xNy4zL0NvbXBpbGVySWRDWFgvYS5vdXQKMjAzYTM0
-NDA0NjJmZWZjYzFhZTI5ZjMwZjZiODMxNTExOGVlYTY4NCAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9D
-TWFrZUZpbGVzLzMuMTcuMy9Db21waWxlcklkQ1hYL0NNYWtlQ1hYQ29tcGlsZXJJZC5jcHAKNWQx
-MjlmNTZjNWJhYTEzNGFhODQwYmExODBhZWQ3ZjIzMTJlZGFhMyAgLi9jbWFrZS1idWlsZC1kZWJ1
-Zy9DTWFrZUZpbGVzLzMuMTcuMy9DTWFrZUNDb21waWxlci5jbWFrZQo4M2U3MGFkMjg5ODE3YjYx
-NjU3YTZkMGY5ZDZiMzY4N2IzYTM3MDNiICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMv
-My4xNy4zL0NNYWtlQ1hYQ29tcGlsZXIuY21ha2UKM2I0Y2UzNzU0MDI5YTBmMTc3MDcxMzMyYTY3
-MWE0YzlhNWQxMzUwMyAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL0NNYWtlT3V0cHV0
-LmxvZwpmNzM4ODY4ZWExZjczMmY2MjgwNmRmMjE2OWM0NDQ2YzBkZTA1MjllICAuL2NtYWtlLWJ1
-aWxkLWRlYnVnL0NNYWtlRmlsZXMvTWFrZWZpbGUyCjljMGNkZTg0ZDlkZDkxYTE3YTczNjlhZGRi
-ZjQzMDUxYTNjMTBhNGMgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9jbGlvbi1sb2cu
-dHh0CmFmNDk1NWNjYjE2ZmVmYWY3OGZlN2JmNDE2NWNiNmQ0MWM1ODUxMzcgIC4vY21ha2UtYnVp
-bGQtZGVidWcvQ01ha2VGaWxlcy9jbGlvbi1lbnZpcm9ubWVudC50eHQKZjhmMWU3OGJmZDhmMTNk
-MWQ3Y2RlYjdjNTI0NDgzYTI1MjgyYWQ1MSAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVz
-L2Fzc2lnbm1lbnQxLmRpci9mbGFncy5tYWtlCjI4ZjMzZmE2ZDQ5YWZmYmZkNzFhNjRmMTc5MjYw
-MGFmMTQxYzExMDUgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50MS5k
-aXIvRGVwZW5kSW5mby5jbWFrZQo3NDI4MTU4YWVlM2Y5MDdjOGJiMzdkNTdiZWY2MjI3ZGUzMzUx
-ZTY4ICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNzaWdubWVudDEuZGlyL3Byb2dy
-ZXNzLm1ha2UKODFjZTM5NDBmMTQzYzJlODUxYWFkNGZkOGVjNjg5MWYyYzVkYjlkYSAgLi9jbWFr
-ZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci9saW5rLnR4dAoyNjRmYWY2
-OTkxOGJmMDk1NGJlZjMwZDM1YTkzYmU4MjE0ZWQ5Y2I2ICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NN
-YWtlRmlsZXMvYXNzaWdubWVudDEuZGlyL2RlcGVuZC5tYWtlCmY4ZTFjMGZhM2IyM2RhZTNhZjc3
-ODUxMWRlZmU0Mzg0OGM1MjI4MzEgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9hc3Np
-Z25tZW50MS5kaXIvYnVpbGQubWFrZQpmOWMzMTlmZTNlMGUwMTlkYzI1NmY1YTlkNTI1ZjE3MDI2
-NDA2OTUyICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNzaWdubWVudDEuZGlyL2Nt
-YWtlX2NsZWFuLmNtYWtlCmIxMjI2NTkxYTc2YzNiYmIxOGYwMGQ5NjRkYzEzOTdkMGQ1YTBlMWEg
-IC4vY21ha2UtYnVpbGQtZGVidWcvYXNzaWdubWVudDEuY2JwCjFmMWNkZTRiZTlmMGJkZDg4OWQy
-N2I2M2E0NTJjZWIyYWEzOGEzYTggIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VDYWNoZS50eHQK
-ZDE0NTNjYTE1YjY2ZjhjMzRlODcxYjQyZjZiMGJhOTBhMWM5YWI5MyAgLi9jbWFrZS1idWlsZC1k
-ZWJ1Zy9NYWtlZmlsZQo=
-200911-170207 make clean
-200911-170207 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-170721 Modified: MGQ0NmVjZmIwODRiYmQ1NzBiMDc4OTE3YzExYjRlOGNmZGFlOWFmOCAgLi8uaWRlYS93b3Jrc3Bh
-Y2UueG1sCmIxM2RhNDZmZDQ0NTBlOWQxZTA2ZDU0ZDNiMTdkN2E4MDY4YTJmZGYgIC4vdG9rZW5p
-c2VyLmNwcAphZDg3MTA5YmZmZjA3NjVmNGRkOGNmNDk0M2IwNGQxNmE0MDcwZmVhICAuL2NtYWtl
-LWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvUHJvZ3Jlc3MvMTEKZGQ3MTAzOGYzNDYzZjUxMWVlNzQw
-M2RiY2JjODcxOTUzMDJkODkxYyAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL1Byb2dy
-ZXNzL2NvdW50LnR4dApmZGNmYjdlNzRhYmE3OTNhM2ZmMzA1YWY3ZWRmMGIwMzM2YjZkZmZjICAu
-L2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNzaWdubWVudDEuZGlyL3Rva2Vucy1jb250
-ZXh0LmNwcC5vCmFkZDU5YTgxMTg3YWIxZjQ1ZDA4YzhhYmU5ZmNhNTk1NzU3ZjQ1MjUgIC4vY21h
-a2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50MS5kaXIvdG9rZW5pc2VyLWJhc2lj
-cy5jcHAubwo4N2IxMTA1M2YwZmQ4ZjA5ZmQ5ZWFiZWJhZmYxYjIzYjIwYWYxYzgwICAuL2NtYWtl
-LWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNzaWdubWVudDEuZGlyL3Rva2Vucy5jcHAubwo4MWZi
-NTNlNTQ0ZGM2ZTliMjJiNDAwNmZlOTUzMjZlNTA4MTU4ZDljICAuL2NtYWtlLWJ1aWxkLWRlYnVn
-L0NNYWtlRmlsZXMvYXNzaWdubWVudDEuZGlyL29yaWdpbmFscy90b2tlbmlzZXItYmFzaWNzLmNw
-cC5vCmVmZDc4NTcwMGU3YWM4ZTQyNDM5ZDZmMDI5NTM1MTIxMDg4NTczMWIgIC4vY21ha2UtYnVp
-bGQtZGVidWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50MS5kaXIvb3JpZ2luYWxzL3Rva2VuaXNlci5j
-cHAubwo5NDliYjM5OGQyZjBjZmRiNGMyZjRiZWVjY2NhM2MxOTdmYTNkYjRjICAuL2NtYWtlLWJ1
-aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNzaWdubWVudDEuZGlyL0NYWC5pbmNsdWRlY2FjaGUKYzll
-YzU2NTg3Y2QyNjFlOGRlNmQzZjIxMWQyMTM2YTVlNTNiZDU1NCAgLi9jbWFrZS1idWlsZC1kZWJ1
-Zy9DTWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci91cGRhdGVzL2Fzc2lnbm1lbnQxLTIwMjAwOTAx
-LTE0MjM1Mi90b2tlbnMtY29udGV4dC5jcHAubwplNWU4MjU5MTM1YjBlZjVkNzRlNmYyMTcwYWVj
-ZjdmOGUyODc2ZTI5ICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNzaWdubWVudDEu
-ZGlyL3VwZGF0ZXMvYXNzaWdubWVudDEtMjAyMDA5MDEtMTQyMzUyL3Rva2Vucy5jcHAubwplNWE0
-MDIyODQwOTRkYjQwOGM5NmRjNDBjNWQ1NDFkNmUwODNhYjFlICAuL2NtYWtlLWJ1aWxkLWRlYnVn
-L0NNYWtlRmlsZXMvYXNzaWdubWVudDEuZGlyL3VwZGF0ZXMvYXNzaWdubWVudDEtMjAyMDA5MDEt
-MTQyMzUyL29yaWdpbmFscy90b2tlbmlzZXItYmFzaWNzLmNwcC5vCjBkY2EzZDk4NGM4NzUwNmU1
-OTk3Zjc3YWQ5NmRhNDk2ZTNjZDcxY2MgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9h
-c3NpZ25tZW50MS5kaXIvdXBkYXRlcy9hc3NpZ25tZW50MS0yMDIwMDkwMS0xNDIzNTIvb3JpZ2lu
-YWxzL3Rva2VuaXNlci5jcHAubwoyYzcwYzk1MTRkMWIyYmNmMDNkMzYyZDFiYjk0OTBjOGUxZjE5
-ZDhkICAuL2NtYWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNzaWdubWVudDEuZGlyL2RlcGVu
-ZC5tYWtlCjk0YTUyZjdiOTVlOGFiZDEyODlmNzVlYmJmZDZkZTYxMzU0OGFkZWMgIC4vY21ha2Ut
-YnVpbGQtZGVidWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50MS5kaXIvdG9rZW5pc2VyLmNwcC5vCjcz
-Y2UxMWU1NDI1MjQwNjFjY2NiZDZjMzQ2MmRlYmY1MjFkMDg4YzAgIC4vY21ha2UtYnVpbGQtZGVi
-dWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50MS5kaXIvZGVwZW5kLmludGVybmFsCg==
-200911-170721 make clean
-200911-170721 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-170745 make clean
-200911-170745 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-170753 Modified: NGNiYzdkNDQ5Y2QxMTViMTFiYzk3NTU4YmU0Y2YzYTRmNmM0YzgxMyAgLi8uaWRlYS93b3Jrc3Bh
-Y2UueG1sCg==
-200911-170753 make 
-200911-170753 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-171627 Modified: ZGMzNjY3MzdmZDM1MDdmYjM0ODliMzI0MDk0MmZkYjAyMGI1M2U3MCAgLi8uaWRlYS93b3Jrc3Bh
-Y2UueG1sCjQxZDMxYmJmYzM5MWI1MmNmMTMyYTY2NWE4NDAxODJiNjhlNzEzNjAgIC4vLmlkZWEv
-bWlzYy54bWwKYWQ4NzEwOWJmZmYwNzY1ZjRkZDhjZjQ5NDNiMDRkMTZhNDA3MGZlYSAgLi9jbWFr
-ZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL1Byb2dyZXNzLzExCmRkNzEwMzhmMzQ2M2Y1MTFlZTc0
-MDNkYmNiYzg3MTk1MzAyZDg5MWMgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9Qcm9n
-cmVzcy9jb3VudC50eHQKMTUyY2E5MGFmMjVkNWQ4NDk0MWU1ZDZhMjRkMmYwNTAyMWJkZWNhNyAg
-Li9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci9DWFguaW5jbHVk
-ZWNhY2hlCjJjNzBjOTUxNGQxYjJiY2YwM2QzNjJkMWJiOTQ5MGM4ZTFmMTlkOGQgIC4vY21ha2Ut
-YnVpbGQtZGVidWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50MS5kaXIvZGVwZW5kLm1ha2UKY2M3M2Jk
-MTMxYjI0NTk4ZWFhNTEyN2Y1MmNiYjVmYTUwN2ZiNDUwZCAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9D
-TWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci90b2tlbmlzZXIuY3BwLm8KNzNjZTExZTU0MjUyNDA2
-MWNjY2JkNmMzNDYyZGViZjUyMWQwODhjMCAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVz
-L2Fzc2lnbm1lbnQxLmRpci9kZXBlbmQuaW50ZXJuYWwK
-200911-171627 make 
-200911-171627 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-171718 make 
-200911-171718 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-171813 make 
-200911-171813 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-173837 Modified: OWFmZTMxMjUxM2I5OTEzNDIwMTFiZDU0MzcwMzVhMjY5YjcwNmZkMyAgLi90b2tlbmlzZXItYmFz
-aWNzLmNwcAo4ZTVjYjE5YmNjMGIzYWQwMjZiZjA3NTIyMTY1NTQ5MmNmN2M3NWFhICAuLy5pZGVh
-L3dvcmtzcGFjZS54bWwKYWQ4NzEwOWJmZmYwNzY1ZjRkZDhjZjQ5NDNiMDRkMTZhNDA3MGZlYSAg
-Li9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL1Byb2dyZXNzLzExCmRkNzEwMzhmMzQ2M2Y1
-MTFlZTc0MDNkYmNiYzg3MTk1MzAyZDg5MWMgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxl
-cy9Qcm9ncmVzcy9jb3VudC50eHQKYmZlOWI5ODEyZWQxNTFhNWYwZTJjNjA0MzU5MGM1ZWUwZGNh
-NjAyNSAgLi9jbWFrZS1idWlsZC1kZWJ1Zy9DTWFrZUZpbGVzL2Fzc2lnbm1lbnQxLmRpci90b2tl
-bmlzZXItYmFzaWNzLmNwcC5vCjkzYmRiMDdjMTBiMTdlMDUwNTViNmY0MjcyYzM5MTlkMWI0NWZm
-OWYgIC4vY21ha2UtYnVpbGQtZGVidWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50MS5kaXIvQ1hYLmlu
-Y2x1ZGVjYWNoZQoyYzcwYzk1MTRkMWIyYmNmMDNkMzYyZDFiYjk0OTBjOGUxZjE5ZDhkICAuL2Nt
-YWtlLWJ1aWxkLWRlYnVnL0NNYWtlRmlsZXMvYXNzaWdubWVudDEuZGlyL2RlcGVuZC5tYWtlCjcz
-Y2UxMWU1NDI1MjQwNjFjY2NiZDZjMzQ2MmRlYmY1MjFkMDg4YzAgIC4vY21ha2UtYnVpbGQtZGVi
-dWcvQ01ha2VGaWxlcy9hc3NpZ25tZW50MS5kaXIvZGVwZW5kLmludGVybmFsCg==
-200911-173837 make 
-200911-173837 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
-200911-173901 make 
-200911-173901 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-161445 make 
+200901-161445 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-161532 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200901-161532 make 
+200901-161532 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-161654 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200901-161654 make 
+200901-161654 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-161721 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200901-161721 make 
+200901-161721 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-161826 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200901-161826 make 
+200901-161826 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-161835 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200901-161835 make 
+200901-161835 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-161917 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200901-161917 make 
+200901-161917 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-162002 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200901-162002 make 
+200901-162002 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-162012 Modified: MDVlNWI4MWVmMzRlYTRlMThiZmFmYjdkMmM5ODM2YjRjODY0Y2E0NyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200901-162012 make 
+200901-162012 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-162052 Modified: Zjk5MGQ3ZWM4ZjQ2YTU5M2IyM2IxNDZkMDcxOGE5ZDBmNTdkOWY4NyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200901-162052 make 
+200901-162052 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-162114 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200901-162114 make 
+200901-162114 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-162137 Modified: ZTRjYjI3NDZlNjlhYzJjZDM2OTYxNDc0MTIyNWRjOTVhNjdmYWJlNyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200901-162137 make 
+200901-162137 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200901-162258 Modified: NGQ4MmQ5MjA0MGJiY2NkOWJhZTkxYmNmMDdiMWI5NjkxMWZmODY2YSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200901-162258 make 
+200901-162258 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-002437 Modified: Zjk3MjE2YzdlYjJmYTdjYjM1NDk1Nzg0ZTI3NmEyMjhiMzBmNzZkYSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-002437 make 
+200902-002437 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-002818 Modified: YzcxZWY2YWZmMjI5NzYxYmE1MGIwOTdiOGI5NzgwNWJmODI0MWVlZSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-002818 make 
+200902-002818 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-002924 make 
+200902-002924 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-003201 Modified: NDMyNGY0NGY5ZDI3Y2U0NzBmZDEwMWZiMGIwZjQyNTRiYWNiMmVlNCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-003201 make 
+200902-003201 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-003353 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200902-003353 make 
+200902-003353 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-003827 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200902-003827 make 
+200902-003827 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-003925 Modified: ZGEzOWEzZWU1ZTZiNGIwZDMyNTViZmVmOTU2MDE4OTBhZmQ4MDcwOSAgLi9vcgowYzY4MjMwMWFk
+NWJmMjMyYWNhZmM2NDQwNzUwMDFmNWZlNGZhNjYwICAuL3VwZGF0ZXMvaW5zdGFsbGVyLmJhc2gK
+ZGEzOWEzZWU1ZTZiNGIwZDMyNTViZmVmOTU2MDE4OTBhZmQ4MDcwOSAgLi89Cg==
+200902-003925 make 
+200902-003925 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-004410 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCmNkNzAwYWQ4YjZkZDU4YzgwYjg2MzYyNjZlNGVlOTMxMGE2NjNhNTEgIC4vaW5j
+bHVkZXMvdG9rZW5pc2VyLWV4dHJhcy5oCg==
+200902-004410 make 
+200902-004410 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-004823 Modified: MWU0NmU2Y2NmNjgxZDkwNzliNDA2NGZkYWEzMTkyMjAyYjFmNDhiMyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo5OWVmYmFmNjE1NGQ5YTkzMDFlMDhmNTAzMmVmMWU0MTgwZWMxYjdhICAuL2lu
+Y2x1ZGVzL3Rva2VuaXNlci5oCg==
+200902-004823 make 
+200902-004823 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-142342 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200902-142342 make 
+200902-142342 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-143429 Modified: MGM4ZmNmODYyMzk4Nzc1ODE5NGE3YjhlNWJlYThiMTA0YjI4ODY0ZSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200902-143429 make 
+200902-143429 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-143440 Modified: MjYwNWU1NzdlZjlkN2IzMzU1OTZiODZlNjU2MGRhMDVlNmE5MGY4NCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200902-143440 make 
+200902-143440 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-143614 Modified: ZTY0ZDUwNWFjODU5ZTY1ODIxZjUxOTAxMDFlMTRmNmVmMjgxNzIyZCAgLi9saWIvY2VudG9zOC90
+b2tlbnMtY29udGV4dAo5ZmJlMWZkYTI5MTYxMzRkN2RmYTAwNzgzZDUyNWU2YTE3OGIwYjdhICAu
+L2xpYi9jZW50b3M4L3Rva2VucwphMWE2YjhkOWEzYzZkN2Q5M2E5MGM2MjIzNGEyMmJlYmE3ZmUz
+ZDU3ICAuL3Rva2VuaXNlci5jcHAKMGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRm
+YTY2MCAgLi91cGRhdGVzL2luc3RhbGxlci5iYXNoCg==
+200902-143614 make 
+200902-143614 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-143917 Modified: NzkwMzA1ZDc1OTY0ZDg5MTAyYzBjMDBhYTAxYWNmMDcyYjIwOTdhMSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-143917 make 
+200902-143917 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-144157 Modified: NmIxYjI2ZTdkYzNmMTg5MTI1YjYwY2RhNzk5MWMwODcyZDIwYzMwNCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-144157 make 
+200902-144157 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-144311 Modified: MjU2MTc5ODdkMmU4OGZhNzgzN2Q4NzFmZDlmNDlkM2Q1Y2Y1MDdhNCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200902-144311 make 
+200902-144311 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-144413 Modified: MTgyN2ZjNDc3NGM0M2I1NmQ1MTNiNzUzOTZlNGI2YzQ4YmVlN2MxNCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200902-144413 make 
+200902-144413 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-144539 Modified: MGE2NjM0ZWNhYjM2YTY1NWJiYjg4YjVhOWQzNjExODI2ZmQyZWVkYyAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-144539 make 
+200902-144539 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-144904 Modified: ZDJmODExNjgzY2E2OWExNTU4ZmEzYzQ3MzZiMjhmNGM5YTMzN2NhZSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200902-144904 make 
+200902-144904 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-145033 Modified: ZGM4N2NlY2UyNjM1ZjQwMTI5OTI0ZjJjNWQwMzNjZjk3YzQyY2FhZiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200902-145033 make 
+200902-145033 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-145110 Modified: MWUyZjU0ODAzMzUxYWUwNjBkOWNjYTg0ODU2Y2I2YzYxMTE0ZDA4OCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200902-145110 make 
+200902-145110 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-145406 Modified: ODkzMjU2ZTI3NThhOWQwZWRmYjAyMjUwZWU3ZjhlZjEwMzE3YmI0ZSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-145406 make 
+200902-145406 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-151114 Modified: MGY5OGI3MTdkMjZhNDJkMDQ1MGZiZGMzOGIyYTdiYTIxNWJmNTI2ZSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-151114 make 
+200902-151114 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-151243 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200902-151243 make 
+200902-151243 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-151256 Modified: NmI5NGI1NTAzNjBkN2Y5MjA4OGQ2OGRjZWNhZDg3YmQ5YTlmMDM3NCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200902-151256 make 
+200902-151256 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-151751 Modified: ZTE1NGRhMjUyYzhhZmY5YzE4YjIyZGNiODI1ZmMzYjZjYTQ3MmQ3ZCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-151751 make 
+200902-151751 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-151813 Modified: YWQ4ZjY4ZmE4ZjFhNmE0YWRjNTk3ZjkwMDU4MGY5Yjc5OTMyNDU2YyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200902-151813 make 
+200902-151813 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-152039 Modified: NzEyMjdlMzRmZGI0YTVmMTJmMDIzNjY5ZGIwMDEzMjkxZmI5YmI4YiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-152039 make 
+200902-152039 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-152905 Modified: OWVjZWVmNzk1YjY2NGU5ZjgyYTk4MjJiMjJmYjViOWI4M2Q0YzBkMiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-152905 make 
+200902-152905 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200902-184529 Modified: YzNhMGU4MjFkNTU1ZGQ2Y2E0NmVlNjM0YmM4NTdkMjBjZjhhZTZkZSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200902-184529 make 
+200902-184529 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-213511 Modified: NmE4ZTZmOWNmOGFhNTkwODNmNjZlOWM0ZTZhNGNjZTM1YWIwNTVkMiAgLi90b2tlbmlzZXItYmFz
+aWNzLmNwcAo5ZWNlZWY3OTViNjY0ZTlmODJhOTgyMmIyMmZiNWI5YjgzZDRjMGQyICAuL3Rva2Vu
+aXNlci5jcHAKMGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRh
+dGVzL2luc3RhbGxlci5iYXNoCg==
+200904-213511 make 
+200904-213511 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-213557 Modified: OGU3YmZmNjA4OGRkMmVkNzYwMDlmM2Q0MDBmOTdkZTJhZDJlMmNjYSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-213557 make 
+200904-213557 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-213649 Modified: MjkwYzQ2OGEzNmM5MDZjNWFkOGRjMDE3NDgxZGIwZmE5OGJlYTgzNyAgLi90b2tlbmlzZXItYmFz
+aWNzLmNwcAowYzY4MjMwMWFkNWJmMjMyYWNhZmM2NDQwNzUwMDFmNWZlNGZhNjYwICAuL3VwZGF0
+ZXMvaW5zdGFsbGVyLmJhc2gK
+200904-213649 make 
+200904-213649 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-213750 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200904-213750 make 
+200904-213750 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-214950 Modified: NDNlNjEzMzM0ZWYyYjA2NWU5ODExZjUzN2MxZWRkOGIyYjIwYjVmMSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200904-214950 make 
+200904-214950 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-215146 Modified: MzkxZWZiYzY5ODUzMzhlYTQ1MjY0N2FiZjJhZTQ4MWE5YzJjYmRiOSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-215146 make 
+200904-215146 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-215207 Modified: NGQ4MWZkZDY2OWU5N2RmZTA2YmY2ZjNiM2ViMGIzMzNkNzNkMDVjOCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-215207 make 
+200904-215207 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-224531 Modified: NTZiNWNkMmQ3OTM4ZDQ5Mzk1NjJiYTRiMzBkZGYwNTIzY2JjYTRkOSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200904-224531 make 
+200904-224531 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-224616 Modified: Y2ZhYmE5NTg4N2Y5MTQyZmQ2NTU3M2M2ODY3ODc5MWZhNjUzYmJkOSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-224616 make 
+200904-224616 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-225313 Modified: NjE4ZGQ5ZGVkY2E1ZTA1MmFlNzQ5ZmYwY2IxODQ1ZmZiOTYyMDk4ZiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-225313 make 
+200904-225313 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-225331 Modified: YzEwMjczOGNlMTcyMTY3YmEwYjc0ZjkzNGE4Zjk0MDE1MWFlZWNlMSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-225331 make 
+200904-225331 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-225400 Modified: NWExODI2ODM4OGNkMTQ3MmQ5OGFhNzBjYTVhZjE0MjkxMzk5NjY2NCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-225400 make 
+200904-225400 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-225448 Modified: NmYzZmIyMTc1YWI2NTk3NmFkZmM1MmRjYzRhNWM2Yzg1YTRiNThmYiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-225448 make 
+200904-225448 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-230711 Modified: NjA4NmQxN2JiZDI0MTcwNTE0ZDc4YTc3Y2ZmMzNkNGM2YjY4M2ZkMiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200904-230711 make 
+200904-230711 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-231042 Modified: ZTBhNzEwZjRmMTFmYzA3NmJhMWEzOTc0MDYyYWQ0YzQyM2YzODNkNCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-231042 make 
+200904-231042 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-231120 Modified: ZmM5ZDRhOTYyMDRkOTAwYTQyZjViNDM1NzFkMjM3Nzc4NmZlZDAxMSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-231120 make 
+200904-231120 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-231620 Modified: ODM2MjRjNmY3MmRhYjZhNGU1NTA0MDg2ZTNjODM3NzA5MjZiYWM4YiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-231620 make 
+200904-231620 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-231956 Modified: OTFiNDU0NjNjMTk3OGFhZjdjYmVmZjJhZmY4ODk3NDQ1NGMyOWE3YiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-231956 make 
+200904-231956 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-232032 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200904-232032 make 
+200904-232032 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-232037 Modified: ODdkY2JmMWZlMTU1YjM0M2U3Y2Q4OTk3ZDgyMmZiZmVlZjYyYTM5YiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-232037 make 
+200904-232037 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-232816 Modified: YTM1MTdlODM0ZjNmNmViMmMzYmJkZTA0NGI1MjUzMmZlODUyMmEzMyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-232816 make 
+200904-232816 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-233010 Modified: Yjc5N2Q5NDg1MzQ5NGYwNDc0YjJkOGI5NjBiZDIxNTA0ZTI5NDAwMyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200904-233010 make 
+200904-233010 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200904-233056 make 
+200904-233056 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-000255 Modified: NjE5ZTQwMGNhODY4ZjhlYTc3MWU0ZGUyNTU1OGU4Yjk1ODIzMjE3MiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-000255 make 
+200905-000255 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-000501 Modified: MmUwNWUzMGVhYmMxYzBhMWIxNzk4Y2VlNzY4MGQ5ODQyNDBhOTI1ZCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-000501 make 
+200905-000501 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-000618 Modified: NWRmYjk5MmRkOWE1MTUyYzE2MTM4MGFkMDkzZTZlZGZlYjUyZTU5YyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-000618 make 
+200905-000618 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-000643 Modified: YjFlMDQxMmM3OWZkMTc3YjhkNzlhNDcxOGFkOGQyZDhhMjY0ZWFhMCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-000643 make 
+200905-000643 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-000918 Modified: ZjhiMTE1OTE0NmU4NzIzM2Q3YTI0YTQ2MWEzZTkyZmM0NWY1ZDI5YyAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-000918 make 
+200905-000918 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-002006 Modified: ZjY2MWE5YWU1YjgyZWQzOGFjNTkwZDM1MzViMWFlZDMzNDdkOGEyZiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-002006 make 
+200905-002006 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-003705 Modified: MWI3YTNiMGQzNjJjODk5ZmI4MWRmMmNmMmVlZWQ3MjM2YjAwZWI3MSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-003705 make 
+200905-003705 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-003827 Modified: Zjg3MWQ3MWE3MGYyZDQxZjlmOTgzODUwMTQzOTY3OGViYTIzMzM1YiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-003827 make 
+200905-003827 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-005224 Modified: MGU0Y2RmODVmY2Q0OGIyODk4ZGNkOTc0N2VkZTU0NjhmZTdjNTI4ZiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-005224 make 
+200905-005224 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-005316 Modified: ODhkYmZlNWRiZTM3MTQ3YjhmYzQ4OGU5MmQwMWRkMjA3NGZhM2Y1NSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-005316 make 
+200905-005316 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-005453 Modified: MTQ5NDYzODU2OWE4OTU4ZDdiMDQ3OTJjOGZjMTBmYWY4NGEzNDhhNSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-005453 make 
+200905-005453 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-005530 Modified: OGM4YzlhMzU1OGQ4Njg1ZGIwNTlmZDAwMjBlMDE4OGE2OTg5ZDdiYyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-005530 make 
+200905-005530 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-005742 Modified: MmY2NzI1MmYxMTg2MTkzMTU3NWNjZDJkMThlY2IzYzMwMWEyYTk4NiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-005742 make 
+200905-005742 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-005756 Modified: NDQ3ZmIxNmUxM2Q0Nzg2N2YyNjY5ZWVjMmYxNGJlZTA4YjI0NGIzMCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-005756 make 
+200905-005756 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-010222 Modified: YWNhMWY5MjliOTQxMzRmZGI1YTYxZjFlY2VjNTgzZTQzMjk0ZDNmZSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-010222 make 
+200905-010222 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-010303 Modified: NTEwZTdiMzcwNWUyN2FiMTQxOTI2YmRlYTE5Y2ZmMGM1MTg1MGI4YyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-010303 make 
+200905-010303 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-010339 Modified: OTkzM2YzODg5YzM0YmUyYjhlM2NlNTNmYzc0MDc3MWY0MjE0MTBhNyAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-010339 make 
+200905-010339 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-010555 make 
+200905-010555 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-010613 Modified: ZTBjOWUzZTVjNmU5OWJkMGU4NDg2OGQ2OWViMmQ2MWEzODlkNzhjNCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-010613 make 
+200905-010613 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-011117 make 
+200905-011117 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-013408 Modified: YTE3N2Y4NTg3YTVjZjA0MTY5ZmM4OTNjOTc5M2Y0MjM3OTdhYTE1ZCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-013408 make 
+200905-013408 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-014443 Modified: MGI0N2QxMGI0MTQzMWMyMzdlMTc0YzYyYmY1MjQyMWM3N2NkNTZiOSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-014443 make 
+200905-014443 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-014532 Modified: MTY3OWMyZjhjNWMxMDQ4ZWYzNDRiOWM5MDBmNTA5OGM2N2NhZTM3NSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-014532 make 
+200905-014532 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-014631 Modified: NTA4MTljMWMxMTE0YTg4N2NjZjYxYTRlNDBjNDhlODFkZjAzY2EyYiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-014631 make 
+200905-014631 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-015421 Modified: NjgwOGFlZGM0MTNmMGJiNThmZTkwNGM2NmJkZGJmMzQ1NWQwYTgwNCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-015421 make 
+200905-015421 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-015525 Modified: NDNiY2U5NjAwOGE4ZWU2OWRmZTJmOGEzZDZiOTMwMjJmYjRmMmE1MSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-015525 make 
+200905-015525 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-015556 Modified: MjE1NTdjNzI4MWM5YmY2NWI1NDJlNDM0MDEyYjFlOTNkNjg0NzI0NiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-015556 make 
+200905-015556 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-015642 Modified: N2VmOTYwZTIzOWYzMDFiZmNiZjE3YzQxZTMyZTA3NmE5OWQ5YTJiYiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-015642 make 
+200905-015642 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-015734 Modified: ZTBlNzE0OTVhYTk2MjgxZDE5ZDViMTI0MmYwNjYxM2Y3ZTQ0YWRiYyAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-015734 make 
+200905-015734 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-020051 Modified: OGMyZDZkNjBkNmQyMDE5YjcyYmMzYzNjZTUzY2I5MWQzMzZkZmZkMSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-020051 make 
+200905-020051 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-020358 Modified: OGE5YjJmOThiNmJhZDVhZDk3MWNkMmE3MjUwMGFmNTQ1OGZiNDQ5ZiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200905-020358 make 
+200905-020358 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200905-020414 Modified: ZWM5YWE5NWFiOWEzMjY4MTFmOTAwMTYwMjg1Y2JkY2QyMjYwMWNjNCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200905-020414 make 
+200905-020414 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-221239 make 
+200906-221239 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-222049 Modified: NmQ1NDQwNjdmN2VkMGJlN2E1NTI0ZjRmNTc2ZjU4YTM3ZDhlYmZiZSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-222049 make 
+200906-222049 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-222108 Modified: ZDEyNTViZWUxNTQ2ZjIzOGYxNzE0ZmMzYTIxY2JjYWVkMWE2ODgyOSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-222108 make 
+200906-222108 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-222315 Modified: MjJiNGRlYTllNTE3ODI4ZjI2YWExODBkNmY1ODY3N2IwZjYyZjkyYSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-222315 make 
+200906-222315 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-222421 Modified: YmJiY2MyMzEyZjRiZmU3YmYyYzJiNmUzY2RmMzJhZWVkNDc0NDRkNiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-222421 make 
+200906-222421 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-222624 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200906-222624 make 
+200906-222624 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-222632 Modified: NzBlMDBhMDAxY2FiNzc4YzliMjdjZTllNDQ5YzdmM2Y5ODZhODEwZCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-222632 make 
+200906-222632 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-222724 Modified: Mjc5ZTA5MTAzMDJiNjg5ZGViN2ZlMTA1NTY0ZDViYjJhZDQyMTlhZSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-222724 make 
+200906-222724 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-222745 Modified: NjJhNjUxYjEyYzNlNDYzZTMxZWU1N2M5ZWNkMDNhMjZkMzRjZDMzZCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-222745 make 
+200906-222745 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-222903 Modified: YzgyZWFlYzk2ZTRhYTRkNjJjNmZjNmQ3ZGFjY2E4MWFhMDM3NDllMyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-222903 make 
+200906-222903 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-223106 Modified: MTI1YWE5N2ZhM2JiOTA3YzkyZjUyMzNjNGM3ODVkZTZiMTgwZDZiNCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-223106 make 
+200906-223106 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-223725 Modified: MGM2ODIzMDFhZDViZjIzMmFjYWZjNjQ0MDc1MDAxZjVmZTRmYTY2MCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCg==
+200906-223725 make 
+200906-223725 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-223740 Modified: YzgyZWFlYzk2ZTRhYTRkNjJjNmZjNmQ3ZGFjY2E4MWFhMDM3NDllMyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-223740 make 
+200906-223740 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-224235 Modified: Zjg5ZGVmMDVhYzZjNmZkZGViOTVlY2JmOTI5NDM5NGZmY2YxMWZhNyAgLi9saWIvY2VudG9zOC90
+b2tlbnMtY29udGV4dAo3YmYzZjQyMDhmODQ5ODlmZDE1YjgwMTk0ZjI2YmFkOTU1NThjNTRiICAu
+L2xpYi9jZW50b3M4L3Rva2VucwowYzY4MjMwMWFkNWJmMjMyYWNhZmM2NDQwNzUwMDFmNWZlNGZh
+NjYwICAuL3VwZGF0ZXMvaW5zdGFsbGVyLmJhc2gK
+200906-224235 make test-working
+200906-224235 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-224319 make test
+200906-224319 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-225629 Modified: MjM5ZTNlZDdjMmE3M2U4NTBlNWRhM2Y4ZTA1NTU0NTRjYjdmMDU0MiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-225629 make 
+200906-225629 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-225823 Modified: ZjAwMGJjYjc5ZGVmNDMyNjlhZmU5OWIzNDI2MWRhNTljY2VkMDAwMSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-225823 make 
+200906-225823 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-225912 Modified: Nzk2NDU3ZmI1NTYzODMyZmVhNzQ5MzFmM2ExZThlY2EyZTFkMzljZCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-225912 make 
+200906-225912 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-230135 Modified: MjFmZjVhNTBkYzM1Mjg0OTQ1OWMxYmEwZTkzM2QwY2U2NGI0ZDJmYiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-230135 make 
+200906-230135 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-230912 Modified: YzFkZjcxYzVkNGI4Mzk1MzBjMWU2MmFmZWIwZDAzNmI5MDZmNDg0NCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-230912 make 
+200906-230912 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-231107 Modified: N2I1YmM2NzdmZDEyZGFmNGViNDhjZTIzNTc5Y2U3YTQ1MTlmNDhmNCAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-231107 make 
+200906-231107 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-231455 Modified: MGUxN2Y1NDE4ZTFkODFiYWY5MjA3YTM4ZWExMTM3YzEzNzhiNTc5YiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-231455 make 
+200906-231455 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-231708 Modified: OWVhODc1NGQxNTk4NWE5YzZmM2VjNWYwNTk3MjM2Mzg2YmJkNzExZiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-231708 make 
+200906-231708 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-231817 Modified: Y2IyOTJmYTQxZjIwMzZiMjUzYzBjZjBhMTcyNTE4ODZjODY0YjdkYSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-231817 make 
+200906-231817 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-231917 Modified: Mzk5NTQwNTZiYTc5NTU3YzJmYjM3NmZhMjZmYmZhODEzNGE2YTJkZiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-231917 make 
+200906-231917 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-233458 Modified: NjUzODUzNzQ0ZTZiNGQ5ODljMDliOGJjYTBlZmYwNjkzNzIwNTI1MiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-233458 make 
+200906-233458 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-233520 Modified: YmM5ZTY2NGE0YmU3YmMwM2UyNDBjNGE1ZjM1MDNkZmQ3ZTQxMmFmMiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-233520 make 
+200906-233520 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-233556 Modified: NGQzYjEzYWU3MmU4ODNiZTAyYmM1Y2Y3NzFmYTQzNzQ0NzgwYTQ3YSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-233556 make 
+200906-233556 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-233643 Modified: NDEwOTBjY2JmMDBiMmNjZjUzZWRhNmFlNGU4NjM5YzkzYTM3ZGZiZiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-233643 make 
+200906-233643 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-233727 Modified: YmJjNzZmMDU3MGQwOTFiN2ZjMzdiZTAxZDMyZjczZTU1NjUyNTk5YiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-233727 make 
+200906-233727 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-233756 Modified: YTBjMjAwNmQ5ZTdiNmQ3Y2JkNmUzY2M5NWM0NGE0NDM3M2I1NTFkMyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-233756 make 
+200906-233756 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-233848 Modified: M2I5MTFlYzgzZDlkOTQ2MGZiYzg3ZjI5NzJjZmE4YTM5MzQwYjlhMyAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-233848 make 
+200906-233848 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-234250 Modified: ZWE3NDY0OGZlMWZiODU4ZDI3YWJhMDAyYzI3ZmZjMDJmY2JkZGVhNyAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-234250 make 
+200906-234250 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-234803 Modified: ZGEzOWEzZWU1ZTZiNGIwZDMyNTViZmVmOTU2MDE4OTBhZmQ4MDcwOSAgLi9iYWNrdXAuY3BwCjM5
+OTU0MDU2YmE3OTU1N2MyZmIzNzZmYTI2ZmJmYTgxMzRhNmEyZGYgIC4vdG9rZW5pc2VyLmNwcAo=
+200906-234803 make 
+200906-234803 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-235613 Modified: OGE0MzdiYTExNmRlOTA5ZTlhYjVhMGQ1MGY4ZGFhZjFhOTc2ZDIzYiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-235613 make 
+200906-235613 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-235716 Modified: M2RlOTExYmNlNGYzMjUzMzE4ZjhlOWU1MDc1MGQ3ODllZTUwYjdiNiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-235716 make 
+200906-235716 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-235856 Modified: OGE0MzdiYTExNmRlOTA5ZTlhYjVhMGQ1MGY4ZGFhZjFhOTc2ZDIzYiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200906-235856 make 
+200906-235856 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200906-235936 Modified: ODE3NGE0ZWE2ZmYzNWI2MGQzOWY2MjY5MDliZjVlMTE4MmUwZjRiZSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200906-235936 make 
+200906-235936 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-000035 Modified: ODE3NGE0ZWE2ZmYzNWI2MGQzOWY2MjY5MDliZjVlMTE4MmUwZjRiZSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200907-000035 make 
+200907-000035 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-000124 Modified: ODE3NGE0ZWE2ZmYzNWI2MGQzOWY2MjY5MDliZjVlMTE4MmUwZjRiZSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200907-000124 make 
+200907-000124 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-000213 Modified: Mzk5NTQwNTZiYTc5NTU3YzJmYjM3NmZhMjZmYmZhODEzNGE2YTJkZiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200907-000213 make 
+200907-000213 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-000746 Modified: Yjk3MmEzODFkNTVkZjgwOWE5N2EzM2IzZTQyNjYzNGM3OTIzZTYzZSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-000746 make 
+200907-000746 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-001814 Modified: NzBjMjA2ZDRlODQyNTFmOTMyN2NhZWJiZTRiYTI3M2UxOTkyYzViMiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-001814 make 
+200907-001814 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-002826 Modified: NTkxOWMwZGFkZTk2OGI3NDUxMTA3ODYxMzlmOTNhY2ZkMzQwODQxOSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-002826 make 
+200907-002826 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+<<<<<<< .mine
+200907-005927 Modified: NzRlMjc3ODY1ZGEwODg3YjM1OWQzYjgyYWY0YjhhODI3M2I1OGZjZiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-005927 make 
+200907-005927 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-010833 Modified: MzJkYWE2NWFiMDZmMTkyM2RhYzgxNWJiYzA5NzMzOTQzYzkxZmQzOCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-010833 make 
+200907-010833 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-010913 Modified: ZTNkZjRhMDQxOTg0NTQ3Y2Y4OWIwZDRlYTQyNmU0ZmQ2MmFmYmI5YiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200907-010913 make 
+200907-010913 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-010947 Modified: NDNmNDE2MWEzMDFmODAyNzkxOGIxMDE0ZWQ3N2JjMGY3ZjljODgxYSAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200907-010947 make 
+200907-010947 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-011732 Modified: MDM2NWM4YTU2MGE1OGJiN2MzOGZkMDkzYzNiZThlMGEyYTBhMTJkNiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200907-011732 make 
+200907-011732 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-011800 Modified: MTVjMzJjMjI5NDlmN2Q3YWMwNWJjMzcyNzlmMzA0N2U3Y2U3N2JjZiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200907-011800 make 
+200907-011800 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-011832 Modified: OGU3MjdmOTBhNWU3ZmQ3MmI4OWU0OTMyNzAyY2Y4NGFhOThiM2QyZiAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200907-011832 make 
+200907-011832 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-012042 Modified: YjVmN2UzYjE5YTg1OTQxYjBjNTdlZWI2YzExMzkxYmEyNTY1ZDAyNyAgLi90b2tlbmlzZXIuY3Bw
+CjBjNjgyMzAxYWQ1YmYyMzJhY2FmYzY0NDA3NTAwMWY1ZmU0ZmE2NjAgIC4vdXBkYXRlcy9pbnN0
+YWxsZXIuYmFzaAo=
+200907-012042 make 
+200907-012042 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-012612 Modified: ZDMyZjYxMWJhZTY0YzJhNjRiYmViNWJjNmU2MGE5YTNlNmZkODY1ZCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-012612 make 
+200907-012612 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-013337 Modified: YTdmODFlODEzMmYwOGJlNmYyMGYyNjRhNTA4ZmU2ZjBlYTUxN2QyMCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-013337 make 
+200907-013337 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-210346 Modified: MmZkMWZkODg0ODFhZWY5ZjYzZjA1NmFhYTdhZDZhMzEwMTA4MDYyNiAgLi9iYWNrdXAuY3BwCmQ2
+Njc5NmQ3YzlkM2MzZWFhMzA2MmM5NTczYzIzYWVmYmZlNzljYTggIC4vdG9rZW5pc2VyLmNwcAo=
+200907-210346 make 
+200907-210346 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-210517 Modified: YzhmOGE2M2M2ZDc1YTlmMjI1ZTNjMjI1NmQxMDMxZjhjN2Q4MDNjZCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-210517 make 
+200907-210517 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-211053 Modified: ZGE1MDExNmU1MDM3OGI1MzYzMmExZjJlNzgyNDRmYzIwZGU3ZDViMSAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-211053 make 
+200907-211053 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-211222 Modified: NDRjMWU1ZDIwMzhkYmM4ZTQyMTZkNmQ5YjE4NzZmYTdhMGMyYTE1YyAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-211222 make 
+200907-211222 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-211402 Modified: N2UzYWVjNDQzNzE2OWEzMGJmMzc4MmJjNWNmZjE2MzhjM2EyZThhOCAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-211402 make 
+200907-211402 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-211524 Modified: MTQ4NDMyOTRlMmQ5MmQ5OWI0OTYxYjQzZjA0YzMyM2E2NGI5YWI5MiAgLi90b2tlbmlzZXIuY3Bw
+Cg==
+200907-211524 make 
+200907-211524 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+||||||| .r198
+=======
+200907-122757 make 
+200907-122757 The following command(s) cannot be found:
+200907-122757 .  zip
+200907-122757 .  unzip
+200907-122757 .  java
+200907-122757 200907-122757 Please install them and try again.
+200907-122757 200907-122757 Please install them and try again.
+200907-122757 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-122757 Cannot find directory updates/assignment1-20200817-142446
+200907-122850 make 
+200907-122850 The following command(s) cannot be found:
+200907-122850 .  zip
+200907-122850 .  unzip
+200907-122850 .  java
+200907-122850 200907-122850 Please install them and try again.
+200907-122850 200907-122850 Please install them and try again.
+200907-122850 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-122850 Cannot find directory updates/assignment1-20200817-142446
+200907-122855 make install
+200907-122855 200907-122855 Please install them and try again.
+200907-122855 The following command(s) cannot be found:
+200907-122855 .  zip
+200907-122855 .  unzip
+200907-122855 .  java
+200907-122855 200907-122855 Please install them and try again.
+200907-122855 SVN user: a1778478, repository path: 2020/s2/cs/assignment1
+200907-122855 Cannot find directory updates/assignment1-20200817-142446
+>>>>>>> .r200
