@@ -13,6 +13,9 @@ using namespace Hack_Virtual_Machine ;
 ////////////////////////////////////////////////////////////////
 /************     MODIFY CODE BETWEEN HERE     **************/
 static string current_function;
+static string name;
+//static string current_function;
+
 
 // translate vm operator command into assembly language
 
@@ -69,70 +72,82 @@ static void translate_vm_operator(TokenKind the_op)
       output_assembler("M=!M");
       break;
 
-      /*case tk_gt:
+      case tk_gt:
       output_assembler("@SP");
       output_assembler("AM=M-1");
       output_assembler("D=M");
-      output_assembler("@SP");
-      output_assembler("AM=M-1");
+
+      output_assembler("A=A-1");
       output_assembler("D=M-D");
-      output_assembler("@" + labelTrue);
+      output_assembler("@"+current_function+"$ifTrue");
       output_assembler("D;JGT");
-      output_assembler("D=0");
-      output_assembler("@"+labelFalse);
+
+      output_assembler("("+current_function+"$ifFalse)");
       output_assembler("0;JMP");
-      output_assembler("("+labelTrue + ")", false);
-      output_assembler("D=-1");
-      output_assembler("(" + labelFalse + ")", false);
-      output_assembler("@SP");
-      output_assembler("A=M");
-      output_assembler("M=D");
-      output_assembler("@SP");
-      output_assembler("M=M+1");
+
+      output_assembler("("+current_function+"$ifTrue)");
+      output_assembler("M=1");
+      output_assembler("M=-M");
+      
+      output_assembler("@"+current_function+"$ifEnd)");
+      output_assembler("0;JMP");
+      
+      output_assembler("("+current_function+"$ifFalse)");
+      output_assembler("M=0");
+
+      output_assembler("("+current_function+"$ifEnd)");
       break;
 
       case tk_eq:
       output_assembler("@SP");
       output_assembler("AM=M-1");
       output_assembler("D=M");
-      output_assembler("@SP");
-      output_assembler("AM=M-1");
+
+      output_assembler("A=A-1");
       output_assembler("D=M-D");
-      output_assembler("@" + labelTrue);
-      output_assembler("D;JGT");
-      output_assembler("D=0");
-      output_assembler("@"+labelFalse);
+      output_assembler("@"+current_function+"$ifTrue");
+      output_assembler("D;JEQ");
+
+      output_assembler("("+current_function+"$ifFalse)");
       output_assembler("0;JMP");
-      output_assembler("("+labelTrue + ")", false);
-      output_assembler("D=-1");
-      output_assembler("(" + labelFalse + ")", false);
-      output_assembler("@SP");
-      output_assembler("A=M");
-      output_assembler("M=D");
-      output_assembler("@SP");
-      output_assembler("M=M+1");
+
+      output_assembler("("+current_function+"$ifTrue)");
+      output_assembler("M=1");
+      output_assembler("M=-M");
+      
+      output_assembler("@"+current_function+"$ifEnd)");
+      output_assembler("0;JMP");
+      
+      output_assembler("("+current_function+"$ifFalse)");
+      output_assembler("M=0");
+
+      output_assembler("("+current_function+"$ifEnd)");
 
       case tk_lt:
       output_assembler("@SP");
       output_assembler("AM=M-1");
       output_assembler("D=M");
-      output_assembler("@SP");
-      output_assembler("AM=M-1");
-      output_assembler("D=M-D");
-      output_assembler("@" + labelTrue);
-      output_assembler("D;JGT");
-      output_assembler("D=0");
-      output_assembler("@"+labelFalse);
-      output_assembler("0;JMP");
-      output_assembler("("+labelTrue + ")", false);
-      output_assembler("D=-1");
-      output_assembler("(" + labelFalse + ")", false);
-      output_assembler("@SP");
-      output_assembler("A=M");
-      output_assembler("M=D");
-      output_assembler("@SP");
-      output_assembler("M=M+1");*/
 
+      output_assembler("A=A-1");
+      output_assembler("D=M-D");
+      output_assembler("@"+current_function+"$ifTrue");
+      output_assembler("D;JLT");
+
+      output_assembler("("+current_function+"$ifFalse)");
+      output_assembler("0;JMP");
+
+      output_assembler("("+current_function+"$ifTrue)");
+      output_assembler("M=1");
+      output_assembler("M=-M");
+      
+      output_assembler("@"+current_function+"$ifEnd)");
+      output_assembler("0;JMP");
+      
+      output_assembler("("+current_function+"$ifFalse)");
+      output_assembler("M=0");
+
+      output_assembler("("+current_function+"$ifEnd)");
+     
 
       default: ;
     }
@@ -145,7 +160,22 @@ static void translate_vm_jump(TokenKind jump, string label)
 {
     start_of_vm_jump_command(jump,label) ;
 
-    // ... your code goes here ...
+    if (jump == tk_goto) {
+     output_assembler("@"+name+"$"+label);
+     output_assembler("0;JMP");
+    }
+    if (jump == tk_if_goto) {
+        output_assembler("@SP");
+        output_assembler("AM=M-1");
+        output_assembler("D=M");
+        output_assembler("@"+name+"$"+label);
+        output_assembler("D;JNE"); 
+    }
+    if (jump == tk_label) {
+        output_assembler("("+name+"$"+label+")");
+    }
+
+
 
     end_of_vm_command() ;
 }
@@ -176,7 +206,7 @@ static void translate_vm_function(TokenKind func, string label, int n)
     }
     else
     {
-      //implement call, 
+      //implement call
 
       //push returnAddress
         output_assembler("@" + current_function + "$returnAddress");
@@ -243,19 +273,200 @@ static void translate_vm_function(TokenKind func, string label, int n)
         
 
     }
-
     end_of_vm_command() ;
 }
+    
+
 
 // translate vm push or pop command into assembly language
 static void translate_vm_stack(TokenKind stack,TokenKind segment,int offset)
 {
     start_of_vm_stack_command(stack,segment,offset) ;
 
-    /*switch(stack){
-      case tk_push:
-      case tk_pop:
-    }*/
+    if (stack == tk_push){
+        switch (segment) {
+            case tk_constant:
+            output_assembler("@"+to_string(offset));
+            output_assembler("D=A");
+            output_assembler("@SP");
+            output_assembler("AM=M+1");
+            output_assembler("A=A-1");
+            output_assembler("M=D");
+            break;
+            
+            case tk_static: 
+            output_assembler("@"+ name + "." + to_string(offset));
+            output_assembler("D=M");
+            output_assembler("@SP");
+            output_assembler("A=M");
+            output_assembler("M=D");
+            output_assembler("@SP");
+            output_assembler("M=M+1");
+            
+            case tk_temp: 
+            output_assembler("@"+to_string(offset+5));
+            output_assembler("D=M");
+            output_assembler("@SP");
+            output_assembler("A=M");
+            output_assembler("M=D");
+            output_assembler("@SP");
+            output_assembler("M=M+1");
+            break;
+            
+            case tk_pointer: 
+            output_assembler("@"+to_string(offset+3));
+            output_assembler("D=A");
+            output_assembler("@THIS");
+            output_assembler("A=A+D");
+            output_assembler("D=M");
+            break;
+
+            case tk_local: 
+            output_assembler("@LCL");
+            output_assembler("D=M");
+            output_assembler("@"+to_string(offset));
+            output_assembler("A=D+A");
+            output_assembler("D=M");
+            output_assembler("@SP");
+            output_assembler("A=M");
+            output_assembler("M=D");
+            output_assembler("@SP");
+            output_assembler("M=M+1");
+            break;
+            
+            case tk_this: 
+            output_assembler("@THIS");
+            output_assembler("D=M");
+            output_assembler("@"+to_string(offset));
+            output_assembler("A=D+A");
+            output_assembler("D=M");
+            output_assembler("@SP");
+            output_assembler("A=M");
+            output_assembler("M=D");
+            output_assembler("@SP");
+            output_assembler("M=M+1");
+            break;
+            
+            case tk_that: 
+            output_assembler("@THAT");
+            output_assembler("D=M");
+            output_assembler("@"+to_string(offset));
+            output_assembler("A=D+A");
+            output_assembler("D=M");
+            output_assembler("@SP");
+            output_assembler("A=M");
+            output_assembler("M=D");
+            output_assembler("@SP");
+            output_assembler("M=M+1");
+            break;
+
+            case tk_argument: 
+            output_assembler("@ARG");
+            output_assembler("D=M");
+            output_assembler("@"+to_string(offset));
+            output_assembler("A=D+A");
+            output_assembler("D=M");
+            output_assembler("@SP");
+            output_assembler("A=M");
+            output_assembler("M=D");
+            output_assembler("@SP");
+            output_assembler("M=M+1");
+            break;
+            default:;
+        }
+    }
+    if (stack == tk_pop){
+        switch (segment) {
+            
+            
+            case tk_static: 
+            output_assembler("@"+ name + "." + to_string(offset));
+            output_assembler("D=M");
+            output_assembler("@SP");
+            output_assembler("A=M");
+            output_assembler("M=D");
+            output_assembler("@SP");
+            output_assembler("M=M+1");
+            
+            case tk_temp: 
+            output_assembler("@SP");
+            output_assembler("AM=M-1");
+            output_assembler("D=M");
+            output_assembler("@"+to_string(offset+5));
+            output_assembler("M=D");
+            
+            break;
+            case tk_pointer: 
+            output_assembler("@SP");
+            output_assembler("AM=M-1");
+            output_assembler("D=M");
+            output_assembler("@"+to_string(offset+3));
+            output_assembler("M=D");
+            break;
+
+            case tk_local: 
+            output_assembler("@LCL");
+            output_assembler("D=M");
+            output_assembler("@"+to_string(offset));
+            output_assembler("D=D+A");
+            output_assembler("@R13");
+            output_assembler("M=D");
+            output_assembler("@SP");
+            output_assembler("AM=M-1");
+            output_assembler("D=M");
+            output_assembler("@R13");
+            output_assembler("A=M");
+            output_assembler("M=D");
+            break;
+            
+            case tk_this: 
+            output_assembler("@THIS");
+            output_assembler("D=M");
+            output_assembler("@"+to_string(offset));
+            output_assembler("D=D+A");
+            output_assembler("@R13");
+            output_assembler("M=D");
+            output_assembler("@SP");
+            output_assembler("AM=M-1");
+            output_assembler("D=M");
+            output_assembler("@R13");
+            output_assembler("A=M");
+            output_assembler("M=D");
+            break;
+            
+            case tk_that: 
+            output_assembler("@THAT");
+            output_assembler("D=M");
+            output_assembler("@"+to_string(offset));
+            output_assembler("D=D+A");
+            output_assembler("@R13");
+            output_assembler("M=D");
+            output_assembler("@SP");
+            output_assembler("AM=M-1");
+            output_assembler("D=M");
+            output_assembler("@R13");
+            output_assembler("A=M");
+            output_assembler("M=D");
+            break;
+
+            case tk_argument: 
+            output_assembler("@ARG");
+            output_assembler("D=M");
+            output_assembler("@"+to_string(offset));
+            output_assembler("D=D+A");
+            output_assembler("@R13");
+            output_assembler("M=D");
+            output_assembler("@SP");
+            output_assembler("AM=M-1");
+            output_assembler("D=M");
+            output_assembler("@R13");
+            output_assembler("A=M");
+            output_assembler("M=D");
+            break;
+            default: ;
+        }
+}
+
 
     end_of_vm_command() ;
 }
