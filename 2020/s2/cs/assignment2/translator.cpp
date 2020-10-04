@@ -85,26 +85,28 @@ static void translate_vm_operator(TokenKind the_op)
 
       case tk_gt:
 
-      gtcounter++;
+      
       output_assembler("@SP");
       output_assembler("AM=M-1");
       output_assembler("D=M");
-      output_assembler("@SP");
-      output_assembler("AM=M-1");
+      output_assembler("A=A-1");
       output_assembler("D=M-D");
-      output_assembler("@"+current_function+"$GTT" + to_string(gtcounter));
-      output_assembler("D;JLT");
-      output_assembler("D=0");
-      output_assembler("@" + current_function+"$NGT" + to_string(gtcounter));
+      
+      output_assembler("@"+current_function+"$DUI" + to_string(gtcounter));
+      output_assembler("D;JGT");
+      output_assembler("@SP");
+      output_assembler("A=M-1");
+      output_assembler("M=0");
+      output_assembler("@"+current_function+"$CUO" + to_string(gtcounter));
       output_assembler("0;JMP");
-      output_assembler("("+current_function+"$GTT"+to_string(gtcounter)+")");
-      output_assembler("D=-1");
-      output_assembler("("+current_function+"$NGT"+to_string(gtcounter)+")");
+
+      output_assembler("("+current_function+"$DUI" + to_string(gtcounter)+")");
+
       output_assembler("@SP");
-      output_assembler("A=M");
-      output_assembler("M=D");
-      output_assembler("@SP");
-      output_assembler("M=M+1");
+      output_assembler("A=M-1");
+      output_assembler("M=-1");
+      output_assembler("("+current_function+"$CUO" + to_string(gtcounter)+")");
+      gtcounter++;
       break;
 
       case tk_eq:
@@ -112,76 +114,47 @@ static void translate_vm_operator(TokenKind the_op)
       output_assembler("@SP");
       output_assembler("AM=M-1");
       output_assembler("D=M");
-
       output_assembler("A=A-1");
       output_assembler("D=M-D");
-      output_assembler("@"+current_function+"$EQT" + to_string(eqcounter));
+      
+      output_assembler("@"+current_function+"$DUI" + to_string(eqcounter));
       output_assembler("D;JEQ");
       output_assembler("@SP");
       output_assembler("A=M-1");
-      output_assembler("M=D");
-      output_assembler("@"+current_function+"$EQE" + to_string(eqcounter));
-      output_assembler("D;JEQ");
-
-      output_assembler("("+current_function+"$EQT" + to_string(eqcounter)+")");
+      output_assembler("M=0");
+      output_assembler("@"+current_function+"$CUO" + to_string(eqcounter));
       output_assembler("0;JMP");
+
+      output_assembler("("+current_function+"$DUI" + to_string(eqcounter)+")");
 
       output_assembler("@SP");
       output_assembler("A=M-1");
       output_assembler("M=-1");
-      output_assembler("("+current_function+"$EQE" + to_string(eqcounter)+")");
+      output_assembler("("+current_function+"$CUO" + to_string(eqcounter)+")");
         eqcounter++;
     break;
-    
       case tk_lt:
-
-      ltcounter++;
-
       output_assembler("@SP");
       output_assembler("AM=M-1");
       output_assembler("D=M");
-      output_assembler("@SP");
-      output_assembler("AM=M-1");
-      output_assembler("D=M-D");
-      output_assembler("@"+current_function+"$LTT" + to_string(ltcounter));
-      output_assembler("D;JLT");
-      output_assembler("D=0");
-      output_assembler("@" + current_function+"$NLT" + to_string(ltcounter));
-      output_assembler("0;JMP");
-      output_assembler("("+current_function+"$LTT"+to_string(ltcounter)+")");
-      output_assembler("D=-1");
-      output_assembler("("+current_function+"$NLT"+to_string(ltcounter)+")");
-      output_assembler("@SP");
-      output_assembler("A=M");
-      output_assembler("M=D");
-      output_assembler("@SP");
-      output_assembler("M=M+1");
-      
-      /*output_assembler("@"+current_function+"$ifTrue" + to_string(ltcounter));
-
       output_assembler("A=A-1");
       output_assembler("D=M-D");
-      output_assembler("@"+current_function+"$ifTrue" + to_string(ltcounter));
+      
+      output_assembler("@"+current_function+"$DUIlt" + to_string(ltcounter));
       output_assembler("D;JLT");
-
-      output_assembler("("+current_function+"$ifFalse" +to_string(ltcounter)+")");
-      output_assembler("0;JMP");
-
-      output_assembler("("+current_function+"$ifTrue"+to_string(ltcounter)+")");
-      output_assembler("@SP");
-      output_assembler("A=M-1");
-      output_assembler("M=1");
-      output_assembler("M=-M");
-
-      output_assembler("@"+current_function+"$ifEND"+to_string(ltcounter)+")");
-      output_assembler("0;JMP");
-
-      output_assembler("("+current_function+"$ifFalse"+to_string(ltcounter)+")");
       output_assembler("@SP");
       output_assembler("A=M-1");
       output_assembler("M=0");
+      output_assembler("@"+current_function+"$CUOlt" + to_string(ltcounter));
+      output_assembler("0;JMP");
 
-      output_assembler("("+current_function+"$ifEND" + to_string(ltcounter)+")");*/
+      output_assembler("("+current_function+"$DUIlt" + to_string(ltcounter)+")");
+
+      output_assembler("@SP");
+      output_assembler("A=M-1");
+      output_assembler("M=-1");
+      output_assembler("("+current_function+"$CUOlt" + to_string(ltcounter)+")");
+      ltcounter++;
       break;
      case tk_return:
 
