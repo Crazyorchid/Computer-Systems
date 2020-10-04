@@ -429,7 +429,7 @@ static void translate_vm_stack(TokenKind stack,TokenKind segment,int offset)
             {
             output_assembler("@"+to_string(offset));
             output_assembler("@THAT");
-            output_assembler("@D=M");
+            output_assembler("D=M");
             output_assembler("@SP");
             output_assembler("AM=M+1");
             output_assembler("A=A-1");
@@ -439,7 +439,7 @@ static void translate_vm_stack(TokenKind stack,TokenKind segment,int offset)
             { 
             output_assembler("@"+to_string(offset));
             output_assembler("@THIS");
-            output_assembler("@D=M");
+            output_assembler("D=M");
             output_assembler("@SP");
             output_assembler("AM=M+1");
             output_assembler("A=A-1");
@@ -461,17 +461,14 @@ static void translate_vm_stack(TokenKind stack,TokenKind segment,int offset)
             break;
 
             case tk_this:
-             output_assembler("@"+to_string(offset));
+            output_assembler("@"+to_string(offset));
             output_assembler("D=A");
             output_assembler("@THIS");
-            output_assembler("D=D+M");
-            output_assembler("@13");
-            output_assembler("M=D");
-            output_assembler("@SP");
-            output_assembler("AM=M+");
+            output_assembler("A=D+M");
             output_assembler("D=M");
-            output_assembler("@13");
-            output_assembler("A=M");
+            output_assembler("@SP");
+            output_assembler("AM=M+1");
+            output_assembler("A=A-1");
             output_assembler("M=D");
             break;
 
@@ -479,15 +476,11 @@ static void translate_vm_stack(TokenKind stack,TokenKind segment,int offset)
             output_assembler("@"+to_string(offset));
             output_assembler("D=A");
             output_assembler("@THAT");
-            output_assembler("D=D+M");
-            
-            output_assembler("@13");
-            output_assembler("M=D");
-            output_assembler("@SP");
-            output_assembler("AM=M+");
+            output_assembler("A=D+M");
             output_assembler("D=M");
-            output_assembler("@13");
-            output_assembler("A=M");
+            output_assembler("@SP");
+            output_assembler("AM=M+1");
+            output_assembler("A=A-1");
             output_assembler("M=D");
             break;
 
@@ -514,7 +507,7 @@ static void translate_vm_stack(TokenKind stack,TokenKind segment,int offset)
             output_assembler("@SP");
             output_assembler("AM=M-1");
             output_assembler("D=M");
-            output_assembler("@"+to_string(offset+5));
+            output_assembler("@"+to_string(offset+16));
             output_assembler("M=D");
             break;
 
