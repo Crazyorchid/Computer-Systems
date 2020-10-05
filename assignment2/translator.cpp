@@ -255,71 +255,65 @@ static void translate_vm_operator(TokenKind the_op)
       output_assembler("M=-1");
       output_assembler("@"+current_function+"$END" + to_string(counter));
       output_assembler("0;JMP");
-
       output_assembler("("+current_function+"$EQ" + to_string(counter)+")");
-
       output_assembler("@SP");
       output_assembler("A=M-1");
       output_assembler("M=0");
       output_assembler("("+current_function+"$END" + to_string(counter)+")");
       counter++;
-      
       break;
      
      case tk_return:
      returncounter++;
-
-    //output_assembler("@" + current_function + "$returnAddress");
-
-    output_assembler("@LCL"); // FRAME = LCL
-    output_assembler("D=M");
-    output_assembler("@R13"); // R13 -> FRAME
-    output_assembler("M=D");
-
-    output_assembler("@5"); // RET = *(FRAME-5)
-    output_assembler("A=D-A");
-    output_assembler("D=M");
-    output_assembler("@R14"); // R14 -> RET
-    output_assembler("M=D");
-
-    output_assembler("@SP"); // *ARG = pop()
-    output_assembler("AM=M-1");
-    output_assembler("D=M");
-    output_assembler("@ARG");
-    output_assembler("A=M");
-    output_assembler("M=D");
-
-    output_assembler("D=A"); // SP = ARG+1
-    output_assembler("@SP");
-    output_assembler("M=D+1");
-
-    output_assembler("@R13"); // THAT = *(FRAME-1)
-    output_assembler("AM=M-1");
-    output_assembler("D=M");
-    output_assembler("@THAT");
-    output_assembler("M=D");
-
-    output_assembler("@R13"); // THIS = *(FRAME-2)
-    output_assembler("AM=M-1");
-    output_assembler("D=M");
-    output_assembler("@THIS");
-    output_assembler("M=D");
-
-    output_assembler("@R13"); // ARG = *(FRAME-3)
-    output_assembler("AM=M-1");
-    output_assembler("D=M");
-    output_assembler("@ARG");
-    output_assembler("M=D");
-
-    output_assembler("@R13"); // LCL = *(FRAME-4)
-    output_assembler("AM=M-1");
-    output_assembler("D=M");
-    output_assembler("@LCL");
-    output_assembler("M=D");
-
-    output_assembler("@R14"); // goto RET
-    output_assembler("A=M");
-    output_assembler("0;JMP");
+        output_assembler("@LCL"); // FRAME = LCL
+        output_assembler("D=M");
+        output_assembler("@R13"); // R13 -> FRAME
+        output_assembler("M=D");
+    
+        output_assembler("@5"); // RET = *(FRAME-5)
+        output_assembler("A=D-A");
+        output_assembler("D=M");
+        output_assembler("@R14"); // R14 -> RET
+        output_assembler("M=D");
+    
+        output_assembler("@SP"); // *ARG = pop()
+        output_assembler("AM=M-1");
+        output_assembler("D=M");
+        output_assembler("@ARG");
+        output_assembler("A=M");
+        output_assembler("M=D");
+    
+        output_assembler("D=A"); // SP = ARG+1
+        output_assembler("@SP");
+        output_assembler("M=D+1");
+    
+        output_assembler("@R13"); // THAT = *(FRAME-1)
+        output_assembler("AM=M-1");
+        output_assembler("D=M");
+        output_assembler("@THAT");
+        output_assembler("M=D");
+    
+        output_assembler("@R13"); // THIS = *(FRAME-2)
+        output_assembler("AM=M-1");
+        output_assembler("D=M");
+        output_assembler("@THIS");
+        output_assembler("M=D");
+    
+        output_assembler("@R13"); // ARG = *(FRAME-3)
+        output_assembler("AM=M-1");
+        output_assembler("D=M");
+        output_assembler("@ARG");
+        output_assembler("M=D");
+    
+        output_assembler("@R13"); // LCL = *(FRAME-4)
+        output_assembler("AM=M-1");
+        output_assembler("D=M");
+        output_assembler("@LCL");
+        output_assembler("M=D");
+    
+        output_assembler("@R14"); // goto RET
+        output_assembler("A=M");
+        output_assembler("0;JMP");
 
     break;
 
@@ -361,8 +355,6 @@ static void translate_vm_function(TokenKind func, string label, int n)
 
 
     start_of_vm_func_command(func,label,n) ;
-
-    // ... your code goes here ...
     //state the current function that has been used
 
     if ( func == tk_function )
