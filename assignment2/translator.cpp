@@ -1,5 +1,15 @@
 // convert Hack VM Code into Hack Assembler
 
+/*
+*   Computer Systems
+*   2020, Semester 02
+*   Assignment 2
+*
+*   student (id): a1778478
+*   student (name): Runtao Zhuge
+*
+*/
+
 #include "iobuffer.h"
 #include "tokeniser.h"
 #include "assembler-internal.h"
