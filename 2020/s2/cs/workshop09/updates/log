@@ -1,0 +1,49 @@
+201005-133629 Modified: Nzg3ZTExZTIyMzA5OGQ3OTc4NmM0ZDIwNDVkNmVhNjI2Y2JmMTdjYyAgLi91cGRhdGVzL3dvcmtz
+aG9wMDktMjAyMDA4MTQtMTAxNzA1LnppcAo=
+201005-133629 make install
+201005-133629 SVN user: a1778478, repository path: 2020/s2/cs/workshop09
+201005-133629 updater:  Directory: ./originals
+201005-133629 updater:  Directory: ./originals/HelloWorld
+201005-133629 updater:  Directory: ./originals/SDev
+201005-133629 updater:  Directory: ./originals/Average
+201005-133629 updater:  Directory: ./originals/Sum
+201005-133629 updater:  Directory: ./HelloWorld
+201005-133629 updater:  Directory: ./SDev
+201005-133629 updater:  Directory: ./bin
+201005-133629 updater:  Directory: ./Average
+201005-133629 updater:  Directory: ./Sum
+201005-133629 updater:  Creating: ./originals/HelloWorld/Main.jack
+201005-133629 updater:  Creating: ./originals/SDev/Main.jack
+201005-133629 updater:  Creating: ./originals/Average/Main.jack
+201005-133629 updater:  Creating: ./originals/Sum/Main.jack
+201005-133629 updater:  Creating: ./HelloWorld/runMain.tst
+201005-133629 updater:  Creating: ./HelloWorld/test00.in
+201005-133629 updater:  Creating: ./HelloWorld/runAll.tst
+201005-133629 updater:  Creating: ./HelloWorld/test00.out
+201005-133629 updater:  Creating: ./SDev/runMain.tst
+201005-133629 updater:  Creating: ./SDev/test02.out
+201005-133629 updater:  Creating: ./SDev/test00.in
+201005-133629 updater:  Creating: ./SDev/runAll.tst
+201005-133629 updater:  Creating: ./SDev/test02.in
+201005-133629 updater:  Creating: ./SDev/test01.out
+201005-133629 updater:  Creating: ./SDev/test00.out
+201005-133629 updater:  Creating: ./SDev/test01.in
+201005-133629 updater:  Creating: ./bin/run-tests
+201005-133629 updater:  Creating: ./Average/runMain.tst
+201005-133629 updater:  Creating: ./Average/test00.in
+201005-133629 updater:  Creating: ./Average/runAll.tst
+201005-133629 updater:  Creating: ./Average/test01.out
+201005-133629 updater:  Creating: ./Average/test00.out
+201005-133629 updater:  Creating: ./Average/test01.in
+201005-133629 updater:  Creating: updates/Makefile
+201005-133629 updater:  Creating: ./Sum/runMain.tst
+201005-133629 updater:  Creating: ./Sum/test00.in
+201005-133629 updater:  Creating: ./Sum/runAll.tst
+201005-133629 updater:  Creating: ./Sum/test00.out
+201005-133629 updater:  Made bin/run-tests executable
+201005-133629 updater:  Creating: HelloWorld/Main.jack
+201005-133629 updater:  Creating: SDev/Main.jack
+201005-133629 updater:  Creating: Average/Main.jack
+201005-133629 updater:  Creating: Sum/Main.jack
+201005-133629 updater:  Updating: updates/README
+201005-133629 updater:  Update installed
