@@ -7,8 +7,8 @@ class Main
                 var int sum;
                 
                 
-                        let a = Unix.readInt("");
-                        let b = Unix.readInt("");
+                        let a = Unix.readInt();
+                        let b = Unix.readInt();
                 
                 let sum = a + b;
                 do Unix.printInt(sum) ;
