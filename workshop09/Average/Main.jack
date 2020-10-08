@@ -26,7 +26,7 @@ class Main
                         let i = i+1;
                 }
                 
-                do Unix.printIn(sum) ;
+                do Unix.printString(sum) ;
                 do Unix.println() ;
                 return;
         }
