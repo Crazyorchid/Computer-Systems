@@ -7,8 +7,8 @@ class Main
                 var int sum;
                 
                 
-                        let a = Unix.readInt("Enter the first number ");
-                        let b = Unix.readInt("Enter the next number: ");
+                        let a = Unix.readInt();
+                        let b = Unix.readInt();
                 
                 let sum = a + b;
                 
