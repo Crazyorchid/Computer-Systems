@@ -5,6 +5,9 @@ class Main
         {
                 do Unix.printString("Hello World!") ;
                 do Unix.println() ;
+                
+                do Unix.printString("Hello World!") ;
+                do Unix.println() ;
                 return ;
         }
 }

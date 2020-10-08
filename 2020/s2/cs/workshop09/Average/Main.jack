@@ -25,6 +25,9 @@ class Main
                         let sum = sum + a[i];
                         let i = i+1;
                 }
+                
+                do Unix.printIn(sum) ;
+                do Unix.println() ;
                 return;
         }
 }
