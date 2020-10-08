@@ -12,6 +12,8 @@ class Main
                 
                 let sum = a + b;
                 
+                return;
+                
                 
         }
 }
