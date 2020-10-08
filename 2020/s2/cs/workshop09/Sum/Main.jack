@@ -11,7 +11,7 @@ class Main
                         let b = Unix.readInt("");
                 
                 let sum = a + b;
-                do Unix.printIn(sum) ;
+                do Unix.printString(sum) ;
                 do Unix.println() ;
                 
                 return;
