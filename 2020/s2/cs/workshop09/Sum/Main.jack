@@ -2,8 +2,16 @@ class Main
 {
         function void main()
         {
-                do Unix.printString("Hello World!") ;
-                do Unix.println() ;
-                return ;
+                var int a;
+                var int b;
+                var int sum;
+                
+                
+                        let a = Unix.readInt("Enter the first number ");
+                        let b = Unix.readInt("Enter the next number: ");
+                
+                let sum = a + b;
+                
+                
         }
 }
