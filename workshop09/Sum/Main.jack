@@ -1,21 +1,18 @@
 class Main
 {
-        function void main()
-        {
-                var int a;
-                var int b;
-                var int sum;
-                
-                
-                        let a = Unix.readInt();
-                        let b = Unix.readInt();
-                
-                let sum = a + b;
-                do Unix.printInt(sum) ;
-                do Unix.println() ;
-                
-                return;
-                
-                
-        }
+       	function int sum()
+	{
+		var int sum, num1, num2;
+        let num1 = Unix.readInt("");
+        let num2 = Unix.readInt("");
+		let sum = num1 + num2;
+		return sum;
+	}
+
+	function void main()
+	{
+		do Unix.printInt(Main.sum());
+		do Unix.println();
+		return;
+	}
 }
