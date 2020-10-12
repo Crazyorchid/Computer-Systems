@@ -1,1 +1,15 @@
 function Question.two 2
+
+(Question.two)
+@0
+A=M
+M=0
+@0
+M=M+1
+
+@Question.two
+A=M
+M=0
+@Question.two
+M=M+1
+
