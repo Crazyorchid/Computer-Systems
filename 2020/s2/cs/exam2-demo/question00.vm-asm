@@ -1,3 +1,5 @@
+function Question.zero 0
+(Question.zero)
 push constant 0
 @0
 D=A
