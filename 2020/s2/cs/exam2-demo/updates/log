@@ -1,0 +1,59 @@
+201012-015108 Modified: NmRiODg3MjhhZjBlMDI5NWQ2NjlhZWVmMTEwMzdmYWFhMDc3YjFiYyAgLi8uc3ZuL3djLmRiCmRh
+MzlhM2VlNWU2YjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkgIC4vLnN2bi93Yy5kYi1qb3Vy
+bmFsCmRlYmRiZDY1ZDA4ZTM3ZWFlZjI3OTkyYzA3MGY5ZjZjNjY2Yzk4YzggIC4vdXBkYXRlcy9p
+bnN0YWxsZXIuYmFzaApiN2ZiOTc2NTc1ZGY1Njc4NDZlZDYzMGRiNmU0MjczZmQzY2I0MjM1ICAu
+L3VwZGF0ZXMvZXhhbTJkLTIwMjAwOTIzLTEyMTExMC56aXAK
+201012-015108 make install
+201012-015108 SVN user: a1778478, repository path: 2020/s2/cs/exam2-demo
+201012-015108 updater:  Directory: ./originals
+201012-015108 updater:  Directory: ./bin
+201012-015108 updater:  Directory: ./lib
+201012-015108 updater:  Directory: ./lib/macos
+201012-015108 updater:  Directory: ./lib/macos/bin
+201012-015108 updater:  Directory: ./lib/cats
+201012-015108 updater:  Directory: ./lib/cats/bin
+201012-015108 updater:  Directory: ./lib/centos8
+201012-015108 updater:  Directory: ./lib/centos8/bin
+201012-015108 updater:  Creating: ./originals/question04.vm-asm
+201012-015108 updater:  Creating: ./originals/question00.vm-asm
+201012-015108 updater:  Creating: ./originals/question01.vm-asm
+201012-015108 updater:  Creating: ./originals/question02.vm-asm
+201012-015108 updater:  Creating: ./originals/question09.vm-asm
+201012-015108 updater:  Creating: ./originals/question03.vm-asm
+201012-015108 updater:  Creating: ./originals/question10.vm-asm
+201012-015108 updater:  Creating: ./originals/question05.vm-asm
+201012-015108 updater:  Creating: ./originals/question06.vm-asm
+201012-015108 updater:  Creating: ./originals/question08.vm-asm
+201012-015108 updater:  Creating: ./originals/question07.vm-asm
+201012-015108 updater:  Creating: ./bin/assembler
+201012-015108 updater:  Creating: ./bin/simulator
+201012-015108 updater:  Creating: ./bin/run-tests
+201012-015108 updater:  Creating: ./lib/macos/bin/assembler
+201012-015108 updater:  Creating: ./lib/macos/bin/simulator
+201012-015108 updater:  Creating: ./lib/cats/bin/assembler
+201012-015108 updater:  Creating: ./lib/cats/bin/simulator
+201012-015108 updater:  Creating: ./lib/centos8/bin/assembler
+201012-015108 updater:  Creating: ./lib/centos8/bin/simulator
+201012-015108 updater:  Creating: updates/Makefile
+201012-015108 updater:  Made bin/assembler executable
+201012-015108 updater:  Made bin/run-tests executable
+201012-015108 updater:  Made bin/simulator executable
+201012-015108 updater:  Made lib/cats/bin/assembler executable
+201012-015108 updater:  Made lib/cats/bin/simulator executable
+201012-015108 updater:  Made lib/centos8/bin/assembler executable
+201012-015108 updater:  Made lib/centos8/bin/simulator executable
+201012-015108 updater:  Made lib/macos/bin/assembler executable
+201012-015108 updater:  Made lib/macos/bin/simulator executable
+201012-015108 updater:  Creating: question04.vm-asm
+201012-015108 updater:  Creating: question00.vm-asm
+201012-015108 updater:  Creating: question01.vm-asm
+201012-015108 updater:  Creating: question02.vm-asm
+201012-015108 updater:  Creating: question09.vm-asm
+201012-015108 updater:  Creating: question03.vm-asm
+201012-015108 updater:  Creating: question10.vm-asm
+201012-015108 updater:  Creating: question05.vm-asm
+201012-015108 updater:  Creating: question06.vm-asm
+201012-015108 updater:  Creating: question08.vm-asm
+201012-015108 updater:  Creating: question07.vm-asm
+201012-015108 updater:  Updating: updates/README
+201012-015108 updater:  Update installed
