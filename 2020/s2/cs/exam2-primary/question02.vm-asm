@@ -1,0 +1,13 @@
+pop local 1
+@1
+D=A
+@LCL
+D=D+M
+@13
+M=D
+@SP
+AM=M-1
+D=M
+@13
+A=M
+M=D
