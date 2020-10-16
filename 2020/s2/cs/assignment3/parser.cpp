@@ -333,6 +333,46 @@ ast parse_statements()
 //
 ast parse_statement()
 {
+push_error_context("parseStatement()") ;
+    
+    // a statement node
+    ast stat = nullptr ;
+
+    // add parsing code here ...
+    
+    if (have(tk_while)) stat = parseWhileStatement() ; else
+    if (have(tk_if)) stat = parseIfStatement() ; else
+    if (have(tk_let)) stat = parseLetStatement() ; else
+    if (have(tk_lcb)) stat = parseStatementSequence() ; else
+    
+    
+
+    //alternate
+    /*
+    switch(token kind())
+    {
+    case tk_while:
+        stat = parseWhileStatement() ;
+        break;
+    case tk_if:
+        stat = parseIfStatement() ;
+        break;
+    case tk_let:
+        stat = parseLetStatement() ;
+        break;
+    case tk_lcb:
+        stat = parseStatementSequence() ;
+        break;
+    default:
+        did_not_find(tg_starts_statement) ;
+    break;
+    }
+    */
+
+    // return a statement node
+    stat = create_statement(stat) ;
+    pop_error_context() ;
+    return stat ;
     push_error_context("parse_statement()") ;
 
     pop_error_context() ;
