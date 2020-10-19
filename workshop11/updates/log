@@ -1,0 +1,70 @@
+201019-140612 Modified: ZDE0YWY2MGJhMGQwMmYxYTkyMDE1Y2VlYzdlMWQwZTI4ZTQ2Y2M2NiAgLi91cGRhdGVzL3dvcmtz
+aG9wMTEtMjAyMDA4MjktMTc0MzM5LnppcAo=
+201019-140612 make install
+201019-140612 SVN user: a1778478, repository path: 2020/s2/cs/workshop11
+201019-140612 updater:  Directory: ./originals
+201019-140612 updater:  Directory: ./bin
+201019-140612 updater:  Directory: ./lib
+201019-140612 updater:  Directory: ./lib/macos
+201019-140612 updater:  Directory: ./lib/macos/bin
+201019-140612 updater:  Directory: ./lib/cats
+201019-140612 updater:  Directory: ./lib/cats/bin
+201019-140612 updater:  Directory: ./lib/centos8
+201019-140612 updater:  Directory: ./lib/centos8/bin
+201019-140612 updater:  Directory: ./tests
+201019-140612 updater:  Directory: ./includes
+201019-140612 updater:  Creating: ./originals/translator.cpp
+201019-140612 updater:  Creating: ./translator
+201019-140612 updater:  Creating: ./bin/Compiler-check.bash
+201019-140612 updater:  Creating: ./bin/diff-colours
+201019-140612 updater:  Creating: ./bin/translator
+201019-140612 updater:  Creating: ./bin/run-tests
+201019-140612 updater:  Creating: ./bin/diffc
+201019-140612 updater:  Creating: ./bin/parser
+201019-140612 updater:  Creating: ./lib/macos/bin/diff-colours
+201019-140612 updater:  Creating: ./lib/macos/bin/translator
+201019-140612 updater:  Creating: ./lib/macos/bin/parser
+201019-140612 updater:  Creating: ./lib/macos/lib.a
+201019-140612 updater:  Creating: ./lib/cats/bin/diff-colours
+201019-140612 updater:  Creating: ./lib/cats/bin/translator
+201019-140612 updater:  Creating: ./lib/cats/bin/parser
+201019-140612 updater:  Creating: ./lib/cats/lib.a
+201019-140612 updater:  Creating: ./lib/centos8/bin/diff-colours
+201019-140612 updater:  Creating: ./lib/centos8/bin/translator
+201019-140612 updater:  Creating: ./lib/centos8/bin/parser
+201019-140612 updater:  Creating: ./lib/centos8/lib.a
+201019-140612 updater:  Creating: ./tests/example3.test
+201019-140612 updater:  Creating: ./tests/example2.test
+201019-140612 updater:  Creating: ./tests/example1.test.Pxml-vm
+201019-140612 updater:  Creating: ./tests/example2.test.Pxml-vm
+201019-140612 updater:  Creating: ./tests/example1.test
+201019-140612 updater:  Creating: ./tests/example3.test.Pxml
+201019-140612 updater:  Creating: ./tests/example2.test.Pxml
+201019-140612 updater:  Creating: ./tests/example3.test.Pxml-vm
+201019-140612 updater:  Creating: ./tests/example1.test.Pxml
+201019-140612 updater:  Creating: ./parser.cpp
+201019-140612 updater:  Creating: updates/Makefile
+201019-140612 updater:  Creating: ./includes/tokeniser-groups.h
+201019-140612 updater:  Creating: ./includes/abstract-syntax-tree.h
+201019-140612 updater:  Creating: ./includes/iobuffer.h
+201019-140612 updater:  Creating: ./includes/symbols.h
+201019-140612 updater:  Creating: ./includes/tokeniser.h
+201019-140612 updater:  Made translator executable
+201019-140612 updater:  Made bin/Compiler-check.bash executable
+201019-140612 updater:  Made bin/diff-colours executable
+201019-140612 updater:  Made bin/diffc executable
+201019-140612 updater:  Made bin/parser executable
+201019-140612 updater:  Made bin/run-tests executable
+201019-140612 updater:  Made bin/translator executable
+201019-140612 updater:  Made lib/cats/bin/diff-colours executable
+201019-140612 updater:  Made lib/cats/bin/parser executable
+201019-140612 updater:  Made lib/cats/bin/translator executable
+201019-140612 updater:  Made lib/centos8/bin/diff-colours executable
+201019-140612 updater:  Made lib/centos8/bin/parser executable
+201019-140612 updater:  Made lib/centos8/bin/translator executable
+201019-140612 updater:  Made lib/macos/bin/diff-colours executable
+201019-140612 updater:  Made lib/macos/bin/parser executable
+201019-140612 updater:  Made lib/macos/bin/translator executable
+201019-140612 updater:  Creating: translator.cpp
+201019-140612 updater:  Updating: updates/README
+201019-140612 updater:  Update installed
