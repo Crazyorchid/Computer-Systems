@@ -1,11 +1,3 @@
-//==========================
-// Computer System
-// Student: Jiwiei Ma
-// id: 1813559
-// Year:2020
-// Semester:s2
-// Assignment 3
-//==========================
 #include <string>
 #include <vector>
 #include "iobuffer.h"
