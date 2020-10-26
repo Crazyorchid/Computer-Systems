@@ -4,41 +4,34 @@
 #include "abstract-syntax-tree.h"
 
 using namespace std ;
-
 using namespace CS_IO_Buffers ;
 using namespace CS_Symbol_Tables ;
 using namespace Workshop_Compiler ;
 
-// ignore unused-function warnings in this source file
 #pragma clang diagnostic ignored "-Wunused-function"
+
+
 
 // the grammar we are recognising
 // rules containing text literals are written using the matching tk_* or tg_* names
+//
 // TERM: DEFINITION
 // program: declarations statement tk_eoi
 // declarations: declaration*
 // declaration: tk_var tk_identifier tk_identifier tk_semi
-// statement:  whileStatement | ifStatement | letStatement | statementSequence | doStatement | switchStatement  | throwStatement
-// whileStatement: tk_while tk_lrb expression tk_rrb statement
-// ifStatement: tk_if tk_lrb expression tk_rrb statement (tk_else statement)?
+// statement:  whileStatement | ifStatement | letStatement | statementSequence
+// whileStatement: tk_while tk_lrb condition tk_rrb statement
+// ifStatement: tk_if tk_lrb condition tk_rrb statement (tk_else statement)?
 // letStatement: tk_let tk_identifier tk_assign expression tk_semi
-// statementSequence: tk_rcb statement* tk_rcb
-// doStatement: tk_do statement tk_while tk_lrb expression tk_rrb tk_semi
-// switchStatement: tk_switch tk_lrb expression tk_rrb tk_rcb labelled* tk_rcb
-// labelled: (label tk_colon)? statement
-// label: tk_default | (tk_case expression)
-// throw: tk_throw expression tk_semi
-// expression: term (tg_operator term)?
-// term: tk_identifier | call | tk_integer | tk_string | (tk_lrb expression tk_rrb)
-// call: tk_call tk_identifier tk_lrb expressions? tk_rrb
-// expressions: expression (tk_comma expression)*
+// statementSequence: tk_lcb statement* tk_rcb
+// expression: term (tg_infix_op term)?
+// condition: term tg_relop term
+// term: tk_identifier | tk_integer
 //
 // Token groups for use with have()/have_next()/mustbe()/did_not_find():
 // tg_starts_statement - matches any token that can start a statement
-// tg_starts_labelled - matches any token that can start the rule labelled
-// tg_starts_label - matches any token that can start a label
-// tg_starts_expressions - matches any token that can start the rule expressions
-// tg_operator - matches any token that can be used as an operator in the rule expression
+// tg_infix_op - matches any token that can be used as an infix_op
+// tg_relop - matches any token that can be used as a relop
 // tg_starts_term - matches any token that can start a term
 
 
@@ -51,21 +44,17 @@ static ast parseWhileStatement() ;
 static ast parseIfStatement() ;
 static ast parseLetStatement() ;
 static ast parseStatementSequence() ;
-static ast parseDoStatement() ;
-static ast parseSwitchStatement() ;
-static ast parseLabelled() ;
-static ast parseLabel() ;
-static ast parseThrowStatement() ;
-static ast parseExpressions() ;
 static ast parseExpression() ;
+static ast parseCondition() ;
 static ast parseTerm() ;
-static ast parseCall() ;
 
 // note: we have added push/pop_error_context() calls so that 
 //       you can see part of the call chain when an error occurs
+// note: conditions are represented as an infix expression in the abstract syntax tree
 // note: in a declaration the first identifier is the variable type
 
 // *****           DO NOT EDIT THE CODE ABOVE           *****
+
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -86,7 +75,9 @@ static ast parseProgram()
     ast stat = nullptr ;
 
     // add parsing code here ...
-
+    decls = parseDeclarations();
+    stat = parseStatement();
+    mustbe(tk_eoi);
     // return a program node
     ast ret = create_program(decls,stat) ;
     pop_error_context() ;
@@ -102,7 +93,9 @@ static ast parseDeclarations()
     vector<ast> decls ;
 
     // add parsing code here ...
-
+    while (have(tk_var)){
+        decls.push_back(parseDeclaration());
+    }
     // return a declarations node
     ast ret = create_declarations(decls) ;
     pop_error_context() ;
@@ -119,71 +112,103 @@ static ast parseDeclaration()
     push_error_context("parseDeclaration()") ;
 
     // a variable node returned by declare_variable()
-    ast decl = nullptr ;
+    ast var = nullptr ;
 
     // add parsing code here ...
-
+    mustbe(tk_var);
+    Token type=mustbe(tk_identifier);
+    Token id=mustbe(tk_identifier);
+    var=declare_variable(id,type);
+    mustbe(tk_semi);
     // return a declaration node
-    ast ret = create_declaration(decl) ;
+    ast ret = create_declaration(var) ;
     pop_error_context() ;
     return ret ;
 }
 
-// statement:  whileStatement | ifStatement | letStatement | statementSequence | doStatement | switchStatement  | throwStatement
+// statement:  whileStatement | ifStatement | letStatement | statementSequence
 static ast parseStatement()
 {
     push_error_context("parseStatement()") ;
-
+    
     // a statement node
     ast stat = nullptr ;
 
     // add parsing code here ...
-
+    switch (token_kind()) {
+        case tk_while:
+            stat=parseWhileStatement();
+            break;
+        case tk_if:
+            stat=parseIfStatement();
+            break;
+        case tk_let:
+            stat=parseLetStatement();
+            break;
+        case tk_lcb:
+            stat=parseStatementSequence();
+            break;
+        default:
+            did_not_find(tg_starts_statement);
+            break;
+    }
     // return a statement node
     stat = create_statement(stat) ;
     pop_error_context() ;
     return stat ;
 }
 
-// whileStatement: tk_while tk_lrb expression tk_rrb statement
+// whileStatement: tk_while tk_lrb condition tk_rrb statement
 static ast parseWhileStatement()
 {
     push_error_context("parseWhileStatement()") ;
 
     // an expression node and a statement node
-    ast expr = nullptr ;
+    ast cond = nullptr ;
     ast stat = nullptr ;
 
     // add parsing code here ...
+    mustbe(tk_while);
+    mustbe(tk_lrb);
+    cond =parseExpression();
+    mustbe(tk_rrb);
+    stat=parseStatement();
 
     // return a while node
-    ast ret = create_while(expr,stat) ;
+    ast ret = create_while(cond,stat) ;
     pop_error_context() ;
     return ret ;
 }
 
-// ifStatement: tk_if tk_lrb expression tk_rrb statement (tk_else statement)?
+// ifStatement: tk_if tk_lrb condition tk_rrb statement (tk_else statement)?
 static ast parseIfStatement()
 {
     push_error_context("parseIfStatement()") ;
 
     // an expression node and statement nodes
-    ast expr = nullptr ;
+    ast cond = nullptr ;
     ast then_stat = nullptr ;
     ast else_stat = nullptr ;
 
     // add parsing code here ...
+    mustbe(tk_if);
+    mustbe(tk_lrb) ;
+    cond = parseExpression();
 
-    // if there is an else statement
+    mustbe(tk_rrb) ;
+    then_stat = parseStatement();
+    if (have(tk_else))
     {
+        mustbe(tk_else);
+        else_stat = parseStatement();
         // return an if else node
-        ast ret = create_if_else(expr,then_stat,else_stat) ;
+        ast ret = create_if_else(cond,then_stat,else_stat) ;
         pop_error_context() ;
         return ret ;
     }
 
     // return an if node
-    ast ret = create_if(expr,then_stat) ;
+    ast ret = create_if(cond,then_stat) ;
     pop_error_context() ;
     return ret ;
 }
@@ -201,6 +226,11 @@ static ast parseLetStatement()
     ast expr = nullptr ;
 
     // add parsing code here ...
+    mustbe(tk_let);
+    id = lookup_variable(mustbe(tk_identifier));
+    mustbe(tk_assign);
+    expr = parseExpression();
+    mustbe(tk_semi);
 
     // return a let node
     ast ret = create_let(id,expr) ;
@@ -217,141 +247,86 @@ static ast parseStatementSequence()
     vector<ast> seq ;
 
     // add parsing code here ...
+    mustbe(tk_lcb) ;
+    while ( have(tg_starts_statement) )
+    {
+        seq.push_back(parseStatement()) ;
+    }
+    mustbe(tk_rcb) ;
 
+    return create_statements(seq) ;
     // return a statements node
     ast ret = create_statements(seq) ;
     pop_error_context() ;
     return ret ;
 }
 
-// doStatement: tk_do statement tk_while tk_lrb expression tk_rrb tk_semi
-static ast parseDoStatement()
-{
-    push_error_context("parseDoStatement()") ;
-
-    // an expression node and a statement node
-    ast expr = nullptr ;
-    ast stat = nullptr ;
-
-    // add parsing code here ...
-
-    // return a do node
-    ast ret = create_do(expr,stat) ;
-    pop_error_context() ;
-    return ret ;
-}
-
-// switchStatement: tk_switch tk_lrb expression tk_rrb tk_rcb labelled* tk_rcb
-static ast parseSwitchStatement()
-{
-    push_error_context("parseSwitchStatement()") ;
-
-    // an expression node and a statements node
-    ast expr = nullptr ;
-    vector<ast> stats ;
-
-    // add parsing code here ...
-
-    // return a switch node
-    ast ret = create_switch(expr,create_statements(stats)) ;
-    pop_error_context() ;
-    return ret ;
-}
-
-// labelled: (label tk_colon) | statement
-static ast parseLabelled()
-{
-    push_error_context("parseLabelled()") ;
-
-    // a statement node
-    ast stat = nullptr ;
-
-    // add parsing code here ...
-
-    // return the statement node - there is no labelled node
-    pop_error_context() ;
-    return stat ;
-}
-
-// label: tk_default | (tk_case expression)
-static ast parseLabel()
-{
-    push_error_context("parseLabel()") ;
-
-    // a label node and an expression node
-    ast expr = nullptr ;
-
-    // add parsing code here ...
-
-    // if its a case label
-    {
-        // return a case label node wrapped in a statement
-        ast ret = create_statement(create_case(expr)) ;
-        pop_error_context() ;
-        return ret ;
-    }
-
-    // return a default label node wrapped in a statement
-    ast ret = create_statement(create_default()) ;
-    pop_error_context() ;
-    return ret ;
-}
-
-
-// throw: tk_throw expression tk_semi
-static ast parseThrowStatement()
-{
-    push_error_context("parseThrowStatement()") ;
-
-    // an expression node
-    ast expr = nullptr ;
-
-    // add parsing code here ...
-
-    // return a throw node
-    ast ret = create_throw(expr) ;
-    pop_error_context() ;
-    return ret ;
-}
-
-// expressions: expression (tk_comma expression)*
-static ast parseExpressions()
-{
-    push_error_context("parseExpressions()") ;
-
-    // a vector of expression nodes
-    vector<ast> exprs ;
-
-    // add parsing code here ...
-
-    // return an expressions node
-    ast ret = create_expressions(exprs) ;
-    pop_error_context() ;
-    return ret ;
-}
-
-// expression: term (tg_operator term)?
+// expression: term (tg_infix_op term)?
 static ast parseExpression()
 {
     push_error_context("parseExpression()") ;
 
-    // two term nodes and a Token
+    // an expression node, two term nodes and a Token
     ast lhs = nullptr ;
     ast rhs = nullptr ;
     Token infix_op = nullptr ;
 
     // add parsing code here ...
-
-    // if the expression has an infix operator
+    lhs = parseTerm();
+    if (have(tk_lt))
     {
+        infix_op = mustbe(tk_lt);
+        rhs = parseTerm();
+    }
+    else if (have(tk_times))
+    {
+        infix_op = mustbe(tk_times);
+        rhs = parseTerm();
+    }
+    else if (have(tk_eq))
+    {
+        infix_op = mustbe(tk_eq);
+        rhs = parseTerm();
+    }
+    else if (have(tk_gt))
+    {
+        infix_op = mustbe(tk_gt);
+        rhs = parseTerm();
+    }
+
+    if (infix_op == nullptr)
+    {
+        // return a single term expression node
+        ast ret = create_expression(lhs) ;
+        pop_error_context() ;
+        return ret ;
+    }
+    else
+    {
+        // if the expression has an infix operator
         // return an infix expression node
         ast ret = create_expression(create_infix_op(lhs,token_spelling(infix_op),rhs)) ;
         pop_error_context() ;
         return ret ;
     }
 
-    // return a single term expression node
-    ast ret = create_expression(lhs) ;
+
+}
+
+// condition: term tg_relop term
+static ast parseCondition()
+{
+    push_error_context("parseCondition()") ;
+
+    // two term nodes and a Token
+    ast lhs = nullptr ;
+    Token relop = nullptr ;
+    ast rhs = nullptr ;
+
+    // add parsing code here ...
+
+    // return the parsed condition as an expression node
+    ast ret = create_expression(create_infix_op(lhs,token_spelling(relop),rhs)) ;
     pop_error_context() ;
     return ret ;
 }
@@ -364,45 +339,28 @@ static ast integer_to_ast(Token integer)
     return create_int(token_ivalue(integer)) ;
 }
 
-// turn a string token into an ast node
-static ast string_to_ast(Token astring)
-{
-    return create_string(token_spelling(astring)) ;
-}
-
 // To return the variable's tree node or report a fatal error if it was not previously declared, use:
 // ast lookup_variable(Token identifier) ;
 
-// term: tk_identifier | call | tk_integer | tk_string | (tk_lrb expression tk_rrb)
+// term: tk_identifier | tk_integer
 static ast parseTerm()
 {
     push_error_context("parseTerm()") ;
 
-    // a variable node, a call node, an integer node, a string node or an expression node
+    // a variable or integer node
     ast term = nullptr ;
 
     // add parsing code here ...
-
-    // return the term parsed wrapped in a term node
+    if (have(tk_identifier))
+    {
+        term = lookup_variable(mustbe(tk_identifier));
+    }
+    else if (have(tk_integer))
+    {
+        term = integer_to_ast(mustbe(tk_integer));
+    }
+    // return the parsed term in a term node
     ast ret = create_term(term) ;
-    pop_error_context() ;
-    return ret ;
-}
-
-// call: tk_call tk_identifier tk_lrb expressions? tk_rrb
-// the identifier is a function name, do not use lookup_variable()
-static ast parseCall()
-{
-    push_error_context("parseCall()") ;
-
-    // a string and an expressions node
-    string fn = "" ;
-    ast exprs = nullptr ;
-
-    // add parsing code here ...
-
-    // return a call node
-    ast ret = create_call(fn,exprs) ;
     pop_error_context() ;
     return ret ;
 }
@@ -508,7 +466,7 @@ int main(int argc,char **argv)
     config_errors(iob_immediate) ;
 
     initialise_symbol_tables() ;        // initialise symbol tables
-    push_symbol_table("local") ;        // push a new symbol table to hold global declarations
+    push_symbol_table("local") ;        // push a new symbol table to hold declarations
 
     next_token() ;                      // read first token to initialise tokeniser
     ast program = parseProgram() ;      // parse a Program to get a parse tree
