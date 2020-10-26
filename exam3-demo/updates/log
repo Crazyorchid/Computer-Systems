@@ -77,3 +77,139 @@ NDUyODkgIC4vTWFrZWZpbGUK
 201026-144246 updater:  Creating: parser.cpp
 201026-144246 updater:  Updating: updates/README
 201026-144246 updater:  Update installed
+201026-190513 Modified: NjI5ZWRjYWEyZjY4MTI1ZDI4NzA0YWI2OWFiMjc4OTJhY2UzOWRlMSAgLi9wYXJzZXIuY3BwCmQ1
+NDllOTBhMDY1MTc3NDk1MDZkMmMyZjhhNTgzOTdiYWU3NDUyODkgIC4vTWFrZWZpbGUK
+201026-190513 make 
+201026-190513 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-190513 updater:  Directory: ./bin
+201026-190513 updater:  Directory: ./includes
+201026-190513 updater:  Directory: ./lib
+201026-190513 updater:  Directory: ./lib/centos8
+201026-190513 updater:  Directory: ./lib/centos8/bin
+201026-190513 updater:  Directory: ./lib/cats
+201026-190513 updater:  Directory: ./lib/cats/bin
+201026-190513 updater:  Directory: ./lib/macos
+201026-190513 updater:  Directory: ./lib/macos/bin
+201026-190513 updater:  Directory: ./originals
+201026-190513 updater:  Directory: ./tests
+201026-190513 updater:  Creating: ./bin/parser
+201026-190513 updater:  Creating: ./bin/run-tests
+201026-190513 updater:  Creating: ./bin/diff-colours
+201026-190513 updater:  Creating: ./bin/diffc
+201026-190513 updater:  Creating: ./bin/Compiler-check.bash
+201026-190513 updater:  Creating: ./bin/tokens
+201026-190513 updater:  Creating: ./parser
+201026-190513 updater:  Creating: ./includes/iobuffer.h
+201026-190513 updater:  Creating: ./includes/abstract-syntax-tree.h
+201026-190513 updater:  Creating: ./includes/symbols.h
+201026-190513 updater:  Creating: ./includes/tokeniser.h
+201026-190513 updater:  Creating: ./includes/tokeniser-groups.h
+201026-190513 updater:  Creating: ./lib/centos8/bin/parser
+201026-190513 updater:  Creating: ./lib/centos8/bin/diff-colours
+201026-190513 updater:  Creating: ./lib/centos8/bin/tokens
+201026-190513 updater:  Creating: ./lib/centos8/lib.a
+201026-190513 updater:  Creating: ./lib/cats/bin/parser
+201026-190513 updater:  Creating: ./lib/cats/bin/diff-colours
+201026-190513 updater:  Creating: ./lib/cats/bin/tokens
+201026-190513 updater:  Creating: ./lib/cats/lib.a
+201026-190513 updater:  Creating: ./lib/macos/bin/parser
+201026-190513 updater:  Creating: ./lib/macos/bin/diff-colours
+201026-190513 updater:  Creating: ./lib/macos/bin/tokens
+201026-190513 updater:  Creating: ./lib/macos/lib.a
+201026-190513 updater:  Creating: ./originals/parser.cpp
+201026-190513 updater:  Creating: ./tests/while1.test
+201026-190513 updater:  Creating: ./tests/var1.test.Pxml
+201026-190513 updater:  Creating: ./tests/let1.test.Pxml
+201026-190513 updater:  Creating: ./tests/ifelse1.test
+201026-190513 updater:  Creating: ./tests/sequence2.test
+201026-190513 updater:  Creating: ./tests/let2.test
+201026-190513 updater:  Creating: ./tests/ifelse1.test.Pxml
+201026-190513 updater:  Creating: ./tests/sequence2.test.Pxml
+201026-190513 updater:  Creating: ./tests/var2.test.Pxml
+201026-190513 updater:  Creating: ./tests/var1.test
+201026-190513 updater:  Creating: ./tests/var2.test
+201026-190513 updater:  Creating: ./tests/if1.test.Pxml
+201026-190513 updater:  Creating: ./tests/let1.test
+201026-190513 updater:  Creating: ./tests/let2.test.Pxml
+201026-190513 updater:  Creating: ./tests/while1.test.Pxml
+201026-190513 updater:  Creating: ./tests/sequence1.test.Pxml
+201026-190513 updater:  Creating: ./tests/if1.test
+201026-190513 updater:  Creating: ./tests/sequence1.test
+201026-190513 updater:  Creating: updates/Makefile
+201026-190513 updater:  Made parser executable
+201026-190513 updater:  Made bin/Compiler-check.bash executable
+201026-190513 updater:  Made bin/diffc executable
+201026-190513 updater:  Made bin/diff-colours executable
+201026-190513 updater:  Made bin/parser executable
+201026-190513 updater:  Made bin/run-tests executable
+201026-190513 updater:  Made bin/tokens executable
+201026-190513 updater:  Made lib/cats/bin/diff-colours executable
+201026-190513 updater:  Made lib/cats/bin/parser executable
+201026-190513 updater:  Made lib/cats/bin/tokens executable
+201026-190513 updater:  Made lib/centos8/bin/diff-colours executable
+201026-190513 updater:  Made lib/centos8/bin/parser executable
+201026-190513 updater:  Made lib/centos8/bin/tokens executable
+201026-190513 updater:  Made lib/macos/bin/diff-colours executable
+201026-190513 updater:  Made lib/macos/bin/parser executable
+201026-190513 updater:  Made lib/macos/bin/tokens executable
+201026-190513 updater:  Updating: updates/README
+201026-190513 updater:  Update installed
+201026-191018 Modified: ZDRhOWM0OGRiN2VmMjQwZDY0ZDgyMjk0OGU0NmQ1MmM2ODMzYjhlOSAgLi9wYXJzZXIuY3BwCg==
+201026-191018 make 
+201026-191018 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-191124 Modified: NGY4OTE4M2E5Yzk2MGVjMGE3ZDQ1NDg1NDBmY2UyYzU4OWY5ODkxMCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCmFlNzNhOTBlMTkwM2JiZTE5YjYxOGY3YTg0NzI2NDljYjA5MWEwMjAgIC4vcGFy
+c2VyLmNwcAo=
+201026-191124 make 
+201026-191124 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-191252 Modified: NTkyYzMxZThjODY4M2ZhN2U5NmRlMDlkZjNhMDhlNWUyNjQ3MTBhNyAgLi9wYXJzZXIuY3BwCg==
+201026-191252 make 
+201026-191252 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-191337 make 
+201026-191337 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-192530 Modified: MTYzZmYxMTg2Yzg2MzIyZTNiN2RlNmEzZTY5MjhhNTNhOTAxYTZhMyAgLi9wYXJzZXIuY3BwCg==
+201026-192530 make 
+201026-192530 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-193517 Modified: M2UyZTE4NDJlZDNkYjc0MDc0N2MxMzcwMmRlZmIxMGEyNzNiMDExOCAgLi9wYXJzZXIuY3BwCg==
+201026-193517 make 
+201026-193517 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-193904 Modified: M2Y3MDA4ZDc1ODVkMjNmZTE3ZWU0MGJjMzEyMTVjNGM1NDk4YTcxYSAgLi9wYXJzZXIuY3BwCg==
+201026-193904 make 
+201026-193904 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-194713 Modified: ZjcyMTkxZDhiNzBjZDU5YTY3ZGNjNDJkYjU2NGY5NDc5Yjk0NWI2NSAgLi9wYXJzZXIuY3BwCg==
+201026-194713 make 
+201026-194713 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-195607 Modified: NGY4OTE4M2E5Yzk2MGVjMGE3ZDQ1NDg1NDBmY2UyYzU4OWY5ODkxMCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCjE1Y2RjYmNmZDQzYTUwYTA0MzYyYmJlYjEwZDEyNjI0YmJkNDZmNDkgIC4vcGFy
+c2VyLmNwcAo=
+201026-195607 make 
+201026-195607 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-195743 Modified: NGY4OTE4M2E5Yzk2MGVjMGE3ZDQ1NDg1NDBmY2UyYzU4OWY5ODkxMCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCjIxMjA3ZTg5MmZhMTg5Nzc1NTc4NjljYjEzMGFkNGVlMDA2Mjc4NDUgIC4vcGFy
+c2VyLmNwcAo=
+201026-195743 make 
+201026-195743 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-200039 Modified: MmM2ZDFiNzEwODQzMzhmMGQ1MGI4ZDQxYjA4MTU1OGQ5Njc4MDBlNyAgLi9wYXJzZXIuY3BwCg==
+201026-200039 make 
+201026-200039 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-203828 Modified: OTMxOTMwZDg0YTlkMjZhYjhmMmIwYzAwNjM5N2JlMjZmMzdjMDQwNSAgLi9wYXJzZXIuY3BwCg==
+201026-203828 make 
+201026-203828 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-204733 Modified: NmUwZjQ4NDJlN2RhNTFlMDE2N2M2YWY4Mzg5OTUzNWRlZWViMzRhNyAgLi9wYXJzZXIuY3BwCg==
+201026-204733 make 
+201026-204733 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-205047 Modified: NzE5MmYzNWJiOTdjNDBmOGM1ZTFmMmU4MzBiNmQwNTBlOGI5OTQ4MiAgLi9wYXJzZXIuY3BwCg==
+201026-205047 make 
+201026-205047 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-210206 Modified: ZGUxZjE1ZjY4NjkxNDNiNGYxZWE2MDVhNTlmNTdhY2U0MTdlZTIyYSAgLi9wYXJzZXIuY3BwCg==
+201026-210206 make 
+201026-210206 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-210322 Modified: ZGUxZjE1ZjY4NjkxNDNiNGYxZWE2MDVhNTlmNTdhY2U0MTdlZTIyYSAgLi9wYXJzZXJfMy5jcHAK
+201026-210322 make 
+201026-210322 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-211231 Modified: YzdhMDc5Zjg2NGFkNTk2NDJiNWE1OGRkMzg0YWEyYjc5MTUyZTk4ZSAgLi9vcmlnaW5hbHMvcGFy
+c2VyLmNwcAowYmY3MzM0NTczZjgzMmVhMzRhNTQ4YTZmZjkyOWI3N2EzZjBiNDdkICAuL3BhcnNl
+ci5jcHAK
+201026-211231 make 
+201026-211231 SVN user: a1778478, repository path: 2020/s2/cs/exam3-demo
+201026-211231 updater:  Updating: ./originals/parser.cpp

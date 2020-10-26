@@ -4,13 +4,13 @@
 #include "abstract-syntax-tree.h"
 
 using namespace std ;
-
 using namespace CS_IO_Buffers ;
 using namespace CS_Symbol_Tables ;
 using namespace Workshop_Compiler ;
 
-// ignore unused-function warnings in this source file
 #pragma clang diagnostic ignored "-Wunused-function"
+
+
 
 // the grammar we are recognising
 // rules containing text literals are written using the matching tk_* or tg_* names
@@ -75,7 +75,9 @@ static ast parseProgram()
     ast stat = nullptr ;
 
     // add parsing code here ...
-
+    decls = parseDeclarations();
+    stat = parseStatement();
+    mustbe(tk_eoi);
     // return a program node
     ast ret = create_program(decls,stat) ;
     pop_error_context() ;
@@ -91,7 +93,9 @@ static ast parseDeclarations()
     vector<ast> decls ;
 
     // add parsing code here ...
-
+    while (have(tk_var)){
+        decls.push_back(parseDeclaration());
+    }
     // return a declarations node
     ast ret = create_declarations(decls) ;
     pop_error_context() ;
@@ -111,7 +115,11 @@ static ast parseDeclaration()
     ast var = nullptr ;
 
     // add parsing code here ...
-
+    mustbe(tk_var);
+    Token type=mustbe(tk_identifier);
+    Token id=mustbe(tk_identifier);
+    var=declare_variable(id,type);
+    mustbe(tk_semi);
     // return a declaration node
     ast ret = create_declaration(var) ;
     pop_error_context() ;
@@ -127,7 +135,23 @@ static ast parseStatement()
     ast stat = nullptr ;
 
     // add parsing code here ...
-
+    switch (token_kind()) {
+        case tk_while:
+            stat=parseWhileStatement();
+            break;
+        case tk_if:
+            stat=parseIfStatement();
+            break;
+        case tk_let:
+            stat=parseLetStatement();
+            break;
+        case tk_lcb:
+            stat=parseStatementSequence();
+            break;
+        default:
+            did_not_find(tg_starts_statement);
+            break;
+    }
     // return a statement node
     stat = create_statement(stat) ;
     pop_error_context() ;
@@ -144,6 +168,11 @@ static ast parseWhileStatement()
     ast stat = nullptr ;
 
     // add parsing code here ...
+    mustbe(tk_while);
+    mustbe(tk_lrb);
+    cond =parseExpression();
+    mustbe(tk_rrb);
+    stat=parseStatement();
 
     // return a while node
     ast ret = create_while(cond,stat) ;
@@ -162,9 +191,16 @@ static ast parseIfStatement()
     ast else_stat = nullptr ;
 
     // add parsing code here ...
+    mustbe(tk_if);
+    mustbe(tk_lrb) ;
+    cond = parseExpression();
 
-    // if there is an else statement
+    mustbe(tk_rrb) ;
+    then_stat = parseStatement();
+    if (have(tk_else))
     {
+        mustbe(tk_else);
+        else_stat = parseStatement();
         // return an if else node
         ast ret = create_if_else(cond,then_stat,else_stat) ;
         pop_error_context() ;
@@ -190,6 +226,11 @@ static ast parseLetStatement()
     ast expr = nullptr ;
 
     // add parsing code here ...
+    mustbe(tk_let);
+    id = lookup_variable(mustbe(tk_identifier));
+    mustbe(tk_assign);
+    expr = parseExpression();
+    mustbe(tk_semi);
 
     // return a let node
     ast ret = create_let(id,expr) ;
@@ -206,7 +247,14 @@ static ast parseStatementSequence()
     vector<ast> seq ;
 
     // add parsing code here ...
+    mustbe(tk_lcb) ;
+    while ( have(tg_starts_statement) )
+    {
+        seq.push_back(parseStatement()) ;
+    }
+    mustbe(tk_rcb) ;
 
+    return create_statements(seq) ;
     // return a statements node
     ast ret = create_statements(seq) ;
     pop_error_context() ;
@@ -224,19 +272,45 @@ static ast parseExpression()
     Token infix_op = nullptr ;
 
     // add parsing code here ...
-
-    // if the expression has an infix operator
+    lhs = parseTerm();
+    if (have(tk_lt))
     {
+        infix_op = mustbe(tk_lt);
+        rhs = parseTerm();
+    }
+    else if (have(tk_times))
+    {
+        infix_op = mustbe(tk_times);
+        rhs = parseTerm();
+    }
+    else if (have(tk_eq))
+    {
+        infix_op = mustbe(tk_eq);
+        rhs = parseTerm();
+    }
+    else if (have(tk_gt))
+    {
+        infix_op = mustbe(tk_gt);
+        rhs = parseTerm();
+    }
+
+    if (infix_op == nullptr)
+    {
+        // return a single term expression node
+        ast ret = create_expression(lhs) ;
+        pop_error_context() ;
+        return ret ;
+    }
+    else
+    {
+        // if the expression has an infix operator
         // return an infix expression node
         ast ret = create_expression(create_infix_op(lhs,token_spelling(infix_op),rhs)) ;
         pop_error_context() ;
         return ret ;
     }
 
-    // return a single term expression node
-    ast ret = create_expression(lhs) ;
-    pop_error_context() ;
-    return ret ;
+
 }
 
 // condition: term tg_relop term
@@ -277,7 +351,14 @@ static ast parseTerm()
     ast term = nullptr ;
 
     // add parsing code here ...
-
+    if (have(tk_identifier))
+    {
+        term = lookup_variable(mustbe(tk_identifier));
+    }
+    else if (have(tk_integer))
+    {
+        term = integer_to_ast(mustbe(tk_integer));
+    }
     // return the parsed term in a term node
     ast ret = create_term(term) ;
     pop_error_context() ;
