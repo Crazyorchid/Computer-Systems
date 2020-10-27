@@ -588,7 +588,7 @@ ast copy_term(ast t)
         copy = nullptr ;
         break ;
     }
-    
+
     if ( copy == term ) return t ;
 
     return create_term(get_ann(t),copy) ;
