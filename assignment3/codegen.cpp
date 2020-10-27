@@ -2,6 +2,7 @@
 #include "symbols.h"
 #include "abstract-syntax-tree.h"
 #include <map>
+
 // to shorten our code:
 using namespace std ;
 using namespace CS_IO_Buffers ;
@@ -116,18 +117,18 @@ void walk_subr(ast t)
 
     switch(ast_node_kind(subr))
     {
-    case ast_constructor:
-        walk_constructor(subr) ;
-        break ;
-    case ast_function:
-        walk_function(subr) ;
-        break ;
-    case ast_method:
-        walk_method(subr) ;
-        break ;
-    default:
-        fatal_error(0,"Unexpected subroutine kind") ;
-        break ;
+        case ast_constructor:
+            walk_constructor(subr) ;
+            break ;
+        case ast_function:
+            walk_function(subr) ;
+            break ;
+        case ast_method:
+            walk_method(subr) ;
+            break ;
+        default:
+            fatal_error(0,"Unexpected subroutine kind") ;
+            break ;
     }
 }
 
@@ -140,7 +141,7 @@ void walk_constructor(ast t)
 
     walk_param_list(param_list) ;
     write_to_output_ln("function "+myclassname+"."+name+" "+
-    to_string(size_of_var_decs(get_subr_body_decs(subr_body))));
+                       to_string(size_of_var_decs(get_subr_body_decs(subr_body))));
     write_to_output_ln("push constant "+to_string(this_counter));
     write_to_output_ln("call Memory.alloc 1");
     write_to_output_ln("pop pointer 0");
@@ -156,7 +157,7 @@ void walk_function(ast t)
 
     walk_param_list(param_list) ;
     write_to_output_ln("function "+myclassname+"."+name+" "+
-    to_string(size_of_var_decs(get_subr_body_decs(subr_body))));
+                       to_string(size_of_var_decs(get_subr_body_decs(subr_body))));
     walk_subr_body(subr_body) ;
 }
 
@@ -169,7 +170,7 @@ void walk_method(ast t)
 
     walk_param_list(param_list) ;
     write_to_output_ln("function "+myclassname+"."+name+" "+
-    to_string(size_of_var_decs(get_subr_body_decs(subr_body))));
+                       to_string(size_of_var_decs(get_subr_body_decs(subr_body))));
     write_to_output_ln("push argument 0");
     write_to_output_ln("pop pointer 0");
     walk_subr_body(subr_body) ;
@@ -217,36 +218,36 @@ void walk_statement(ast t)
 
     switch(ast_node_kind(statement))
     {
-    case ast_let:
-        walk_let(statement) ;
-        break ;
-    case ast_let_array:
-        walk_let_array(statement) ;
-        break ;
-    case ast_if:
-        walk_if(statement) ;
-        break ;
-    case ast_if_else:
-        walk_if_else(statement) ;
-        break ;
-    case ast_while:
-        walk_while(statement) ;
-        break ;
-    case ast_do:
-        walk_do(statement) ;
-        break ;
-    case ast_return:
-        walk_return(statement) ;
-        break ;
-    case ast_return_expr:
-        walk_return_expr(statement) ;
-        break ;
-    case ast_statements:
-        walk_statements(statement) ;
-        break ;
-    default:
-        fatal_error(0,"Unexpected statement kind") ;
-        break ;
+        case ast_let:
+            walk_let(statement) ;
+            break ;
+        case ast_let_array:
+            walk_let_array(statement) ;
+            break ;
+        case ast_if:
+            walk_if(statement) ;
+            break ;
+        case ast_if_else:
+            walk_if_else(statement) ;
+            break ;
+        case ast_while:
+            walk_while(statement) ;
+            break ;
+        case ast_do:
+            walk_do(statement) ;
+            break ;
+        case ast_return:
+            walk_return(statement) ;
+            break ;
+        case ast_return_expr:
+            walk_return_expr(statement) ;
+            break ;
+        case ast_statements:
+            walk_statements(statement) ;
+            break ;
+        default:
+            fatal_error(0,"Unexpected statement kind") ;
+            break ;
     }
 }
 
@@ -312,7 +313,7 @@ void walk_while(ast t)
 {
     ast condition = get_while_condition(t) ;
     ast body = get_while_body(t) ;
-    
+
     string label_idx = to_string(while_label++);
     write_to_output_ln("label WHILE_EXP"+label_idx);
     walk_expr(condition) ;
@@ -329,15 +330,15 @@ void walk_do(ast t)
 
     switch(ast_node_kind(call))
     {
-    case ast_call_as_function:
-        walk_call_as_function(call) ;
-        break ;
-    case ast_call_as_method:
-        walk_call_as_method(call) ;
-        break ;
-    default:
-        fatal_error(0,"Unexpected call kind") ;
-        break ;
+        case ast_call_as_function:
+            walk_call_as_function(call) ;
+            break ;
+        case ast_call_as_method:
+            walk_call_as_method(call) ;
+            break ;
+        default:
+            fatal_error(0,"Unexpected call kind") ;
+            break ;
     }
     write_to_output_ln("pop temp 0");
 }
@@ -356,18 +357,18 @@ void walk_return_expr(ast t)
     write_to_output_ln("return");
 }
 
-map<string, string> op_map = 
-{
-    {"+", "add"},
-    {"-", "sub"},
-    {"*", "call Math.multiply 2"},
-    {"/", "call Math.divide 2"},
-    {"&", "and"},
-    {"|", "or"},
-    {">", "gt"},
-    {"=", "eq"},
-    {"<", "lt"}
-};
+map<string, string> op_map =
+        {
+                {"+", "add"},
+                {"-", "sub"},
+                {"*", "call Math.multiply 2"},
+                {"/", "call Math.divide 2"},
+                {"&", "and"},
+                {"|", "or"},
+                {">", "gt"},
+                {"=", "eq"},
+                {"<", "lt"}
+        };
 void walk_expr(ast t)
 {
     int term_ops = size_of_expr(t) ;
@@ -389,42 +390,42 @@ void walk_term(ast t)
 
     switch(ast_node_kind(term))
     {
-    case ast_int:
-        walk_int(term) ;
-        break ;
-    case ast_string:
-        walk_string(term) ;
-        break ;
-    case ast_bool:
-        walk_bool(term) ;
-        break ;
-    case ast_null:
-        walk_null(term) ;
-        break ;
-    case ast_this:
-        walk_this(term) ;
-        break ;
-    case ast_expr:
-        walk_expr(term) ;
-        break ;
-    case ast_unary_op:
-        walk_unary_op(term) ;
-        break ;
-    case ast_var:
-        walk_var(term, PUSH) ;
-        break ;
-    case ast_array_index:
-        walk_array_index(term) ;
-        break ;
-    case ast_call_as_function:
-        walk_call_as_function(term) ;
-        break ;
-    case ast_call_as_method:
-        walk_call_as_method(term) ;
-        break ;
-    default:
-        fatal_error(0,"Unexpected term kind") ;
-        break ;
+        case ast_int:
+            walk_int(term) ;
+            break ;
+        case ast_string:
+            walk_string(term) ;
+            break ;
+        case ast_bool:
+            walk_bool(term) ;
+            break ;
+        case ast_null:
+            walk_null(term) ;
+            break ;
+        case ast_this:
+            walk_this(term) ;
+            break ;
+        case ast_expr:
+            walk_expr(term) ;
+            break ;
+        case ast_unary_op:
+            walk_unary_op(term) ;
+            break ;
+        case ast_var:
+            walk_var(term, PUSH) ;
+            break ;
+        case ast_array_index:
+            walk_array_index(term) ;
+            break ;
+        case ast_call_as_function:
+            walk_call_as_function(term) ;
+            break ;
+        case ast_call_as_method:
+            walk_call_as_method(term) ;
+            break ;
+        default:
+            fatal_error(0,"Unexpected term kind") ;
+            break ;
     }
 }
 
@@ -513,15 +514,15 @@ void walk_call_as_method(ast t)
 
     switch(ast_node_kind(var))
     {
-    case ast_this:
-        walk_this(var) ;
-        break ;
-    case ast_var:
-        walk_var(var, PUSH) ;
-        break ;
-    default:
-        fatal_error(0,"Expected var or this") ;
-        break ;
+        case ast_this:
+            walk_this(var) ;
+            break ;
+        case ast_var:
+            walk_var(var, PUSH) ;
+            break ;
+        default:
+            fatal_error(0,"Expected var or this") ;
+            break ;
     }
     string subr_name = get_subr_call_subr_name(subr_call) ;
     ast expr_list = get_subr_call_expr_list(subr_call) ;
@@ -551,4 +552,5 @@ int main(int argc,char **argv)
     print_output() ;
     print_errors() ;
 }
+
 

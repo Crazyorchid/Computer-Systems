@@ -53,7 +53,7 @@ void walk_bool(ast t) ;
 void walk_null(ast t) ;
 void walk_this(ast t) ;
 void walk_unary_op(ast t) ;
-void walk_var(ast t) ;
+void walk_var(ast t, const char string1[4]);
 void walk_array_index(ast t) ;
 void walk_call_as_function(ast t) ;
 void walk_call_as_method(ast t) ;
@@ -290,7 +290,7 @@ void walk_let(ast t)
     ast var = get_let_var(t) ;
     ast expr = get_let_expr(t) ;
 
-    walk_var(var) ;
+    walk_var(var, nullptr);
     walk_expr(expr) ;
 }
 
@@ -305,7 +305,7 @@ void walk_let_array(ast t)
     ast index = get_let_array_index(t) ;
     ast expr = get_let_array_expr(t) ;
 
-    walk_var(var) ;
+    walk_var(var, nullptr);
     walk_expr(index) ;
     walk_expr(expr) ;
 }
@@ -445,7 +445,7 @@ void walk_term(ast t)
         walk_unary_op(term) ;
         break ;
     case ast_var:
-        walk_var(term) ;
+        walk_var(term, nullptr);
         break ;
     case ast_array_index:
         walk_array_index(term) ;
@@ -518,7 +518,7 @@ void walk_unary_op(ast t)
 // segment - a string
 // offset - an int
 //
-void walk_var(ast t)
+void walk_var(ast t, const char string1[4])
 {
     //string name = get_var_name(t) ;
     //string type = get_var_type(t) ;
@@ -535,7 +535,7 @@ void walk_array_index(ast t)
     ast var = get_array_index_var(t) ;
     ast index = get_array_index_index(t) ;
 
-    walk_var(var) ;
+    walk_var(var, nullptr);
     walk_expr(index) ;
 }
 
@@ -568,7 +568,7 @@ void walk_call_as_method(ast t)
         walk_this(var) ;
         break ;
     case ast_var:
-        walk_var(var) ;
+        walk_var(var, nullptr);
         break ;
     default:
         fatal_error(0,"Expected var or this") ;
