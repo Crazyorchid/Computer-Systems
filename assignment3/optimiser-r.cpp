@@ -114,10 +114,10 @@ ast copy_class_var_decs(ast t)
 //
 ast copy_var_dec(ast t)
 {
-    //string name = get_var_dec_name(t) ;
-    //string type = get_var_dec_type(t) ;
-    //string segment = get_var_dec_segment(t) ;
-    //int offset = get_var_dec_offset(t) ;
+    string name = get_var_dec_name(t) ;
+    string type = get_var_dec_type(t) ;
+    string segment = get_var_dec_segment(t) ;
+    int offset = get_var_dec_offset(t) ;
 
     return t ;
 }
@@ -341,8 +341,14 @@ ast copy_statement(ast t)
         copy = copy_let_array(statement) ;
         break ;
     case ast_if:
-        copy = copy_if(statement) ;
-        break ;
+        if(true){
+            copy = copy_if(statement);
+        }
+        else {
+            break;
+        }
+        //copy = copy_if(statement) ;
+        //break ;
     case ast_if_else:
         copy = copy_if_else(statement) ;
         break ;
