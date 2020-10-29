@@ -369,7 +369,7 @@ map<string, string> op_map =
                 {"=", "eq"},
                 {"<", "lt"}
         };
-void walk_expr(ast t)
+void walk_expr1(ast t)
 {
     int term_ops = size_of_expr(t) ;
     for ( int i = 0 ; i < term_ops ; i+=2 )
@@ -383,6 +383,35 @@ void walk_expr(ast t)
         write_to_output_ln( op_map[get_infix_op_op(term_op)] );
     }
 }
+
+
+void walk_expr(ast t)
+{
+    int term_ops = size_of_expr(t) ;
+    ast term_op = get_expr(t,0);
+    walk_term(term_op);
+
+    for ( int i = 0 ; i < term_ops-1 ; i++ )
+    {
+        if ( i % 2 != 0 )
+        {
+            int n = i;
+
+            //walk_term(term_op) ;
+            ast term_op = get_expr(t,n);
+            write_to_output_ln( op_map[get_infix_op_op(term_op)] );
+
+        }
+        if (i % 2 == 0)
+        {
+            int m = i+2;
+            ast term_op = get_expr(t,m);
+            walk_term(term_op) ;
+            //walk_infix_op(term_op) ;
+        }
+    }
+}
+
 
 void walk_term(ast t)
 {
