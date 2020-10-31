@@ -363,8 +363,7 @@ bool if_all_true(ast t){
 
 
     if (get_bool_t_or_f(temp) != false)
-        return ()
-
+        return true;
     return false;
 
 }
