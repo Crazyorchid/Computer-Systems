@@ -117,7 +117,7 @@ ast copy_var_dec(ast t)
     string name = get_var_dec_name(t) ;
     string type = get_var_dec_type(t) ;
     string segment = get_var_dec_segment(t) ;
-    int offset = get_var_dec_offset(t) ;
+   // int offset = get_var_dec_offset(t) ;
 
     return t ;
 }
@@ -304,22 +304,89 @@ ast copy_var_decs(ast t)
 // copy an ast statements node
 // it is an ast vector of statement nodes
 //
+bool while_all_false(ast t){
+    ast temp;
+    temp = get_statement_statement(t);
+
+    if (!ast_have_kind(temp, ast_while)) return false;
+    temp = get_while_condition(temp);
+
+    if(size_of_expr(temp) !=1) return false;
+
+    temp = get_expr(temp, 0);
+
+    temp= get_term_term(temp);
+
+    if(!ast_have_kind(temp, ast_bool)) return false;
+
+    if (get_bool_t_or_f(temp) != false) return false;
+
+    return true;
+
+}
+
+bool if_all_false(ast t){
+    ast temp;
+    temp = get_statement_statement(t);
+
+    if (!ast_have_kind(temp, ast_if)) return false;
+    temp = get_if_condition(temp);
+
+    if(size_of_expr(temp) !=1) return false;
+
+    temp = get_expr(temp, 0);
+
+    temp= get_term_term(temp);
+
+    if(!ast_have_kind(temp, ast_bool)) return false;
+
+    if (get_bool_t_or_f(temp) != false) return false;
+
+    return true;
+
+}
+
+bool if_all_true(ast t){
+    ast temp;
+    temp = get_statement_statement(t);
+
+    if (!ast_have_kind(temp, ast_if)) return false;
+    temp = get_if_condition(temp);
+
+    if(size_of_expr(temp) !=1) return false;
+
+    temp = get_expr(temp, 0);
+
+    temp= get_term_term(temp);
+
+    if(!ast_have_kind(temp, ast_bool)) return false;
+
+
+    if (get_bool_t_or_f(temp) != false)
+        return ()
+
+    return false;
+
+}
+
 ast copy_statements(ast t)
 {
     vector<ast> decs ;
 
-    bool copied = false ;
+    //bool copied = false ;
     int size = size_of_statements(t) ;
     for ( int i = 0 ; i < size ; i++ )
     {
         ast deci = get_statements(t,i) ;
         ast copy = copy_statement(deci) ;
-        if ( deci != copy ) copied = true ;
-
+        //if ( deci != copy ) copied = true ;
+        if(while_all_false(copy)) continue;
+        if(if_all_true(copy)) continue;
+        if(if_all_false(copy)) continue;
         decs.push_back(copy) ;
     }
 
-    if ( !copied ) return t ;
+   // if ( !copied ) return t ;
 
     return create_statements(get_ann(t),decs) ;
 }
@@ -341,14 +408,8 @@ ast copy_statement(ast t)
         copy = copy_let_array(statement) ;
         break ;
     case ast_if:
-        if(true){
-            copy = copy_if(statement);
-        }
-        else {
-            break;
-        }
-        //copy = copy_if(statement) ;
-        //break ;
+        copy = copy_if(statement) ;
+            break ;
     case ast_if_else:
         copy = copy_if_else(statement) ;
         break ;
