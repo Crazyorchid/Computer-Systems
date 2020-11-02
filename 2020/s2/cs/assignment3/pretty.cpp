@@ -1,3 +1,12 @@
+/*
+*   Computer Systems
+*   2020, Semester 02
+*   Assignment 3
+*
+*   student (id): a1778478
+*   student (name): Runtao Zhuge
+*
+*/
 #include "iobuffer.h"
 #include "symbols.h"
 #include "abstract-syntax-tree.h"
@@ -61,16 +70,19 @@ void walk_infix_op(ast t) ;
 
 int tab_counter = 0;
 
-void outputTab(int times){
+void outputTab(int times)
+{
     for (int i = 0; i < times; i++)
         write_to_output("    ");
 }
 
-void outputSpace(){
+void outputSpace()
+{
     write_to_output(" ");
 }
 
-void outputNL(){
+void outputNL()
+{
     write_to_output("\n");
 }
 
@@ -93,8 +105,8 @@ void walk_class(ast t)
     outputNL();
 }
 
-vector<string> static_vec;
-vector<string> field_vec;
+//<string> static_vec;
+//vector<string> field_vec;
 
 void walk_class_var_decs(ast t)
 {
