@@ -76,9 +76,10 @@ void walk_infix_op(ast t) ;
 #define POP "pop"
 string myclassname;
 int while_label = 0;
-int if_else_label = 0;
+//int if_else_label = 0;
 int if_label = 0;
 int this_counter = 0;
+
 void write_to_output_ln(string str){
     write_to_output(str + "\n");
 }
