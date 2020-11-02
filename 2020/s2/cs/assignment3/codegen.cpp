@@ -1,3 +1,12 @@
+/*
+*   Computer Systems
+*   2020, Semester 02
+*   Assignment 3
+*
+*   student (id): a1778478
+*   student (name): Runtao Zhuge
+*
+*/
 #include "iobuffer.h"
 #include "symbols.h"
 #include "abstract-syntax-tree.h"
