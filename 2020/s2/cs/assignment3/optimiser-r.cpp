@@ -324,11 +324,9 @@ bool expr_is_bool(ast expr)
 {
     if (ast_have_kind(expr, ast_term))
     {
-        //write_to_logs("Condition is term\n") ;
         ast cond_term = get_term_term(expr) ;
         if (ast_have_kind(cond_term, ast_bool))
         {
-            //write_to_logs("Condition is bool\n") ;
             return true ;
         }
     }
