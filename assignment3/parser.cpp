@@ -1,3 +1,12 @@
+/*
+*   Computer Systems
+*   2020, Semester 02
+*   Assignment 3
+*
+*   student (id): a1778478
+*   student (name): Runtao Zhuge
+*
+*/
 #include <string>
 #include <vector>
 #include "iobuffer.h"
@@ -39,11 +48,8 @@ using namespace Jack_Compiler ;
 //       these statements need to be replaced by code that creates the correct ast nodes.
 //
 
-// fatal error handling
-static void fatal(string message)
-{
-    fatal_error(0,"***** Error:\n" + token_context() + message) ;
-}
+// use the fatal_token_context() function to print fatal error messages with the current input file position marked.
+
 
 // The Jack grammar to be recognised:
 // program          ::= One or more classes, each class in a separate file named <class_name>'.Jack'
@@ -84,10 +90,9 @@ static void fatal(string message)
 // NOTE: parse_type(), parse_vtype(), parse_unary_op() all return a Token not an ast
 // NOTE: parse_static_var_dec(), parse_field_var_dec(), parse_var_dec() all return vector<ast> not an ast
 //
+
 ast parse_class() ;
 ast parse_class_var_decs() ;
-vector<ast> parse_static_var_dec() ;
-vector<ast> parse_field_var_dec() ;
 Token parse_type() ;
 Token parse_vtype() ;
 ast parse_subr_decs() ;
@@ -97,18 +102,17 @@ ast parse_method() ;
 ast parse_param_list(int num) ;
 ast parse_subr_body() ;
 ast parse_var_decs() ;
-vector<ast> parse_var_dec(int &local_offset_count) ;
-
 ast parse_statements() ;
 ast parse_statement() ;
+
 ast parse_let() ;
 ast parse_if() ;
 ast parse_while() ;
 ast parse_do() ;
 ast parse_return() ;
-
 ast parse_expr() ;
 ast parse_term() ;
+
 ast parse_var_term() ;
 ast parse_index() ;
 ast parse_id_call() ;
@@ -116,22 +120,37 @@ ast parse_call() ;
 ast parse_expr_list() ;
 ast parse_infix_op() ;
 Token parse_unary_op() ;
+//create vector <ast> for storing
 
-// symbol table management so we can lookup declared variables
-static symbols class_variable_table = 0;
-static symbols subrutine_variable_table = 0;
+//used to store static
+vector<ast> parseVarDec(int &lcl_count) ;
+//used to store field
+vector<ast> parseStaticVarDec() ;
+//used to store local
+vector<ast> parseFieldVarDec() ;
 
-// a global to record the next free position in the local segment
-static int static_offset_count = 0 ;
-static int field_offset_count = 0;
+// the fatal_token_context() function to print fatal error messages with the current
+//       input file position marked.
+static void fatal(string message)
+{
+    fatal_error(0,"***** Error:\n" + token_context() + message) ;
+}
+
+//create symbol tables
+static symbols claVariableTable = 0;
+static symbols subVariableTable = 0;
+
+//setup global offsets counter to count the next free position for the local segment
+static int staticOffsetCount = 0 ;
+static int fieldOffsetCount = 0;
+//Create myclass outside of the class to get
 static string class_name;
 
 // class ::= 'class' identifier '{' class_var_decs subr_decs '}'
 // create_class(myclassname,class_var_`decs,class_subrs)
 ast parse_class()
 {
-    class_variable_table = create_variables();
-    //get class variable that must tk class
+    claVariableTable = create_variables();
     mustbe(tk_class);
     class_name = token_spelling(mustbe(tk_identifier));
 
@@ -167,12 +186,12 @@ ast parse_class_var_decs()
     {
         if(have(tk_static))
         {
-            temp = parse_static_var_dec();
+            temp = parseStaticVarDec();
             decs.insert(decs.end(),temp.begin(),temp.end());
         }
         else if(have(tk_field))
         {
-            temp = parse_field_var_dec();
+            temp = parseFieldVarDec();
             decs.insert(decs.end(),temp.begin(),temp.end());
         }
     }
@@ -189,30 +208,32 @@ ast parse_class_var_decs()
 // . offset: the variable's position in it's segment
 // . type: the variable's type
 //
-vector<ast> parse_static_var_dec()
+vector<ast> parseStaticVarDec()
 {
     vector<ast> static_var_dec ;
+    st_variable localVar;
     while(have(tk_static))
     {
         mustbe(tk_static);
         string type = token_spelling(parse_type());
         string name = token_spelling(mustbe(tk_identifier));
         string segment = "static";
-        ast var_dec = create_var_dec(name,segment,static_offset_count,type);
+        ast var_dec = create_var_dec(name, segment, staticOffsetCount, type);
         static_var_dec.push_back(var_dec);
-        st_variable myvar(name, type, segment, static_offset_count);
-        if(!insert_variables(class_variable_table, name, myvar))  fatal("Error!!!");
-        static_offset_count++;
+        st_variable lclVar(name, type, segment, staticOffsetCount);
+        if(!insert_variables(claVariableTable, name, lclVar))  fatal("Error");
+        staticOffsetCount++;
+        //incrementing the counter for the free positions
         //while have the comma it will continue to read
         while(have(tk_comma))
         {
             mustbe(tk_comma);
             name = token_spelling(mustbe(tk_identifier));
-            var_dec = create_var_dec(name,segment,static_offset_count,type);
+            var_dec = create_var_dec(name, segment, staticOffsetCount, type);
             static_var_dec.push_back(var_dec);
-            st_variable myvar1(name, type, segment, static_offset_count);
-            if(!insert_variables(class_variable_table, name, myvar1))  fatal("Error!!!");
-            static_offset_count++;
+            st_variable myvar1(name, type, segment, staticOffsetCount);
+            if(!insert_variables(claVariableTable, name, myvar1))  fatal("Error");
+            staticOffsetCount++;
         }
     }
     mustbe(tk_semi);
@@ -229,7 +250,7 @@ vector<ast> parse_static_var_dec()
 // . offset: the variable's position in it's segment
 // . type: the variable's type
 //
-vector<ast> parse_field_var_dec()
+vector<ast> parseFieldVarDec()
 {
     vector<ast> field_var_dec ;
     while(have(tk_field))
@@ -238,20 +259,20 @@ vector<ast> parse_field_var_dec()
         string type = token_spelling(parse_type());
         string name = token_spelling(mustbe(tk_identifier));
         string segment = "this";
-        ast var_dec = create_var_dec(name,segment,field_offset_count,type);
+        ast var_dec = create_var_dec(name, segment, fieldOffsetCount, type);
         field_var_dec.push_back(var_dec);
-        st_variable myvar(name, type, segment, field_offset_count);
-        if(!insert_variables(class_variable_table, name, myvar))  fatal("Error!!!");
-        field_offset_count++;
+        st_variable myvar(name, type, segment, fieldOffsetCount);
+        if(!insert_variables(claVariableTable, name, myvar))  fatal("Having problems");
+        fieldOffsetCount++;
         while(have(tk_comma))
         {
             mustbe(tk_comma);
             name = token_spelling(mustbe(tk_identifier));
-            var_dec = create_var_dec(name,segment,field_offset_count,type);
+            var_dec = create_var_dec(name, segment, fieldOffsetCount, type);
             field_var_dec.push_back(var_dec);
-            st_variable myvar1(name, type, segment, field_offset_count);
-            if(!insert_variables(class_variable_table, name, myvar1))  fatal("Error!!!");
-            field_offset_count++;
+            st_variable stVariable(name, type, segment, fieldOffsetCount);
+            if(!insert_variables(claVariableTable, name, stVariable))  fatal("Having problems");
+            fieldOffsetCount++;
         }
     }
     mustbe(tk_semi);
@@ -278,8 +299,6 @@ Token parse_vtype()
 //
 // ast_subr: create_subr(ast subr)
 // create_subr must be passed one of: ast_constructor, ast_function or ast_method
-//
-//done done done!!!!!
 
 ast parse_subr_decs()
 {
@@ -312,11 +331,10 @@ ast parse_subr_decs()
 // . name: the constructor's name within its class
 // . params: ast_param_list - the constructor's parameters
 // . body: ast_subr_body - the constructor's body
-//
-//done done done!!!
+
 ast parse_constructor()
 {
-    subrutine_variable_table = create_variables();
+    subVariableTable = create_variables();
     mustbe(tk_constructor);
     string vtype = token_spelling(mustbe(tk_identifier));
     if(vtype != class_name)
@@ -329,7 +347,7 @@ ast parse_constructor()
     ast params = parse_param_list(0);
     mustbe(tk_rrb);
     ast body = parse_subr_body();
-    delete_variables(subrutine_variable_table);
+    delete_variables(subVariableTable);
     return create_constructor(vtype, name, params, body) ;
 }
 
@@ -342,7 +360,7 @@ ast parse_constructor()
 //
 ast parse_function()
 {
-    subrutine_variable_table = create_variables();
+    subVariableTable = create_variables();
     mustbe(tk_function);
 
     string vtype = token_spelling(parse_vtype());
@@ -351,7 +369,7 @@ ast parse_function()
     ast params = parse_param_list(0);
     mustbe(tk_rrb);
     ast body = parse_subr_body();
-    delete_variables(subrutine_variable_table);
+    delete_variables(subVariableTable);
     pop_error_context() ;
     return create_function(vtype, name, params, body) ;
 }
@@ -365,7 +383,7 @@ ast parse_function()
 //
 ast parse_method()
 {
-    subrutine_variable_table = create_variables();
+    subVariableTable = create_variables();
     mustbe(tk_method);
     string vtype = token_spelling(parse_vtype());
     string name = token_spelling(mustbe(tk_identifier));
@@ -373,7 +391,7 @@ ast parse_method()
     ast params = parse_param_list(1);
     mustbe(tk_rrb);
     ast body = parse_subr_body();
-    delete_variables(subrutine_variable_table);
+    delete_variables(subVariableTable);
     return create_method(vtype, name, params, body) ;
 }
 
@@ -389,7 +407,6 @@ ast parse_method()
 // . type: the variable's type
 //
 
-//segment: argument
 ast parse_param_list(int num)
 {
     int argument_offset_count;
@@ -410,8 +427,8 @@ ast parse_param_list(int num)
 
         ast para = create_var_dec(name,segment,argument_offset_count,type);
 
-        st_variable myvar(name, type, segment, argument_offset_count);
-        if(!insert_variables(subrutine_variable_table,name,myvar))  fatal("Error!!!");
+        st_variable stVariable(name, type, segment, argument_offset_count);
+        if(!insert_variables(subVariableTable, name, stVariable))  fatal("Having problems");
         params.push_back(para);
         argument_offset_count++;
         while(have(tk_comma))
@@ -420,8 +437,8 @@ ast parse_param_list(int num)
             type = token_spelling(mustbe(tg_starts_type));
             name = token_spelling(mustbe(tk_identifier));
             ast para = create_var_dec(name,segment,argument_offset_count,type);
-            st_variable myvar1(name, type, segment, argument_offset_count);
-            if(!insert_variables(subrutine_variable_table,name,myvar1))  fatal("Error!!!");
+            st_variable lclvar(name, type, segment, argument_offset_count);
+            if(!insert_variables(subVariableTable, name, lclvar))  fatal("Having problems");
             params.push_back(para);
             argument_offset_count++;
         }
@@ -457,7 +474,7 @@ ast parse_var_decs()
     int local_offset_count = 0;
     while(have(tk_var))
     {
-        decs = parse_var_dec(local_offset_count);
+        decs = parseVarDec(local_offset_count);
         all_decs.insert(all_decs.end(),decs.begin(),decs.end());
     }
     return create_var_decs(all_decs);
@@ -475,28 +492,28 @@ ast parse_var_decs()
 //
 
 //local, the parameterts
-vector<ast> parse_var_dec(int &local_offset_count)
+vector<ast> parseVarDec(int &lcl_count)
 {
     vector<ast> my_ast_var_dec ;
     mustbe(tk_var);
     string type = token_spelling(parse_type());
     string name = token_spelling(mustbe(tk_identifier));
     string segment = "local";
-    ast var = create_var_dec(name,segment,local_offset_count,type);
+    ast var = create_var_dec(name, segment, lcl_count, type);
     my_ast_var_dec.push_back(var);
-    st_variable myvar(name, type, segment, local_offset_count);
+    st_variable myvar(name, type, segment, lcl_count);
 
-    if(!insert_variables(subrutine_variable_table,name,myvar))  fatal("Error!!!");
-    local_offset_count++;
+    if(!insert_variables(subVariableTable, name, myvar))  fatal("Error!");
+    lcl_count++;
     while(have(tk_comma))
     {
         mustbe(tk_comma);
         name = token_spelling(mustbe(tk_identifier));
-        ast var = create_var_dec(name,segment,local_offset_count,type);
+        ast var = create_var_dec(name, segment, lcl_count, type);
         my_ast_var_dec.push_back(var);
-        st_variable myvar(name, type, segment, local_offset_count);
-        if(!insert_variables(subrutine_variable_table,name,myvar))  fatal("Error!!!");
-        local_offset_count++;
+        st_variable myvar(name, type, segment, lcl_count);
+        if(!insert_variables(subVariableTable, name, myvar))  fatal("Error!");
+        lcl_count++;
     }
     mustbe(tk_semi);
     return my_ast_var_dec ;
@@ -562,8 +579,8 @@ ast parse_let()
     ast var, expr;
     mustbe(tk_let);
     string name = token_spelling(mustbe(tk_identifier));
-    st_variable subr_myvar = lookup_variables(subrutine_variable_table,name);
-    st_variable class_myvar = lookup_variables(class_variable_table,name);
+    st_variable subr_myvar = lookup_variables(subVariableTable, name);
+    st_variable class_myvar = lookup_variables(claVariableTable, name);
     if(subr_myvar.offset != -1)
     {
         var = create_var(subr_myvar.name,subr_myvar.segment,subr_myvar.offset,subr_myvar.type);
@@ -661,8 +678,8 @@ ast parse_do()
 {
     mustbe(tk_do);
     string name = token_spelling(mustbe(tk_identifier));
-    st_variable subr_myvar = lookup_variables(subrutine_variable_table,name);
-    st_variable class_myvar = lookup_variables(class_variable_table,name);
+    st_variable subr_myvar = lookup_variables(subVariableTable, name);
+    st_variable class_myvar = lookup_variables(claVariableTable, name);
     if(have(tk_lrb))
     {
         ast expr_list = parse_call();
@@ -707,29 +724,6 @@ ast parse_do()
     }
     return 0 ;
 }
-//myvar = lookup_variables(class_variable_table,name);
-//if(myvar.offset == -1)
-//{
-//mustbe(tk_stop);
-//Token to = mustbe(tk_identifier);
-//string sname = token_spelling(to);
-//mustbe(tk_lrb);
-//ast expr_list = parse_expr_list();
-//mustbe(tk_rrb);
-//ast subr_call = create_subr_call(sname,expr_list);
-//ast call_as_function = create_call_as_function(name,subr_call);
-//mustbe(tk_semi);
-//return create_do(call_as_function);
-//}
-
-// return ::= 'return' expr? ';'
-// returns one of: ast_return or ast_return_expr
-//
-// ast_return: create_return()
-//
-// ast_return_expr: create_return_expr(ast expr)
-// create_return_expr must be passed an ast_expr
-//
 ast parse_return()
 {
     ast expr;
@@ -876,17 +870,17 @@ ast parse_var_term()
     if(have(tk_stop))
     {
         ast subr_call = parse_id_call();
-        st_variable subr_myvar = lookup_variables(subrutine_variable_table,name);
-        st_variable class_myvar = lookup_variables(class_variable_table, name);
-        if(subr_myvar.offset != -1)
+        st_variable subrMyvar = lookup_variables(subVariableTable, name);
+        st_variable stVariable = lookup_variables(claVariableTable, name);
+        if(subrMyvar.offset != -1)
         {
-            ast object = create_var(subr_myvar.name, subr_myvar.segment, subr_myvar.offset, subr_myvar.type);
+            ast object = create_var(subrMyvar.name, subrMyvar.segment, subrMyvar.offset, subrMyvar.type);
             name = get_var_type(object);
             return create_call_as_method(name,object,subr_call);
         }
-        else if(class_myvar.offset != -1)
+        else if(stVariable.offset != -1)
         {
-            ast object = create_var(class_myvar.name, class_myvar.segment, class_myvar.offset, class_myvar.type);
+            ast object = create_var(stVariable.name, stVariable.segment, stVariable.offset, stVariable.type);
             name = get_var_type(object);
             return create_call_as_method(name,object,subr_call);
         }
@@ -895,7 +889,7 @@ ast parse_var_term()
             return create_call_as_function(name,subr_call);
         }
     }
-    //call
+
     if(have(tk_lrb))
     {
         ast object=create_this();
@@ -903,13 +897,13 @@ ast parse_var_term()
         return create_call_as_method(class_name, object, subr_call);
 
     }
-    //[]
+
     else
     {
         if(have(tk_lsb))
         {
-            st_variable subr_myvar = lookup_variables(subrutine_variable_table,name);
-            st_variable class_myvar = lookup_variables(class_variable_table,name);
+            st_variable subr_myvar = lookup_variables(subVariableTable, name);
+            st_variable class_myvar = lookup_variables(claVariableTable, name);
             if(subr_myvar.offset != -1)
             {
                 ast var = create_var(subr_myvar.name,subr_myvar.segment,subr_myvar.offset,subr_myvar.type);
@@ -927,18 +921,18 @@ ast parse_var_term()
         }
         else
         {
-            st_variable subr_myvar = lookup_variables(subrutine_variable_table,name);
-            st_variable class_myvar = lookup_variables(class_variable_table,name);
-            if(subr_myvar.offset != -1)
+            st_variable subrMyvar = lookup_variables(subVariableTable, name);
+            st_variable classMyvar = lookup_variables(claVariableTable, name);
+            if(subrMyvar.offset != -1)
             {
-                ast var = create_var(subr_myvar.name,subr_myvar.segment,subr_myvar.offset,subr_myvar.type);
+                ast var = create_var(subrMyvar.name, subrMyvar.segment, subrMyvar.offset, subrMyvar.type);
 
                 return var;
             }
-            else if(class_myvar.offset != -1)
+            else if(classMyvar.offset != -1)
             {
 
-                ast var = create_var(class_myvar.name,class_myvar.segment,class_myvar.offset,class_myvar.type);
+                ast var = create_var(classMyvar.name, classMyvar.segment, classMyvar.offset, classMyvar.type);
                 return var;
             }
         }

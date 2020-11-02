@@ -1142,3 +1142,232 @@ bm1lbnQzLTIwMjAxMDA1LTExMzIwNS56aXAK
 201031-155128 Modified: YTg4NDE0Mjk2OTJjNmYyY2I0ZGZiY2MxZDJlZjA2MDFiZjExYTkxMyAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
 201031-155128 make 
 201031-155128 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201031-191340 Modified: OWI0MTA1OGJlYTJkMmM0MjA0NGM1MmY4OTVjYjUxNDU5ODNiYTRlNiAgLi9vcHRpbWlzZXItci5jcHAKODMxMjQxYTk3NWNiYTI4ZmQ1ZDZhMTg5ZWE1MzcyNDBmNWM1YTM5YSAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201031-191340 make 
+201031-191340 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201031-191411 make test-optimiser
+201031-191411 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201031-191418 Modified: YTU2ZTQ5NmQzY2UyNGM3MzFhMjlmNjU3ZTI1MGJhZTE5ZjQzOGEyOCAgLi91cGRhdGVzL2luc3RhbGxlci5iYXNoCg==
+201031-191418 make test-optimiser-r
+201031-191418 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201031-191504 make test-optimiser-r
+201031-191504 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201031-191604 make test-optimiser-r
+201031-191604 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-142502 Modified: MmE2YjY0MWZiYTUzZWZjNWU2NDg0ZjZmMTM0MWNiN2QzMTFhZTFhNyAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-142502 make clean
+201102-142502 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-142510 Modified: YTNhZTc2NmRjMDc0ZDNkMzgzYzQ2MTgzYjI5OTUwYjUwYjVkOWVmYyAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-142510 make clean
+201102-142510 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-142536 Modified: MGIyMTY3N2E5YTYzYzQ1MmNiNTAyZjA0MTE4ZjZhMDkzZWVmMWQzYSAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-142536 make test-optimiser-r
+201102-142536 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-142859 Modified: NTJmYzcwZTdlYjdmOTQ1ZDk1ZWRjNDAzOGVjZjljZmQyZGYzZjczNSAgLi9vcHRpbWlzZXItci5jcHAK
+201102-142859 make test-optimiser-r
+201102-142859 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-142937 Modified: YmUxYTkzYjdkYjBiN2Q4ZjBhYTczMzBlNmRjNzY1ZTg0NWY0MDc2ZiAgLi9vcHRpbWlzZXItci5jcHAK
+201102-142937 make 
+201102-142937 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-143026 make test-optimiser-r
+201102-143026 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-143035 Modified: NmI2MzFmYzAzMDU3OWQ1YTA1N2JhMjJlYWM0NDEyYjhlZjc0NjQ1YyAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-143035 make test-optimiser-r
+201102-143035 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-143041 make clean
+201102-143041 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-143046 Modified: OTkxNWE1MTQ2N2U4Mjc1MGI2OTIyYmNkNWIwMTE0MzUxY2RmMjZkZiAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-143046 make test-optimiser-r
+201102-143046 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-143258 Modified: ODdjYjc5Mzk0NmMwODA5ZGU2YWVlZGFjZDg1ZTlhZTNkY2I0ZTkxZCAgLi9vcHRpbWlzZXItci5jcHAKZjY5MmEzOTBmM2Y4OTBkMjcxMDFiOWUwMWIwNzgyYTA4NDdlYzdhZCAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-143258 make test-optimiser-r
+201102-143258 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-143408 make test-optimiser-r
+201102-143408 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-143542 Modified: OGQwYmUxZGU3ZmRhNTQ3NDM0ZjU3MTBiMDFiZGQyYTA5ZTUxYzc2MyAgLi9vcHRpbWlzZXItci5jcHAK
+201102-143542 make test-optimiser-r
+201102-143542 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-143631 Modified: ODdjYjc5Mzk0NmMwODA5ZGU2YWVlZGFjZDg1ZTlhZTNkY2I0ZTkxZCAgLi9vcHRpbWlzZXItci5jcHAK
+201102-143631 make test-optimiser-r
+201102-143631 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-143658 Modified: OGQwYmUxZGU3ZmRhNTQ3NDM0ZjU3MTBiMDFiZGQyYTA5ZTUxYzc2MyAgLi9vcHRpbWlzZXItci5jcHAK
+201102-143658 make test-optimiser-r
+201102-143658 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-144221 Modified: Y2M2YjViYWQ1N2I1OTY1YzA4NWJmNTY0ZmVmYTY4NDc1ZTU3NTg2ZSAgLi9vcHRpbWlzZXItci5jcHAKOWVmOGI5NGMzMGFmOGQyOGRhYjI4ZDE4Njc1ZWVhYmI3ZThlNjZkMCAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-144221 make test-optimiser-r
+201102-144221 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-144235 make clean
+201102-144235 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-144242 Modified: YjgwYjM1MzU5YjgyYzdjY2MwMzNhMDYzYzgxMWEyYjYwZGNjNWNjNiAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-144242 make test-optimiser-r
+201102-144242 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-144454 Modified: ZWU5YmRhMDE3ZjQxYTBjMTk2MGRjNDA3NTVhNWExZDc0NmY0N2Y2MyAgLi9vcHRpbWlzZXItci5jcHAK
+201102-144454 make test-optimiser-r
+201102-144454 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-144648 Modified: NGEwMjJhZmMxZDQwMjAxZWJlZjBhNmNlMDlhNzU0ODhmNzJlYWFlNyAgLi9vcHRpbWlzZXItci5jcHAK
+201102-144648 make test-optimiser-r
+201102-144648 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-144949 Modified: N2MwYzI4ZDkxMjAxYmY0NTVkMjJiYWU4YjhjZWE2MjRmMTQyYzZlYyAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-144949 make clean
+201102-144949 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-144955 Modified: ZTJjM2Y4NjZiN2Q2OGZkOGM2ZTNiODhlYzg4ZWU5ZmQzMjVhZDEzNyAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-144955 make test-optimiser-r
+201102-144955 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-145215 Modified: OWJhNDQ4NWFkMDgyNThiMDY3YTg5NTYwNWE2NWIwZTMxMmJkZWMyZiAgLi9vcHRpbWlzZXItci5jcHAK
+201102-145215 make test-optimiser-r
+201102-145215 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-145338 Modified: ODcxNDYwZmVmMTJkMTQyNTFlM2FmZDI1YzJkODcyYzIzOWM3MmYxNiAgLi9vcHRpbWlzZXItci5jcHAK
+201102-145338 make test-optimiser-r
+201102-145338 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-145411 Modified: MWIzZTYwMzQxMGY4NDgxYTA5MDRlZTNlNGQ2YjQ3NWU5MzM1NTljYyAgLi9vcHRpbWlzZXItci5jcHAK
+201102-145411 make test-optimiser-r
+201102-145411 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-145459 Modified: NDU0MTNjNWFkNmNmZWU0NzZlZTU0NmI5OTYxZTllOTBlYWEzNGIyMCAgLi9vcHRpbWlzZXItci5jcHAK
+201102-145459 make test-optimiser-r
+201102-145459 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-145904 Modified: MjMzMzlkNTM5MWYyNzE0NjA5M2NhNjA2ZWE3MGE4NmU5ZGY0MWQ1NiAgLi9vcHRpbWlzZXItci5jcHAKNjkyYzA3ZTNmODc4OGI3NjFhOWJkZjFhYjU3MDFiMzA4ZjdmMTc5YiAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-145904 make test-optimiser-r
+201102-145904 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-150002 Modified: OWFhZTE3NzU3YjcwM2Q0Y2U4MTZhNTQyMGM5ZGMyYmZjYTA3ZjdkZSAgLi9vcHRpbWlzZXItci5jcHAK
+201102-150002 make test-optimiser-r
+201102-150002 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-150028 Modified: MjMzMzlkNTM5MWYyNzE0NjA5M2NhNjA2ZWE3MGE4NmU5ZGY0MWQ1NiAgLi9vcHRpbWlzZXItci5jcHAK
+201102-150028 make test-optimiser-r
+201102-150028 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-150111 Modified: YWUzZGFjMTk0MzllNGNmYWVhZDM2MzU1MjdlNzhkMmZjZmM2NTAyNyAgLi9vcHRpbWlzZXItci5jcHAK
+201102-150111 make test-optimiser-r
+201102-150111 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-150125 Modified: MzFiYTA3YmY5MjMwYzhkZWQ0ZGVhYTFkYWU2NDcyNzZiNDI4MjA3MiAgLi9vcHRpbWlzZXItci5jcHAKYTU2ZTQ5NmQzY2UyNGM3MzFhMjlmNjU3ZTI1MGJhZTE5ZjQzOGEyOCAgLi91cGRhdGVzL2luc3RhbGxlci5iYXNoCg==
+201102-150125 make test-optimiser-r
+201102-150125 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-151202 Modified: ZjU4MmE5ZGVmZjlkOTNhN2RlM2MwMGVmMzQ2NDg5N2EwZDJiMjNjNyAgLi9vcHRpbWlzZXItci5jcHAKMWMzYjA0OGYzODdmNGM0OWI2MjAxZTM5NGEyZDUyZjI3ZjRhYWJhNiAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-151202 make test-optimiser-r
+201102-151202 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-151403 Modified: M2Q5ZTYzMDg1ZTQ4OWU2YmYwNzdkZWU5OGJmOWU1NWUzNmU2MGI0YSAgLi9vcHRpbWlzZXItci5jcHAKYTU2ZTQ5NmQzY2UyNGM3MzFhMjlmNjU3ZTI1MGJhZTE5ZjQzOGEyOCAgLi91cGRhdGVzL2luc3RhbGxlci5iYXNoCjNlNmZiNGZlYWExM2JkYTVkMGQ1ZDNiZjUxZjliYTI0MDNmYzM3YWMgIC4vLmlkZWEvd29ya3NwYWNlLnhtbAo=
+201102-151403 make test-optimiser-r
+201102-151403 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-151446 make clean
+201102-151446 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-151453 Modified: ODJhNDdkNjY4ZDZmMjVlODMxMTBkZWFhZmMyNmJjZWYyYzk0MGM1OCAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-151453 make test-optimiser-r
+201102-151453 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-151535 Modified: MThmYmZlMWM0ODkxMzI0NmIwYjY5NzMxZTdkZmVhODI1ZTJjMDBlMiAgLi9vcHRpbWlzZXItci5jcHAK
+201102-151535 make test-optimiser-r
+201102-151535 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-151602 Modified: YWU3YjA2MTg1NzM2ZGJjZmQzYzVmN2VjZTA4YjRiYzE2OTE4YTVlZCAgLi9vcHRpbWlzZXItci5jcHAK
+201102-151602 make test-optimiser-r
+201102-151602 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-151743 Modified: OWUyYjhiODJiN2ZhODliYjlkZjBhOTkxZWQ1NTk3ODA5YTcyYjIwNCAgLi9vcHRpbWlzZXItci5jcHAK
+201102-151743 make test-optimiser-r
+201102-151743 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-151816 Modified: NmNiODdkMmFmYjVkMWU5MzJjYTM3NmUxMDI5OWZjNDdhNjFiOGJmNCAgLi9vcHRpbWlzZXItci5jcHAK
+201102-151816 make test-optimiser-r
+201102-151816 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-151930 Modified: MjQ5ODQ2NmZkZmZkZWE3NDRhYzRhNGUxNjY5ZWRlOTkxMTBiN2M0NyAgLi9vcHRpbWlzZXItci5jcHAK
+201102-151930 make test-optimiser-r
+201102-151930 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-152201 Modified: MGE5MWZjY2VjMWIzNzM2N2EyZjlkODM5NjNkOTMwNzFkMTc0NTUyOCAgLi9vcHRpbWlzZXItci5jcHAKZTM1NjlkMjg5ZjVkYTQ5ZWU2ODVlMDRmMTNhYWUxOWU5M2ZmNTVjMyAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-152201 make test-optimiser-r
+201102-152201 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-152253 Modified: YmJlNDM1NGNiZmMyZDBlNGJiNzk5ZTQyMzA2MGFiZTIxOGNhYzk2MyAgLi9vcHRpbWlzZXItci5jcHAK
+201102-152253 make test-optimiser-r
+201102-152253 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-152709 Modified: YjYwZjcwZWEwM2FmY2VlMDQ5N2YwODNkNTc1ZWU5ODA3MzMwMTA2ZiAgLi9vcHRpbWlzZXItci5jcHAK
+201102-152709 make test-optimiser-r
+201102-152709 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-152738 Modified: ZTlkM2FjNWU5YmMwOTdkMjJkZDFjOTVmOWY1MGE5ZWQ3MGIwMDllMCAgLi9vcHRpbWlzZXItci5jcHAKYTU2ZTQ5NmQzY2UyNGM3MzFhMjlmNjU3ZTI1MGJhZTE5ZjQzOGEyOCAgLi91cGRhdGVzL2luc3RhbGxlci5iYXNoCg==
+201102-152738 make test-optimiser-r
+201102-152738 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-152910 Modified: Njk5ZmFmYmUxOTgyODRjZjJkZmU3MTk2ZGExMGEzODFhOGQ1ZWQ5MCAgLi9vcHRpbWlzZXItci5jcHAKZWYxZWEzM2E4OTk3MmYxNTM4MGQyMWM2Njg5MjMyYzhiNjhlNmY4MCAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-152910 make test-optimiser-r
+201102-152910 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-152942 Modified: YmMxYzVjNGU1YjIyYWNkYmFhOWI3NWFjZmIyZWQ4MTNmZGM0YzQ0ZiAgLi9vcHRpbWlzZXItci5jcHAK
+201102-152942 make test-optimiser-r
+201102-152942 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-153020 Modified: MDE0ZGUzNmNjMjllNWM1MmY1MWRhOGIxNjQzMzY2MDNkNzdkOWIxNyAgLi9vcHRpbWlzZXItci5jcHAK
+201102-153020 make test-optimiser-r
+201102-153020 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-153025 make clean
+201102-153025 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-153032 Modified: ZmQ0YzlhMDhiYjA1YmIyNWEyMjcyODEwMTMyNzNkNzZjZTQyZjc1OSAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-153032 make test-optimiser-r
+201102-153032 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-153055 Modified: MzRkNTFkYmJlZWRhYWJiM2NiZGVjNTE2ZTFiNjQ0YmFiYjcyNDYzYSAgLi9vcHRpbWlzZXItci5jcHAK
+201102-153055 make test-optimiser-r
+201102-153055 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-153104 Modified: MTExYjY3NGFiMGQ4MmU3YzFhMDc2ZmRlZWNhYzU2YmQzOGFmZjJhNCAgLi9vcHRpbWlzZXItci5jcHAKYTU2ZTQ5NmQzY2UyNGM3MzFhMjlmNjU3ZTI1MGJhZTE5ZjQzOGEyOCAgLi91cGRhdGVzL2luc3RhbGxlci5iYXNoCg==
+201102-153104 make test-optimiser-r
+201102-153104 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-153202 Modified: MTBkYzViZGZiMWQzYzVjYmRjMDQxNjgxYjA4MWVkMzIzOTFhZDdkMiAgLi9vcHRpbWlzZXItci5jcHAK
+201102-153202 make test-optimiser-r
+201102-153202 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-153920 Modified: YmJkYzRmZTE4NjhmNGI0MDBkZjljMDhmNWJlMDkxYjBjNjZmZmEwOCAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCjA3NGM2NGQ1NGYyZjhkYmY5MmMzNjA0ZTM5MjkwMThhYzI4OTc5MjkgIC4vcGFyc2VyLmNwcAo=
+201102-153920 make clean
+201102-153920 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-153937 Modified: MTcwYWRjMzUxZTIzNDBiYjVmZTliOGY4OGY1YzRlYWZkYTA4NTFiMCAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-153937 make test-optimiser-r
+201102-153937 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-153943 make clean
+201102-153943 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-153950 Modified: OTEwZGY3YzM2ZGMwMzJlMjNkYzEwYzRkZDU2OGM5NmE2ZTI1ODc3ZiAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-153950 make test-optimiser-r
+201102-153950 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-154418 Modified: MDVmMzc5ZTllNmFlOTEwOTQ1YjE0NmIwZWJjMjNlYWJiMTFmNWQ1NCAgLi9wYXJzZXIuY3BwCg==
+201102-154418 make test-optimiser-r
+201102-154418 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-154453 Modified: NzRkNWFmMjhmYWJlOTgwZDg4NzkzYWUzYmY3YjViMGJjY2RjOGQ0MSAgLi9vcHRpbWlzZXItci5jcHAK
+201102-154453 make test-optimiser-r
+201102-154453 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-154806 Modified: NzJlYmNlZTBkZmFiNWFmZGQ3NDk5NTZhOGIwNDEwYTdhOTEyNzhiMiAgLi9vcHRpbWlzZXItci5jcHAK
+201102-154806 make test-optimiser-r
+201102-154806 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-155347 Modified: NGQzMjQxNjViMzAzNGRkNGVlZDBlNzg3YWNmNjdkYjAxYzNjNTI4OCAgLi9vcHRpbWlzZXItci5jcHAKYWMzY2RmMTQxNTU0OGVjOTYzZWIwNDRlOTc0YzRhYTAyODZkZDU0MyAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-155347 make test-optimiser-r
+201102-155347 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-170251 Modified: Njg3MmZiOGUwNzY1NTZmMWU4NDdiZThlN2JjOWYxYWE1N2FlNzIwMSAgLi9vcHRpbWlzZXItci5jcHAKYmM3OTk4NWJmZDZiODNiMDMxYjYyMWM0ZThlMGE0YmFlZTBlMGEyMiAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-170251 make clean
+201102-170251 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-170258 Modified: NTY2YWEzY2JkOWU0ODJmZjA1Yzg3NjRjN2UzZDMzZjljYmEyOWRmMyAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-170258 make test-optimiser-r
+201102-170258 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-171202 Modified: ZTc3NmE1OTI5OTNkMzcwOTNkMzY4ZjA1MjFjMjg2ZDNlZDNjZGJkMSAgLi9vcHRpbWlzZXItci5jcHAK
+201102-171202 make test-optimiser-r
+201102-171202 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-171237 Modified: NmY3ZDViOGVmMjFkNzAwNWVjMzk2NzdmMGMwMTFkYzZiNzRkNDY2NSAgLi9vcHRpbWlzZXItci5jcHAK
+201102-171237 make test-optimiser-r
+201102-171237 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-171324 Modified: ZTc4YTI4YzEwMmU3OThkZWZiNzZlYjEzOWU3ODRiNzcyMTZiNzE1OSAgLi9vcHRpbWlzZXItci5jcHAK
+201102-171324 make test-optimiser-r
+201102-171324 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-171606 Modified: YWMyMzdjMDVlOTkxNWQ1ZWY4Y2Q1NzYwYzVhYzA3MWVhNmQwMzU3ZiAgLi9vcHRpbWlzZXItci5jcHAK
+201102-171606 make test-optimiser-r
+201102-171606 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-171628 Modified: MDc4YjJlMGIyMjg5MjMyOTE0YjE5OGVkMTRhZjViZTAwZjcyOTFmYSAgLi9vcHRpbWlzZXItci5jcHAK
+201102-171628 make test-optimiser-r
+201102-171628 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-171642 Modified: Y2Q1MTgwNmUxZDZkODQyYzMyMzY1Mjk5NDJiY2Y1MmE0MGFjNDI3ZSAgLi9vcHRpbWlzZXItci5jcHAK
+201102-171642 make test-optimiser-r
+201102-171642 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-172205 Modified: NjhjOWNkMjM2MTg5ZjQ1ZGUyMmYyZjY5MjJjNDQyYjc2NTJkOGFjNSAgLi9vcHRpbWlzZXItci5jcHAKMjFjNjY0YzY4YzU2ZDQ4MDA4ZWNjNmRlMmE3M2JlYWRhM2JkNjMwMSAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCmMyYTYxYmFlY2IzZmU2NzQwZGUxZDljNTY5OTRkMTczZjU2NTJmMGIgIC4vcGFyc2VyLmNwcAozZjFlZGYxZGZjMmE3NGY4NDE1ZmJjMWZmNzZhODk0ZjFmZDBjZTYyICAuL2NvZGVnZW4uY3BwCg==
+201102-172205 make 
+201102-172205 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-173257 Modified: N2YzOWM4MTdlOWJmZGQwN2Q5YzUwNTgyMDQ1MDA3MzVhMDQ2NzQyZSAgLi9vcHRpbWlzZXItci5jcHAKYjMyYTMwZGMxOTc1Y2JjNzcyMjkzZTUxMmUyN2YxYWFlYTg5MjE3NyAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-173257 make clean
+201102-173257 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-173329 Modified: NmJmMjQzYjg5NDdmODMwYzJkYjg1YjE0ODMzZDI1NzdiYWZmYWVmYSAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCg==
+201102-173329 make 
+201102-173329 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-173858 Modified: MzM5ZTllZWJlY2VhMzQyNjE4ZmU1ODNmN2UyZjA3NDA1ODA4NGY1MiAgLi9wYXJzZXIuY3BwCg==
+201102-173858 make 
+201102-173858 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-174132 Modified: ZjQ5ZTMwNjZmNmE0N2JkZDY1ZGM2NzkyMDVmMWQ5NzRlNDk4Zjc1NSAgLi91cGRhdGVzL2Fzc2lnbm1lbnQzLTIwMjAxMDA1LTExMzIwNS9vcmlnaW5hbHMvcGFyc2VyLmNwcApmNDllMzA2NmY2YTQ3YmRkNjVkYzY3OTIwNWYxZDk3NGU0OThmNzU1ICAuL29yaWdpbmFscy9wYXJzZXIuY3BwCjc4NGQ1Y2RlYTVmNTE2Mzg4MTNkYjM5MDg2ZGYzNDBmNmQ0ZmUzYTcgIC4vLmlkZWEvd29ya3NwYWNlLnhtbApmYmM1ZDkzNDIzMmY4MjU5ZmYzMGM1NDQyYmE1YmNlYTFlZGNlNTgwICAuL3BhcnNlci5jcHAK
+201102-174132 make parser
+201102-174132 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-174140 make test-parser
+201102-174140 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-174250 Modified: ZjBkY2M4N2Y5ZjZkMmIzZjBkMGEyMTg5MjEyYTI0YTMzM2NhMzc3MiAgLi91cGRhdGVzL2Fzc2lnbm1lbnQzLTIwMjAxMDA1LTExMzIwNS9vcmlnaW5hbHMvcGFyc2VyLmNwcApmMGRjYzg3ZjlmNmQyYjNmMGQwYTIxODkyMTJhMjRhMzMzY2EzNzcyICAuL29yaWdpbmFscy9wYXJzZXIuY3BwCmYwMWU1YmFlZjcxYTIwNThlNmQ2NTVkNTQzYzc1Y2YwZDEzNGNmMTggIC4vcGFyc2VyLmNwcAo=
+201102-174250 make test-parser
+201102-174250 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
+201102-181104 Modified: NzY0MjQ2YTE2ZDRlMWNmZjJmMjlkYTc5Njc3MjIzZWVkNDEzMzRjYiAgLi8uaWRlYS93b3Jrc3BhY2UueG1sCjk2MmU0ZDdhYjc2Yzc0ZDY5NTViYTE2NWRjZjJiMTcwOTUzZWZlNzMgIC4vcGFyc2VyLmNwcAo=
+201102-181104 make test-parser
+201102-181104 SVN user: a1778478, repository path: 2020/s2/cs/assignment3
